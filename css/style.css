@@ -15,7 +15,6 @@ header{
     width: var(--TailMax);
     height:80vh;
     flex-direction: row;
-
 }
 nav{
 display: flex;
@@ -226,7 +225,14 @@ background-color: var(--colorSite);
 border: none;
 color: white;
 }
-
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: var(--colorSite);
+}
 @media screen and (max-width:780px) {
 
     html{
@@ -238,7 +244,13 @@ color: white;
         font-family: 'Inria Serif', serif;
         flex-direction: row;
     }
+    header{
+        width: var(--TailMax);
+        height:75vh;
+        flex-direction: row;
+    }
     .member{
+        width: 100%;
         display: flex;
        flex-wrap: wrap;
         margin-bottom: 8rem;
