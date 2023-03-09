@@ -1,0 +1,111 @@
+html{
+    font-size: 100%;
+}
+body{
+    max-width: 71.25rem;
+    margin: 0 auto;
+    font-family: 'Inria Serif', serif;
+    flex-direction: row;
+}
+header{
+    width: 71.25rem;
+    height:5rem;
+    flex-direction: row;
+
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+ul{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+ul li{
+    
+    margin-right: 2rem;
+   }
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.btnGes{
+    height: 30px;
+    width: 150px;
+    border: none;
+    background-color: #25995C;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+.slideList{
+    width: 71.25rem;
+    height:50vh;
+}
+.fade1{
+    width: 71.25rem;
+    height: 40rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/image/bg1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slideBlocInfo{
+    display: block;
+}
+.fade2{
+    width: 71.25rem;
+    height: 40rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/image/bg2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+.fade3{
+    width: 71.25rem;
+    height: 40rem;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/image/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fade4{
+    width: 71.25rem;
+    height: 40rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/image/img1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.fade4 h1{
+    line-height: 1.5;
+}
+.ellipse{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #25995C;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+}
