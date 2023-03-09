@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <main>
+        <div class="login">
+            <div class="enterepr">
+                <img src="../assets/image/K-vivri.png" alt="">
+                <h1>Entreprise</h1>
+            </div>
+            <form action="">
+                <div class="inputDiv">
+                    <input type="text" placeholder="Nom utilisateur">
+                </div>
+                <div class="inputDiv">
+                    <input type="text" placeholder="Mot de passe">
+                </div>
+                <div class="btnDiv">
+                    <input class="btnLog" type="button" value="Connecter">
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <script>
+        let btnLog = document.querySelector(".btnLog");
+        btnLog.addEventListener("click", ()=>{
+            window.location.href = "dashboard.html";
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+:root{
+    --colorSite : #25995C;
+    --TailMax :71.25rem;
+}
+body{
+    background-color: black;
+    flex-direction: column;
+}
+main{
+    margin: var(--TailMax);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.login{
+    padding-top: 300px;
+}
+.enterepr img{
+    height: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 5rem;
+}
+h1{
+    color: white;
+}
+.enterepr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px
+}
+.inputDiv input{
+width: 300px;
+height: 40px;
+}
+.inputDiv{
+    margin-bottom: 30px;
+}
+.inputDiv input::placeholder{
+    text-align: center;
+}
+form{
+    margin-bottom: 20px;
+}
+.btnDiv{
+    display: flex;
+    justify-content: end;
+}
+.btnLog{
+width: 100px;
+height: 30px;
+border: none;
+color: white;
+background-color: var(--colorSite);
+}
