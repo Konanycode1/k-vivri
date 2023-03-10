@@ -13,7 +13,7 @@ body{
 }
 header{
     width: var(--TailMax);
-    height:80vh;
+    height:100vh;
     flex-direction: row;
 }
 nav{
@@ -46,7 +46,7 @@ li{
 }
 .fade1{
     width: var(--TailMaw);
-    height: 40rem;
+    height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/image/bg1.jpeg");
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ li{
 }
 .fade2{
     width: var(--TailMax);
-    height: 40rem;
+    height:80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/image/bg2.jpeg");
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ li{
 }
 .fade3{
     width: var(--TailMax);
-    height: 40rem;
+    height: 80vh;
     display: flex;
    align-items: center;
    justify-content: center;
@@ -82,7 +82,7 @@ li{
 }
 .fade4{
     width: var(--TailMax);
-    height: 40rem;
+    height: 80vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
