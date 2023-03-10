@@ -233,7 +233,7 @@ color: white;
 footer{
     background-color: var(--colorSite);
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1400px) {
 
     html{
         font-size: 90%;
