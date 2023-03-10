@@ -236,7 +236,7 @@ footer{
 @media screen and (max-width:1400px) {
 
     html{
-        font-size: 90%;
+        font-size: 100%;
     }
     body{
         max-width: var(--TailMax);
@@ -306,7 +306,7 @@ footer{
     }
     .fade1{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/image/bg1.jpeg");
         background-repeat: no-repeat;
@@ -317,7 +317,7 @@ footer{
     }
     .fade2{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/image/bg2.jpeg");
         background-repeat: no-repeat;
@@ -331,7 +331,7 @@ footer{
     }
     .fade3{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         display: flex;
        align-items: center;
        justify-content: center;
@@ -342,7 +342,7 @@ footer{
     }
     .fade4{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -392,7 +392,7 @@ footer{
     }
     .fade1{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/image/bg1.jpeg");
         background-repeat: no-repeat;
@@ -403,7 +403,7 @@ footer{
     }
     .fade2{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/image/bg2.jpeg");
         background-repeat: no-repeat;
@@ -417,7 +417,7 @@ footer{
     }
     .fade3{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         display: flex;
        align-items: center;
        justify-content: center;
@@ -428,7 +428,7 @@ footer{
     }
     .fade4{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -488,7 +488,7 @@ footer{
     }
     .fade1{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/image/bg1.jpeg");
         background-repeat: no-repeat;
@@ -499,7 +499,7 @@ footer{
     }
     .fade2{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/image/bg2.jpeg");
         background-repeat: no-repeat;
@@ -513,7 +513,7 @@ footer{
     }
     .fade3{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         display: flex;
        align-items: center;
        justify-content: center;
@@ -524,7 +524,7 @@ footer{
     }
     .fade4{
         width: 100%;
-        height: 40rem;
+        height:80vh;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -579,7 +579,7 @@ footer{
     }
     .fade1{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/image/bg1.jpeg");
         background-repeat: no-repeat;
@@ -590,7 +590,7 @@ footer{
     }
     .fade2{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/image/bg2.jpeg");
         background-repeat: no-repeat;
@@ -604,7 +604,7 @@ footer{
     }
     .fade3{
         width: 100%;
-        height: 40rem;
+        height: 80vh;
         display: flex;
        align-items: center;
        justify-content: center;
@@ -615,7 +615,7 @@ footer{
     }
     .fade4{
         width: 100%;
-        height: 40rem;
+        height:80vh;
         margin: 0 auto;
         display: flex;
         align-items: center;
