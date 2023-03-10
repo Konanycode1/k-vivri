@@ -329,6 +329,11 @@ footer{
         height: 92vh;
         background-color: white;
     }
+    .interDash{
+        width: 85%;
+        height: 100vh;
+        background-color: var(--colorBg);
+    }
     
 }
 @media screen and (max-width:1230px) {
