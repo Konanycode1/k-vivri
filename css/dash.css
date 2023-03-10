@@ -19,12 +19,12 @@ body{
 }
 /* css dashbord */
 .col1{
-    width: 20rem;
+    width: 20%;
     height: 100vh;
     background-color: black;
 }
 .col2{
-    width: 100vw;
+    width: 80%;
     height: 100%;
     background-color: var(--colorBg);
 }
@@ -293,7 +293,43 @@ footer{
 .eclipouvri{
     color: red;
 }
+@media screen and (max-width:1600px) {
 
+    html{
+        font-size: 80%;
+    }
+    main{
+        display: flex;
+        min-height: 100vh;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+         margin: 0 auto;
+         font-family: 'Inria Serif', serif;
+         flex-direction: row;
+     }
+     .col1 {
+        width: 20%;
+        height: 100vh;
+        background-color: black;
+    }
+    .col2{
+        width:80%;
+        height: 100vh;
+        background-color: var(--colorBg);
+    }
+    .listPersonel {
+        width: 20%;
+        height: 100vh;
+        background-color: white;
+    }
+    .interDash{
+        width: 80%;
+        background-color: var(--colorBg);
+    }
+    
+}
 
 @media screen and (max-width:1400px) {
 
