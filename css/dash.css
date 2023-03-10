@@ -305,7 +305,7 @@ footer{
     }
     main{
         display: flex;
-        height: 100vh;
+        height: 100%;
     }
     body{
         width: 100%;
@@ -315,12 +315,12 @@ footer{
          flex-direction: row;
      }
      .col1 {
-        width: 20rem;
+        width: 20%;
         height: 100vh;
         background-color: black;
     }
     .col2{
-        width: 100vw;
+        width:80%;
         height: 100vh;
         background-color: var(--colorBg);
     }
@@ -352,12 +352,12 @@ footer{
         height: 100vh;
     }
      .col1 {
-        width: 20rem;
+        width: 20%;
         height: 99.7vh;
         background-color: black;
     }
     .col2{
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         background-color: var(--colorBg);
     }
@@ -387,7 +387,7 @@ footer{
      }
      main{
         display: flex;
-        height: 100vh;
+        height: 100%;
     }
      .col1{
         width: 20%;
