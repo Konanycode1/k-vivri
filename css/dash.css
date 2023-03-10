@@ -267,7 +267,6 @@ table{
 }
 footer{
     background-color: var(--colorSite);
-    position: sticky;
 }
 
 /* liste personnelle css */
@@ -417,7 +416,6 @@ footer{
     footer{
         width: 100%;
         background-color: var(--colorSite);
-        position: sticky;
     }
 }
 @media screen and (max-width:1000px) {
