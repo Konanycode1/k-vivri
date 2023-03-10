@@ -317,7 +317,7 @@ footer{
      }
      .col1 {
         width: 20rem;
-        height: 99.7vh;
+        height: 100vh;
         background-color: black;
     }
     .col2{
@@ -327,7 +327,7 @@ footer{
     }
     .listPersonel {
         width: 20%;
-        height: 92vh;
+        height: 100vh;
         background-color: white;
     }
     .interDash{
