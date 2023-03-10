@@ -335,7 +335,7 @@ footer{
 @media screen and (max-width:1400px) {
 
     html{
-        font-size: 80%;
+        font-size: 60%;
     }
     main{
         display: flex;
@@ -371,7 +371,7 @@ footer{
 @media screen and (max-width:1230px) {
 
     html{
-        font-size: 80%;
+        font-size: 60%;
     }
     body{
         width: 100%;
@@ -393,6 +393,11 @@ footer{
         height: 100vh;
         background-color: var(--colorBg);
     }
+    .listImg img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
     .interDash{
         width: 75%;
         background-color: var(--colorBg);
@@ -408,7 +413,7 @@ footer{
 @media screen and (max-width:1180px) {
 
     html{
-        font-size: 80%;
+        font-size: 60%;
     }
     body{
         width: 100%;
@@ -442,6 +447,20 @@ footer{
         align-items: center;
         justify-content: space-between;
     }
+    .interDash{
+        width: 75%;
+        background-color: var(--colorBg);
+    }
+    .listPersonel {
+        width: 25%;
+        height: 92vh;
+        background-color: white;
+    }
+    .listImg img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
     .foot{
         
         display: flex;
@@ -455,7 +474,7 @@ footer{
 }
 @media screen and (max-width:1000px) {
     html{
-        font-size: 70%;
+        font-size: 60%;
     }
     body{
         width: 100%;
@@ -475,9 +494,65 @@ footer{
          font-family: 'Inria Serif', serif;
          flex-direction: row;
      }
+
+    html{
+        font-size: 60%;
+    }
+   
+     main{
+        display: flex;
+        min-height: 100vh;
+    }
+     .col1{
+        width: 20%;
+        height: 100vh;
+        background-color: black;
+    }
+    .col2{
+        width: 80%;
+        height: 100vh;
+        background-color: var(--colorBg);
+    }
+    .tacheEncour {
+        padding: 0.8rem;
+        width: 40rem;
+        background-color: white;
+        border-top: 7px solid black;
+    }
+    .divTach {
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .interDash{
+        width: 75%;
+        background-color: var(--colorBg);
+    }
+    .listPersonel {
+        width: 25%;
+        height: 92vh;
+        background-color: white;
+    }
+    .listImg img{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+    .foot{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        background-color: var(--colorSite);
+    }
     
 }
 @media screen and (max-width:780px) {
+    
     html{
         font-size: 50%;
     }
@@ -487,5 +562,55 @@ footer{
          font-family: 'Inria Serif', serif;
          flex-direction: row;
      }
+     main{
+        display: flex;
+        min-height: 100vh;
+    }
+     .col1{
+        width: 20%;
+        height: 100vh;
+        background-color: black;
+    }
+    .col2{
+        width: 80%;
+        height: 100vh;
+        background-color: var(--colorBg);
+    }
+    .tacheEncour {
+        padding: 0.8rem;
+        width: 40rem;
+        background-color: white;
+        border-top: 7px solid black;
+    }
+    .divTach {
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .interDash{
+        width: 75%;
+        background-color: var(--colorBg);
+    }
+    .listPersonel {
+        width: 25%;
+        height: 92vh;
+        background-color: white;
+    }
+    .listImg img{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+    .foot{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        background-color: var(--colorSite);
+    }
     
 }
