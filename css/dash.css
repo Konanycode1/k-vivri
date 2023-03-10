@@ -163,12 +163,9 @@ svg{
 }
 .content{
    display: flex;
-   height: 100vh;
-
 }
 .interDash{
     width: 85%;
-    height: 92vh;
     background-color: var(--colorBg);
 }
 
@@ -305,7 +302,7 @@ footer{
     }
     main{
         display: flex;
-        height: 100%;
+        min-height: 100vh;
     }
     body{
         width: 100%;
@@ -331,7 +328,6 @@ footer{
     }
     .interDash{
         width: 80%;
-        height: 100vh;
         background-color: var(--colorBg);
     }
     
@@ -363,7 +359,6 @@ footer{
     }
     .interDash{
         width: 75%;
-        height: 92vh;
         background-color: var(--colorBg);
     }
     .listPersonel {
