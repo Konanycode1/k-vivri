@@ -233,10 +233,42 @@ color: white;
 footer{
     background-color: var(--colorSite);
 }
-@media screen and (max-width:780px) {
+@media screen and (max-width:1200px) {
 
     html{
         font-size: 90%;
+    }
+    body{
+        max-width: var(--TailMax);
+        margin: 0 auto;
+        font-family: 'Inria Serif', serif;
+        flex-direction: row;
+    }
+    header{
+        width: var(--TailMax);
+        height:75vh;
+        flex-direction: row;
+    }
+    .member{
+        width: 100%;
+        display: flex;
+       flex-wrap: wrap;
+        margin-bottom: 8rem;
+    }
+    .mem{
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        box-shadow: 2px 2px 2px 2px gray;
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width:780px) {
+
+    html{
+        font-size: 55%;
     }
     body{
         max-width: var(--TailMax);
