@@ -34,17 +34,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     pwd : pwd.value
                 }
                 user = JSON.stringify(user)
-                let verif = localStorage.getItem('SessionUser')
-                    let tabUser = []; 
-                    if(verif == null){
-                        tabUser.push(user);
-                        localStorage.setItem("SessionUser", JSON.stringify(tabUser))
-                    }
-                    else{
-                        verif = verif.push(user)
-                        localStorage.setItem("SessionUser", JSON.stringify(verif))
-                    }
-                    window.location.href = "../pages/dashboard.html"
+                localStorage.setItem('SessionUser',user)
+                window.location.href = "../pages/dashboard.html"
             }
             else{
                 para.style.color = "green";
