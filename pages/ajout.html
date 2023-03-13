@@ -56,10 +56,157 @@
                     </div>
                 </header>
                 <div class="content">
-                    <div class="ajoutPerso">
-                        <div class="formPerso">
-                            
+                    
+
+                    <div class="interDash">
+                        <div class="ajoutPerso">
+                            <div class="formPerso">
+                                <div class="titleForm">
+                                    <p class="p-rect"></p>
+                                    <h1>Ajout personnel</h1>
+                                </div>
+                                <div class="formDivEn">
+                                    <form action="" id="formAjoutPerso">
+                                        <div  class="K-form-input">
+                                            <input type="text" name="nom" id="nom" placeholder="Nom">
+                                            <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                                        </div>
+                                        <div  class="K-form-input">
+                                            <input type="text" name="age" id="age" placeholder="Age">
+                                            <input type="text" name="domaine" id="domaine" placeholder="Domaine">
+                                        </div>
+                                        <div  class="K-form-input">
+                                            <select name="" id="">
+                                                <option value="0">Attribué une tâche</option>
+                                                <option value="1">Nettoyage</option>
+                                                <option value="2">Recolte</option>
+                                                <option value="3">semence</option>
+                                                <option value="4">Remplissage</option>
+                                            <input type="text" name="numero" id="numero" placeholder="Numéro">
+                                        </div>
+                                    <div class="k-form-btn">
+                                        <button type="submit">Enregistrer</button>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="K-tach-info">
+                                <div class="K-card-1">
+                                    <h3>Tâche la plus active</h3>
+                                    <p>Remplissage <span style="color: rgb(20, 239, 20);">80%</span> </p>
+                                </div>
+                                <div class="K-card-2">
+                                    <h3>Tâche peu active</h3>
+                                    <p>Ramassage <span style="color:rgb(243, 60, 60)">50%</span></p>
+                                </div>
+                                <div class="K-card-3">
+                                    <h3>Tâche moins active</h3>
+                                    <p>Semence <span style="color:rgb(229, 216, 38)">20%</span> </p> 
+                                </div>
+                            </div> 
                         </div>
+                        <div class="K-regist">
+                            <form action="">
+                                <div class="K-form-input-regist" >
+                                    <input type="text" name="tache" id="" placeholder="Ajouter une tâche">
+                                    <button type="submit">Enregister</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="K-tab-div">
+                            <div class="k-list">
+                                <h3>Tâche</h3>
+                                <h3>Remplissage</h3>
+                                <h3>Recolte</h3>
+                                <h3>Semence</h3>
+                                
+                            </div>
+                            <div class="k-list">
+                                <h3> Date ajout </h3>
+                                <h3>05/03/2023</h3>
+                                <h3>05/03/2023</h3>
+                                <h3>06/03/2023</h3>
+                                
+                                
+                            </div>
+                            <div class="k-list">
+                                <h3>Date Terminer</h3>
+                                <h3>06/03/2023</h3>
+                                <h3>07/03/2023</h3>
+                                <h3>08/03/2023</h3>
+                            </div>
+                            <div class="k-list">
+                                <h3></h3>
+                                <div class="K-icon-list">
+                                    <i class="fa-sharp fa-solid fa-bell k-color-i-1"></i>
+                                    <i class="fa-solid fa-envelope k-color-i-2"></i>
+                                </div>
+                                <div class="K-icon-list">
+                                    <i class="fa-sharp fa-solid fa-bell k-color-i-1"></i>
+                                    <i class="fa-solid fa-envelope k-color-i-2"></i>
+                                </div>
+                                <div class="K-icon-list">
+                                    <i class="fa-sharp fa-solid fa-bell k-color-i-1"></i>
+                                    <i class="fa-solid fa-envelope k-color-i-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="listPersonel">
+                        <div class="adminList">
+                            <u><h3 style="text-align: center;">Admin Actif</h3></u>
+                            <div class="listen">
+                                <img src="../assets/image/ad1.jpeg" alt="">
+                                <h3>Yah Danielle</h3>
+                                <p class="eclipAdmin"></p>
+                            </div>
+                            <div class="listen">
+                                <img src="../assets/image/ad2.png" alt="">
+                                <h3>Boka romaric</h3>
+                                <p class="eclipAdmin"></p>
+                            </div>
+                            <div class="listen">
+                                <img src="../assets/image/ad3.png" alt="">
+                                <h3>Azie Emmanuel</h3>
+                                <p class="eclipAdmin"></p>
+                            </div>
+                            <div class="listen">
+                                <img src="../assets/image/ad4.png" alt="">
+                                <h3>Braffo Christian</h3>
+                                <p class="eclipAdmin"></p>
+                            </div>
+                            <div class="listen">
+                                <img src="../assets/image/ad5.jpeg" alt="">
+                                <h3>Bamba Mohamed</h3>
+                                <p class="eclipAdmin"></p>
+                            </div>
+                        </div>
+                        <div class="ouvriList">
+                            <u><h3 style="text-align: center;">Ouvrier Actif</h3></u>
+                            <div class="listen">
+                                <h3>Yah Danielle</h3>
+                                <p class="eclipouvri">Terminer</p>
+                            </div>
+                            <div class="listen">
+                                <h3>Boka romaric</h3>
+                                <p class="eclipouvri">Terminer</p>
+                            </div>
+                            <div class="listen">
+                                <h3>Azie Emmanuel</h3>
+                                <p class="eclipouvri">Terminer</p>
+                            </div>
+                            <div class="listen">
+                                <h3>Braffo Christian</h3>
+                                <p class="eclipouvri">Terminer</p>
+                            </div>
+                            <div class="listen">
+                                <h3>Bamba Mohamed</h3>
+                                <p class="eclipouvri">Terminer</p>
+                            </div>
+                        </div>
+
                     </div>
                    
                    
@@ -71,5 +218,6 @@
           <p>CopyRight &copy; by KonanyCode</p>
         </div>
       </footer>
+      <script src="../js/ajoutPerso.js"></script>
 </body>
 </html>
