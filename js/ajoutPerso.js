@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let domaine = document.getElementById('domaine');
     let attache = document.getElementById('tach');
     let tel = document.getElementById('numero');
+   
 
     // soumettre et stopper l'action du form
     form.addEventListener('submit', (e)=>{
@@ -16,6 +17,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
     })
     // ajouter les information du personnel
     btnAjout.addEventListener('click', ()=>{
+        const event = new Date();
+        const hre = event.getHours();
+        const mnute = event.getMinutes();
+        const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
         let perso = localStorage.getItem("perso");
         let data = {
             nom : nom.value,
@@ -23,19 +28,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
             age : age.value,
             domaine : domaine.value,
             attache : attache.value,
-            tel : tel.value
+            tel : tel.value,
+            dateAjout :`${hre}:${mnute}`   
         }
         if(perso !== null){
             perso = JSON.parse(perso);
             perso.push(data);
-            localStorage.setItem("perso", JSON.stringify(perso))
+            localStorage.setItem("perso", JSON.stringify(perso));
+            window.location.reload();
         }
         else{
             perso = [];
-            console.log(perso)
+            console.log(perso);
             perso.push(data);
-            console.log(perso)
-            localStorage.setItem("perso",JSON.stringify(perso))
+            console.log(perso);
+            localStorage.setItem("perso",JSON.stringify(perso));
+            window.location.reload()
         } 
     })
 
@@ -48,7 +56,7 @@ formRegistre.addEventListener("submit", (e)=>{
 })
 btnEnregist.addEventListener("click", ()=>{
     const event = new Date();
-const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+    const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
     let ajoutTache = {
         tache : tache.value,
         dateAjout: event.toLocaleDateString(),
