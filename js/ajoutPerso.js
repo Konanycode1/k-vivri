@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
          e.preventDefault();
     })
     btnAjout.addEventListener('click', ()=>{
-        let perso = localStorage.getItem('perso');
-        console.log(perso);
+        let perso = localStorage.getItem("perso");
         let recup = [];
         let data = {
             nom : nom.value,
@@ -30,13 +29,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
         if(perso !== null){
             perso = JSON.parse(perso);
             perso.push(data);
-            localStorage.setItem("perso", JSON.stringify(recup))
+            localStorage.setItem("perso", JSON.stringify(perso))
         }
         else{
             perso = [];
+            console.log(perso)
             perso.push(data);
             console.log(perso)
-            localStorage.setItem("perso",JSON.stringify(data))
+            localStorage.setItem("perso",JSON.stringify(perso))
         }
        
     })
