@@ -4,9 +4,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let nom = document.getElementById('nom')
     let preneom = document.getElementById('prenom');
     let age = document.getElementById('age')
-    let domaine = document.getElementById('prenom');
+    let domaine = document.getElementById('domaine');
     let attache = document.getElementById('tach');
     let tel = document.getElementById('numero');
+    
 
 
 
@@ -14,7 +15,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
          e.preventDefault();
     })
     btnAjout.addEventListener('click', ()=>{
-
+        let perso = localStorage.getItem('perso');
+        console.log(perso);
+        let recup = [];
         let data = {
             nom : nom.value,
             preneom : preneom.value,
@@ -23,7 +26,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
             attache : attache.value,
             tel : tel.value
         }
-        console.log(data);
+
+        if(perso !== null){
+            perso = JSON.parse(perso);
+            perso.push(data);
+            localStorage.setItem("perso", JSON.stringify(recup))
+        }
+        else{
+            perso = [];
+            perso.push(data);
+            console.log(perso)
+            localStorage.setItem("perso",JSON.stringify(data))
+        }
        
     })
     
