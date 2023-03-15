@@ -17,12 +17,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
     else{
         logStatus;
-    }
-
-
-
-    
-
-
-    
+    }  
 })

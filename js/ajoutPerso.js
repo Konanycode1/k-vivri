@@ -9,12 +9,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let domaine = document.getElementById('domaine');
     let attache = document.getElementById('tach');
     let tel = document.getElementById('numero');
-   
-
     // soumettre et stopper l'action du form
     form.addEventListener('submit', (e)=>{
          e.preventDefault();
-    })
+    });
     // ajouter les information du personnel
     btnAjout.addEventListener('click', ()=>{
         const event = new Date();
@@ -43,9 +41,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
             perso.push(data);
             console.log(perso);
             localStorage.setItem("perso",JSON.stringify(perso));
-            window.location.reload()
+            window.location.reload();
         } 
-    })
+    });
 
 let formRegistre = document.getElementById("K-form-registre");
 let btnEnregist = document.querySelector(".btn-regist");
@@ -53,7 +51,7 @@ let tache = document.getElementById("tache");
 
 formRegistre.addEventListener("submit", (e)=>{
     e.preventDefault();
-})
+});
 btnEnregist.addEventListener("click", ()=>{
     const event = new Date();
     const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
@@ -66,14 +64,14 @@ btnEnregist.addEventListener("click", ()=>{
     dataRegist = JSON.parse(dataRegist);
     console.log(dataRegist);
     if(dataRegist !== null){
-        let isfount = dataRegist.some(element => element.tache === tache.value)
+        let isfount = dataRegist.some(element => element.tache === tache.value);
         if(isfount){
             alert("Tâche non terminer");
         }
         else{
-            dataRegist.push(ajoutTache)
+            dataRegist.push(ajoutTache);
             localStorage.setItem("tache",JSON.stringify(dataRegist));
-            window.location.reload()
+            window.location.reload();
         }
     }
     else{
@@ -82,7 +80,6 @@ btnEnregist.addEventListener("click", ()=>{
         localStorage.setItem("tache", JSON.stringify(dataRegist));
         window.location.reload();
     }
-
-})
+});
 
 })

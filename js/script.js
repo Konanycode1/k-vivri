@@ -16,3 +16,5 @@ function slideCard() {
     setTimeout(slideCard,2000); 
 }
 slideCard()
+
+
