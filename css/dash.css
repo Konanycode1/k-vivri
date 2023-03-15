@@ -740,7 +740,7 @@ option{
 }
 @media screen and (max-width:900px) {
     html{
-        font-size: 55%;
+        font-size: 60%;
     }
     body{
         width: 100%;
@@ -939,7 +939,7 @@ option{
 }
 @media screen and (max-width:800px) {
     html{
-        font-size: 55%;
+        font-size: 60%;
     }
     body{
         width: 100%;
@@ -961,6 +961,12 @@ option{
         height: 100vh;
         background-color: black;
     }
+    .col2{
+        width: 90%;
+        height: 100vh;
+        background-color: var(--colorBg);
+    }
+  
     .cach{
         display: none;
     }
@@ -997,11 +1003,7 @@ option{
       .listLink ul li a{
         margin-left: 0px;
      }
-    .col2{
-        width: 90%;
-        height: 100vh;
-        background-color: var(--colorBg);
-    }
+   
     .tacheEncour {
         padding: 0.8rem;
         width: 40rem;
@@ -1230,7 +1232,7 @@ option{
         margin-left: 0px;
      }
     .col2{
-        width: 0%;
+        width: 90%;
         height: 100vh;
         background-color: var(--colorBg);
     }
