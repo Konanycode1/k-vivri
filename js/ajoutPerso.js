@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let form = document.getElementById('formAjoutPerso');
     let btnAjout = document.getElementById('btnAjout');
     let nom = document.getElementById('nom')
-    let preneom = document.getElementById('prenom');
+    let prenom = document.getElementById('prenom');
     let age = document.getElementById('age')
     let domaine = document.getElementById('domaine');
     let attache = document.getElementById('tach');
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         let perso = localStorage.getItem("perso");
         let data = {
             nom : nom.value,
-            preneom : preneom.value,
+            prenom : prenom.value,
             age : age.value,
             domaine : domaine.value,
             attache : attache.value,

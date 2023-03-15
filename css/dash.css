@@ -309,6 +309,11 @@ footer{
     display: flex;
     align-items: center;
 }
+.titlePerson{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .formPerso{
     margin-right: 10rem;
 }
@@ -493,6 +498,133 @@ option{
         background-color: var(--colorBg);
     }
     
+}
+@media screen and (max-width:1300px) {
+
+    
+    .titleForm{
+        display: flex;
+        align-items: center;
+    }
+    .formPerso{
+        margin-right: 10rem;
+    }
+    .K-form-input{
+        width:50rem ;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .K-form-input input{
+        width: 20rem;
+        height: 4rem;
+        background-color: white;
+        border: none;
+    }
+    .K-form-input input::placeholder{
+        text-align: center;
+    }
+    .K-form-input select{
+        width: 20rem;
+        height: 4rem;
+        border: none;background-color: #fff;
+    }
+    option{
+        text-align: center;
+    }
+    .k-form-btn{
+        display: flex;
+        justify-content: end;
+    }
+    .k-form-btn button{
+        width: 15rem;
+        height: 4rem;
+        background-color: var(--colorSite);
+        border: none;
+        color: #ffff;
+    }
+    .K-tach-info{
+       display: block;
+        
+    }
+    .K-card-1{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(20, 239, 20);
+    }
+    .K-card-2{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(243, 60, 60);
+    }
+    .K-card-3{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(229, 216, 38);
+    }
+    .K-regist{
+        padding: 1rem;
+        width: 40rem;
+    
+    }
+    .K-form-input-regist{
+        display: flex;
+        justify-content: space-around;
+    }
+    .K-form-input-regist input{
+        width: 25rem;
+        height: 4rem;
+        background-color: white;
+        border: none;
+        margin-right: 20px;
+    }
+    .K-form-input-regist input::placeholder{
+        text-align: center;
+    }
+    .K-form-input-regist button{
+        width: 15rem;
+        height: 4rem;
+        background-color: var(--colorSite);
+        border: none;
+        color: #ffff;
+    }
+    .K-tab-div{
+        padding: .5rem;
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+    
+    }
+    .k-color-i-1{
+        color: #2F14D4;
+    }
+    .k-color-i-2{
+        color: #d31c1c;
+    }
+    .foot{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        background-color: var(--colorSite);
+    }
 }
 @media screen and (max-width:1230px) {
 
