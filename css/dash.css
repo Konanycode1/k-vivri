@@ -469,11 +469,59 @@ option{
 
 }
 .tableauMontant{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-/* css action sur le personnel */
 
+/* -------------Fin css action sur le personnel-------------------- */
+
+/* --------------css liste ouvrier ------------- */
+.k-Liste-perso{
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+.ico{
+   width: 10px;
+   height: 5px; 
+   background-color: var(--colorSite);
+}
+.titlePerso{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.k-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.k-recherch{
+    display: flex;
+    align-items: center;
+}
+.k-recherch #recher{
+   width: 250px;
+   height: 30px;
+   border: 2px solid #25995C;
+}
+.k-recherch #btn-recher{
+    background-color: var(--colorSite);
+    height: 30px;
+    border: none;
+    color: white;
+ }
+ .k-select-num select{
+    width: 50px;
+    height: 30px;
+    border: 2px solid var(--colorSite);
+ }
+ .k-perso-table{
+    width: 100%;
+ }
+ 
+/* --------------css liste ouvrier ------------- */
 
 @media screen and (max-width:1600px) {
 
