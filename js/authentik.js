@@ -20,32 +20,32 @@ document.addEventListener('DOMContentLoaded', ()=>{
     else{
         logStatus;
     }  
- 
+    affiTache()
     function affiTache() {
         let recupData = localStorage.getItem("tache");
         let recupTachTer = localStorage.getItem('tacheTerminer');
         let ajoutContent = document.querySelector('.tacheEncour');
 
         recupData = JSON.parse(recupData);
-        // console.log(recupData)  
 
         for (let i = 0; i < recupData.length; i++) {
-
-            console.log(recupData[i].tache);
-            let div = document.createElement ("div");
-            div.className = "divTach"
-            div.innerHTML = `
-            <h3>${recupData[i].tache}</h3>
-            <input type="button" class="terminer" value="Terminée">`;
-            ajoutContent.appendChild(div)
-            
+           
+            if(recupData[i].dateTermine === "En cours"){
+                let div = document.createElement ("div");
+                div.className = "divTach"
+                div.innerHTML = `
+                <h3>${recupData[i].tache}</h3>
+                <input type="button" class="terminer" value="Terminée">`;
+                ajoutContent.appendChild(div)
+            } 
         }
         let div2 = document.createElement('div')
         div2.className = "dat";
         div2.innerHTML = `<h4>${dat.toLocaleDateString()}</h4>`;
         ajoutContent.appendChild(div2)  
+        
     }
-    affiTache()
+    
     
     function BtnTerminer() {
         let btnSelect = document.querySelectorAll('.terminer');
@@ -58,30 +58,25 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 let texte = parent.querySelector("h3").textContent;
                 recupVal = JSON.parse(recupVal);
                 const dat = new Date()
+                let data;
 
-                recupVal.forEach(element => {
+                recupVal = recupVal.map(element => {
                     if(element.tache === texte){
-                        let objet = {
+                       
+                         data = {
                             tache: element.tache,
-                            Termine : dat.toLocaleDateString(),
-                            Ajout: element.dateAjout
+                            dateTermine : dat.toLocaleDateString(),
+                            dateAjout: element.dateAjout
                         }
-                        let tacheTer = localStorage.getItem("tacheTerminer")
-                        if(tacheTer !== null){
-                            tacheTer = JSON.parse(tacheTer);
-                            tacheTer.push(objet);
-                            localStorage.setItem('tacheTerminer', JSON.stringify(tacheTer));
-                             
-                        }
-                        else{
-                            tacheTer = [];
-                            tacheTer.push(objet);
-                            localStorage.setItem('tacheTerminer', JSON.stringify(tacheTer))  
-                        }
-                        
+                    }else{
+                        return element
                     }
-                    
+                    return data
                 });
+                console.log(recupVal)
+                localStorage.setItem("tache", JSON.stringify(recupVal));
+                window.location.reload();
+
             }
             
         }));

@@ -425,7 +425,7 @@ option{
 /* css action sur le personnel */
 .Paiement{
     padding: 20px;
-    width: 100%;
+    width: 90rem;
     display: flex;
     justify-content: space-between;
 }
@@ -459,8 +459,8 @@ option{
     color: white;
 }
 .k-card-action-1{
-    width: 100px;
-    height: 60px;
+    width: 120px;
+    height: 90px;
     padding: 1%;
     background-color: white;
     border-right: 5px solid #14D428;
@@ -469,10 +469,14 @@ option{
 
 }
 .tableauMontant{
-    width: 100%;
+    width: 90rem;
     display: flex;
     justify-content: space-between;
 }
+.mytable{
+    width: 90rem;
+}
+
 
 /* -------------Fin css action sur le personnel-------------------- */
 
@@ -568,6 +572,135 @@ option{
         background: white;
     
     }
+    /* css ajout page */
+.ajoutPerso{
+    padding: 2rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.p-rect{
+    height: 20px;
+    width: 5PX;
+    background-color: var(--colorSite);
+}
+.titleForm{
+    display: flex;
+    align-items: center;
+}
+.titlePerson{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formPerso{
+    margin-right: 10rem;
+}
+.K-form-input{
+    width:60rem ;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.K-form-input input{
+    width: 25rem;
+    height: 4rem;
+    background-color: white;
+    border: none;
+}
+.K-form-input input::placeholder{
+    text-align: center;
+}
+.K-form-input select{
+    width: 25rem;
+    height: 4rem;
+    border: none;background-color: #fff;
+}
+option{
+    text-align: center;
+}
+.k-form-btn{
+    display: flex;
+    justify-content: end;
+}
+.k-form-btn button{
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--colorSite);
+    border: none;
+    color: #ffff;
+}
+.K-tach-info{
+   display: block;
+    
+}
+.K-card-1{
+    width: 15rem;
+    height: 5rem;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(20, 239, 20);
+}
+.K-card-2{
+    width: 15rem;
+    height: 5rem;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(243, 60, 60);
+}
+.K-card-3{
+    width: 15rem;
+    height: 5rem;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(229, 216, 38);
+}
+.K-regist{
+    padding: 2rem;
+    width: 40rem;
+
+}
+.K-form-input-regist{
+    display: flex;
+    justify-content: space-around;
+}
+.K-form-input-regist input{
+    width: 25rem;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    margin-right: 20px;
+}
+.K-form-input-regist input::placeholder{
+    text-align: center;
+}
+.K-form-input-regist button{
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--colorSite);
+    border: none;
+    color: #ffff;
+}
+.K-tab-div{
+    width: 90rem;
+    display: block;
+    background: white;
+
+}
+
+.k-color-i-1{
+    color: #2F14D4;
+}
+.k-color-i-2{
+    color: #d31c1c;
+}
+/* css ajout page */
 }
 
 @media screen and (max-width:1400px) {

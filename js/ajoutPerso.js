@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
-    // ajout personnel
+    AjoutPerso() ;
+    function AjoutPerso() {
+         // ajout personnel
     let form = document.getElementById('formAjoutPerso');
     let btnAjout = document.getElementById('btnAjout');
     let nom = document.getElementById('nom')
@@ -44,44 +46,53 @@ document.addEventListener("DOMContentLoaded", ()=>{
             window.location.reload();
         } 
     });
-
-let formRegistre = document.getElementById("K-form-registre");
-let btnEnregist = document.querySelector(".btn-regist");
-let tache = document.getElementById("tache");
-
-formRegistre.addEventListener("submit", (e)=>{
-    e.preventDefault();
-});
-btnEnregist.addEventListener("click", ()=>{
-    const event = new Date();
-    const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
-    let ajoutTache = {
-        tache : tache.value,
-        dateAjout: event.toLocaleDateString(),
-        dateTermine: "En cours"
     }
-    let dataRegist = localStorage.getItem("tache");
-    dataRegist = JSON.parse(dataRegist);
-    console.log(dataRegist);
-    if(dataRegist !== null){
-        let isfount = dataRegist.some(element => element.tache === tache.value);
-        if(isfount){
-            alert("Tâche non terminer");
-        }
-        else{
-            dataRegist.push(ajoutTache);
-            localStorage.setItem("tache",JSON.stringify(dataRegist));
-            window.location.reload();
-        }
-    }
-    else{
-        dataRegist = [];
-        dataRegist.push(ajoutTache);
-        localStorage.setItem("tache", JSON.stringify(dataRegist));
-        window.location.reload();
-    }
-});
+   
+AjoutTache();
+function AjoutTache() {
+        let formRegistre = document.getElementById("K-form-registre");
+        let btnEnregist = document.querySelector(".btn-regist");
+        let tache = document.getElementById("tache");
 
+        formRegistre.addEventListener("submit", (e)=>{
+            e.preventDefault();
+        });
+        btnEnregist.addEventListener("click", ()=>{
+            const event = new Date();
+            const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+            let ajoutTache = {
+                tache : tache.value,
+                dateAjout: event.toLocaleDateString(),
+                dateTermine: "En cours"
+            }
+            let dataRegist = localStorage.getItem("tache");
+            dataRegist = JSON.parse(dataRegist);
+            console.log(dataRegist);
+            if(dataRegist !== null){
+                let isfount = dataRegist.some(element => element.tache === tache.value && element.dateTermine == "En cours");
+                console.log(isfount)
+                if(isfount){
+                    alert("Tâche non terminer");
+                }
+                else{
+                    dataRegist.push(ajoutTache);
+                    localStorage.setItem("tache",JSON.stringify(dataRegist));
+                    window.location.reload();
+                }
+            }
+            else{
+                dataRegist = [];
+                dataRegist.push(ajoutTache);
+                localStorage.setItem("tache", JSON.stringify(dataRegist));
+                window.location.reload();
+            }
+        });
+
+        
+}
+
+
+    SelectTache();
 function SelectTache() {
     let recupListe = localStorage.getItem('tache');
     let select = document.getElementById("tach")
@@ -93,6 +104,6 @@ function SelectTache() {
        select.appendChild(option)
     });
 }
-SelectTache()
+
 
 })
