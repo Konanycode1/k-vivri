@@ -82,4 +82,17 @@ btnEnregist.addEventListener("click", ()=>{
     }
 });
 
+function SelectTache() {
+    let recupListe = localStorage.getItem('tache');
+    let select = document.getElementById("tach")
+    recupListe = JSON.parse(recupListe);
+    recupListe.forEach(element => {
+       let option = document.createElement('option');
+       option.textContent = element.tache;
+       option.value = element.tache
+       select.appendChild(option)
+    });
+}
+SelectTache()
+
 })

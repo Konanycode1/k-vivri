@@ -26,7 +26,7 @@
             </div>
                 <div class="listLink">
                     <ul>
-                        <li class="dash"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><mask id="ipSDashboardCar0"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="M6.572 37.428A21.904 21.904 0 0 1 2 24C2 11.85 11.85 2 24 2s22 9.85 22 22c0 5.056-1.705 9.713-4.572 13.428"/><path d="M12.303 31.697A13.935 13.935 0 0 1 10 24c0-7.732 6.268-14 14-14s14 6.268 14 14c0 2.843-.847 5.488-2.303 7.697"/><path fill="#fff" fill-rule="evenodd" d="m24 30l16 16H8l16-16Z" clip-rule="evenodd"/></g></mask><path fill="white" d="M0 0h48v48H0z" mask="url(#ipSDashboardCar0)"/></svg> <span class="cach"> Dashboard</span></a></li>
+                        <li ><a href="" class="dash"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><mask id="ipSDashboardCar0"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="M6.572 37.428A21.904 21.904 0 0 1 2 24C2 11.85 11.85 2 24 2s22 9.85 22 22c0 5.056-1.705 9.713-4.572 13.428"/><path d="M12.303 31.697A13.935 13.935 0 0 1 10 24c0-7.732 6.268-14 14-14s14 6.268 14 14c0 2.843-.847 5.488-2.303 7.697"/><path fill="#fff" fill-rule="evenodd" d="m24 30l16 16H8l16-16Z" clip-rule="evenodd"/></g></mask><path fill="white" d="M0 0h48v48H0z" mask="url(#ipSDashboardCar0)"/></svg> <span class="cach"> Dashboard</span></a></li>
                         <li><a href="ajout.html"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1280 1536"><path fill="white" d="M1280 1271q0 109-62.5 187t-150.5 78H213q-88 0-150.5-78T0 1271q0-85 8.5-160.5t31.5-152t58.5-131t94-89T327 704q131 128 313 128t313-128q76 0 134.5 34.5t94 89t58.5 131t31.5 152t8.5 160.5zm-256-887q0 159-112.5 271.5T640 768T368.5 655.5T256 384t112.5-271.5T640 0t271.5 112.5T1024 384z"/></svg>
                           <span class="cach">Ajout</span> </a></li>
                            <li> <a href="liste.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1792 1408"><path fill="white" d="M384 1216q0 80-56 136t-136 56t-136-56t-56-136t56-136t136-56t136 56t56 136zm0-512q0 80-56 136t-136 56t-136-56T0 704t56-136t136-56t136 56t56 136zm1408 416v192q0 13-9.5 22.5t-22.5 9.5H544q-13 0-22.5-9.5T512 1312v-192q0-13 9.5-22.5t22.5-9.5h1216q13 0 22.5 9.5t9.5 22.5zM384 192q0 80-56 136t-136 56t-136-56T0 192T56 56T192 0t136 56t56 136zm1408 416v192q0 13-9.5 22.5T1760 832H544q-13 0-22.5-9.5T512 800V608q0-13 9.5-22.5T544 576h1216q13 0 22.5 9.5t9.5 22.5zm0-512v192q0 13-9.5 22.5T1760 320H544q-13 0-22.5-9.5T512 288V96q0-13 9.5-22.5T544 64h1216q13 0 22.5 9.5T1792 96z"/></svg> <span class="cach">Liste Ouvrier</span> </a> </li>
@@ -61,15 +61,15 @@
                         <div class="nombr">
                             <div class="ouvr">
                                 <h3>Nombres Ouvriers</h3>
-                                <p>200 Pers</p>
+                                <p class="nbrOu"></p>
                             </div>
                             <div class="tach">
                                 <h3>Nombres De Tâche</h3>
-                                <p>200 Pers</p>
+                                <p class="nbrTac">200 Pers</p>
                             </div>
                             <div class="admin">
                                 <h3>Nombres Admin</h3>
-                                <p>200 Pers</p>
+                                <p class="nbrAdmin">200 Pers</p>
                             </div>
                         </div>
                         <div class="tacheBloc">
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="tableau">
-                            <table>
+                                <table>
                                 <tr>
                                     <td>&nbsp;</td>
                                   <td>Nbres tâche Prog</td>
@@ -187,6 +187,7 @@
       </footer>
       
       <script src="../js/burger.js"></script>
+      <script src="../js/countValue.js"></script>
       <script src="../js/authentik.js"></script>
      
 </body>

@@ -20,15 +20,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
     else{
         logStatus;
     }  
-
-
+ 
     function affiTache() {
         let recupData = localStorage.getItem("tache");
+        let recupTachTer = localStorage.getItem('tacheTerminer');
         let ajoutContent = document.querySelector('.tacheEncour');
+
         recupData = JSON.parse(recupData);
         // console.log(recupData)  
 
         for (let i = 0; i < recupData.length; i++) {
+
             console.log(recupData[i].tache);
             let div = document.createElement ("div");
             div.className = "divTach"
@@ -69,16 +71,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
                             tacheTer = JSON.parse(tacheTer);
                             tacheTer.push(objet);
                             localStorage.setItem('tacheTerminer', JSON.stringify(tacheTer));
-                            parent.remove();
+                             
                         }
                         else{
                             tacheTer = [];
                             tacheTer.push(objet);
-                            localStorage.setItem('tacheTerminer', JSON.stringify(tacheTer))
-                            parent.remove();
-
+                            localStorage.setItem('tacheTerminer', JSON.stringify(tacheTer))  
                         }
-                        localStorage.removeItem('tache')
                         
                     }
                     

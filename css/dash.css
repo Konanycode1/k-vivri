@@ -132,7 +132,7 @@ a{
     align-items: center;
     margin-bottom: 3rem;
  }
- .listLink ul li:hover {
+ .listLink ul li  a:hover {
     background-color: cadetblue;
   
  }
@@ -409,14 +409,12 @@ option{
     color: #ffff;
 }
 .K-tab-div{
-    padding: 2rem;
-    width: 80rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 90rem;
+    display: block;
     background: white;
 
 }
+
 .k-color-i-1{
     color: #2F14D4;
 }
@@ -424,6 +422,59 @@ option{
     color: #d31c1c;
 }
 /* css ajout page */
+/* css action sur le personnel */
+.Paiement{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.rectan{
+    width:5px;
+    height: 10px;
+    background-color: var(--colorSite);
+    margin-right:8px;
+}
+.k-titleAction{
+    display: flex;
+    align-items: center;
+}
+.K-form-input-action{
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.K-form-input-action input{
+   width: 15rem;
+   height: 3rem;
+   margin-bottom: 5px;
+   border: none;
+}
+.K-form-input-action input::placeholder{
+   text-align: center;
+ }
+#btnMontant{
+    background-color: var(--colorSite);
+    color: white;
+}
+.k-card-action-1{
+    width: 100px;
+    height: 60px;
+    padding: 1%;
+    background-color: white;
+    border-right: 5px solid #14D428;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.tableauMontant{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* css action sur le personnel */
+
+
 @media screen and (max-width:1600px) {
 
     html{
@@ -461,6 +512,14 @@ option{
     .content{
         display: flex;
      }
+     .K-tab-div{
+        width: 60rem;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        background: white;
+    
+    }
 }
 
 @media screen and (max-width:1400px) {
@@ -496,6 +555,14 @@ option{
     .interDash{
         width: 80%;
         background-color: var(--colorBg);
+    }
+    .K-tab-div{
+        width: 60rem;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        background: white;
+    
     }
     
 }
@@ -601,11 +668,10 @@ option{
         color: #ffff;
     }
     .K-tab-div{
-        padding: .5rem;
-        width: 50rem;
-        display: flex;
-        justify-content: space-between;
+        width: 60rem;
+        display: block;
         align-items: center;
+        justify-content: center;
         background: white;
     
     }
@@ -664,6 +730,23 @@ option{
         width: 25%;
         height: 92vh;
         background-color: white;
+    }
+    .K-tab-div{
+        width: 80rem;
+        display: block;
+        background: white;
+    
+    }
+    .k-list{
+        width: 60rem;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .k-color-i-1{
+        color: #2F14D4;
     }
     
 }
@@ -831,15 +914,16 @@ option{
         background-color: var(--colorSite);
         border: none;
         color: #ffff;
-    }
+    } 
     .K-tab-div{
-        padding: .5rem;
-        width: 50rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 60rem;
+        display: block;
         background: white;
     
+    }
+
+    .k-color-i-1{
+        color: #2F14D4;
     }
     .k-color-i-1{
         color: #2F14D4;
@@ -1043,13 +1127,9 @@ option{
         color: #ffff;
     }
     .K-tab-div{
-        padding: .5rem;
         width: 50rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: block;
         background: white;
-    
     }
     .k-color-i-1{
         color: #2F14D4;
@@ -1070,6 +1150,7 @@ option{
     
 }
 @media screen and (max-width:800px) {
+
     html{
         font-size: 60%;
     }
@@ -1281,13 +1362,12 @@ option{
         color: #ffff;
     }
     .K-tab-div{
-        padding: .5rem;
-        width: 50rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 40rem;
+        display: block;
         background: white;
-    
+    }
+    .TacheTerminer{
+        width: 30rem;
     }
     .k-color-i-1{
         color: #2F14D4;
