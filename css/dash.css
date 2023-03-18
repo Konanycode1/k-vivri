@@ -476,8 +476,6 @@ option{
 .mytable{
     width: 90rem;
 }
-
-
 /* -------------Fin css action sur le personnel-------------------- */
 
 /* --------------css liste ouvrier ------------- */
@@ -597,13 +595,13 @@ option{
     margin-right: 10rem;
 }
 .K-form-input{
-    width:60rem ;
+    width:40rem ;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 .K-form-input input{
-    width: 25rem;
+    width: 15rem;
     height: 4rem;
     background-color: white;
     border: none;
@@ -612,7 +610,7 @@ option{
     text-align: center;
 }
 .K-form-input select{
-    width: 25rem;
+    width: 15rem;
     height: 4rem;
     border: none;background-color: #fff;
 }
@@ -701,6 +699,61 @@ option{
     color: #d31c1c;
 }
 /* css ajout page */
+/* css action sur le personnel */
+.Paiement{
+    padding: 20px;
+    width: 90rem;
+    display: flex;
+    justify-content: space-between;
+}
+.rectan{
+    width:5px;
+    height: 10px;
+    background-color: var(--colorSite);
+    margin-right:8px;
+}
+.k-titleAction{
+    display: flex;
+    align-items: center;
+}
+.K-form-input-action{
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.K-form-input-action input{
+   width: 15rem;
+   height: 3rem;
+   margin-bottom: 5px;
+   border: none;
+}
+.K-form-input-action input::placeholder{
+   text-align: center;
+ }
+#btnMontant{
+    background-color: var(--colorSite);
+    color: white;
+}
+.k-card-action-1{
+    width: 120px;
+    height: 90px;
+    padding: 1%;
+    background-color: white;
+    border-right: 5px solid #14D428;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.tableauMontant{
+    width: 90rem;
+    display: flex;
+    justify-content: space-between;
+}
+.mytable{
+    width: 90rem;
+}
+/* -------------Fin css action sur le personnel-------------------- */
 }
 
 @media screen and (max-width:1400px) {
@@ -929,6 +982,61 @@ option{
     .k-color-i-1{
         color: #2F14D4;
     }
+    /* css action sur le personnel */
+.Paiement{
+    padding: 20px;
+    width: 90rem;
+    display: flex;
+    justify-content: space-between;
+}
+.rectan{
+    width:5px;
+    height: 10px;
+    background-color: var(--colorSite);
+    margin-right:8px;
+}
+.k-titleAction{
+    display: flex;
+    align-items: center;
+}
+.K-form-input-action{
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.K-form-input-action input{
+   width: 15rem;
+   height: 3rem;
+   margin-bottom: 5px;
+   border: none;
+}
+.K-form-input-action input::placeholder{
+   text-align: center;
+ }
+#btnMontant{
+    background-color: var(--colorSite);
+    color: white;
+}
+.k-card-action-1{
+    width: 120px;
+    height: 90px;
+    padding: 1%;
+    background-color: white;
+    border-right: 5px solid #14D428;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.tableauMontant{
+    width: 90rem;
+    display: flex;
+    justify-content: space-between;
+}
+.mytable{
+    width: 90rem;
+}
+/* -------------Fin css action sur le personnel-------------------- */
     
 }
 
@@ -1112,6 +1220,69 @@ option{
     .k-color-i-2{
         color: #d31c1c;
     }
+    /* css action sur le personnel */
+.Paiement{
+    padding: 20px;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+}
+.rectan{
+    width:5px;
+    height: 10px;
+    background-color: var(--colorSite);
+    margin-right:8px;
+}
+.MonTache{
+    margin-right: 20px;
+}
+.k-titleAction{
+    display: flex;
+    align-items: center;
+}
+.K-form-input-action{
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.K-form-input-action input{
+   width: 15rem;
+   height: 3rem;
+   margin-bottom: 5px;
+   border: none;
+}
+.K-form-input-action input::placeholder{
+   text-align: center;
+ }
+#btnMontant{
+    background-color: var(--colorSite);
+    color: white;
+}
+.k-card-action{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.k-card-action-1{
+    width: 120px;
+    height: 50px;
+    padding: 1%;
+    background-color: white;
+    border-right: 5px solid #14D428;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.tableauMontant{
+    width: 80rem;
+    display: block;
+    justify-content: space-between;
+}
+.mytable{
+    width: 90rem;
+}
+/* -------------Fin css action sur le personnel-------------------- */
     .foot{
         
         display: flex;
@@ -1133,6 +1304,70 @@ option{
          font-family: 'Inria Serif', serif;
          flex-direction: row;
      }
+        /* css action sur le personnel */
+.Paiement{
+    padding: 20px;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+}
+.rectan{
+    width:5px;
+    height: 10px;
+    background-color: var(--colorSite);
+    margin-right:8px;
+}
+.MonTache{
+    width: 30rem;
+    margin-right: 20px;
+}
+.k-titleAction{
+    display: flex;
+    align-items: center;
+}
+.K-form-input-action{
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.K-form-input-action input{
+   width: 10rem;
+   height: 3rem;
+   margin-bottom: 5px;
+   border: none;
+}
+.K-form-input-action input::placeholder{
+   text-align: center;
+ }
+#btnMontant{
+    background-color: var(--colorSite);
+    color: white;
+}
+.k-card-action{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.k-card-action-1{
+    width: 120px;
+    height: 50px;
+    padding: 1%;
+    background-color: white;
+    border-right: 5px solid #14D428;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.tableauMontant{
+    width: 70rem;
+    display: block;
+    justify-content: space-between;
+}
+.mytable{
+    width: 60rem;
+}
+/* -------------Fin css action sur le personnel-------------------- */
     
 }
 @media screen and (max-width:900px) {
@@ -1666,4 +1901,375 @@ option{
         background-color: var(--colorSite);
     }
     
+}
+@media screen and (max-width:600px) {
+    
+    html{
+        font-size: 40%;
+    }
+    body{
+        width: 100%;
+         margin: 0 auto;
+         font-family: 'Inria Serif', serif;
+         flex-direction: row;
+     }
+     main{
+        display: flex;
+        min-height: 100vh;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+     .col1{
+        width: 10%;
+        height: 100vh;
+        background-color: black;
+    }
+    .cach{
+        display: none;
+    }
+    .dash{
+        background-color: orange;
+        border-radius: 5px;
+        margin-bottom: 20px;
+     }
+    .listLink{
+        display: block;
+    
+    }
+    .listLink ul li i{
+        color: white;
+     
+     }
+     .listLink ul {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+     }
+     .listLink ul li {
+         height: 3rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 2rem;
+         margin-bottom: 3rem;
+      }
+      .listLink ul li:hover {
+         background-color: cadetblue;
+      }
+     
+      .listLink ul li a {
+         width: 12rem;
+         display: flex;
+         align-items: center;
+         justify-content: center; 
+      }
+      .listLink ul li a{
+        margin-left: 0px;
+     }
+    .col2{
+        width: 90%;
+        height: 100vh;
+        background-color: var(--colorBg);
+    }
+    .tacheEncour {
+        padding: 0.8rem;
+        width: 40rem;
+        background-color: white;
+        border-top: 7px solid black;
+    }
+    .divTach {
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .interDash{
+        width: 75%;
+        background-color: var(--colorBg);
+    }
+    .listPersonel {
+        width: 25%;
+        height: 92vh;
+        background-color: white;
+    }
+    .listImg{
+        
+        display: block;
+        align-items: center;
+        }
+    .listImg i{
+        
+        display: none;
+    }
+    .listImg p{
+        
+        display: none;
+    }
+    .btnNav {
+        width: 10rem;
+        height: 1.6rem;
+        background-color: white;
+        border: none;
+        border-radius: 0.2rem;
+    }
+    .btnNav::placeholder {
+        font-size: 10px;
+    }
+
+    .listImg img{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+    }
+    .ajoutPerso{
+        padding: 10px;
+        display: block;
+    }
+    .formAjoutPerso{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .p-rect{
+        height: 20px;
+        width: 5PX;
+        background-color: var(--colorSite);
+    }
+    .titleForm{
+        display: flex;
+        align-items: center;
+    }
+    .formPerso{
+        margin-right: 10rem;
+    }
+    .K-form-input{
+        width:30rem ;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .K-form-input input{
+        width: 10rem;
+        height: 4rem;
+        background-color: white;
+        border: none;
+    }
+    .K-form-input input::placeholder{
+        text-align: center;
+    }
+    .K-form-input select{
+        width: 10rem;
+        height: 4rem;
+        border: none;background-color: #fff;
+    }
+    option{
+        text-align: center;
+    }
+    .k-form-btn{
+        display: flex;
+        justify-content: end;
+    }
+    .k-form-btn button{
+        width: 15rem;
+        height: 4rem;
+        background-color: var(--colorSite);
+        border: none;
+        color: #ffff;
+    }
+    .K-tach-info{
+        margin-top: 20px;
+       display: flex;
+       justify-content: space-between;
+        
+    }
+    .K-card-1{
+        width: 10rem;
+        height: 10rem;
+        padding: 5px;
+        background-color: #fff;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(20, 239, 20);
+    }
+    .K-card-2{
+        width: 10rem;
+        height: 10rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(243, 60, 60);
+    }
+    .K-card-3{
+        width: 10rem;
+        height: 10rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(229, 216, 38);
+    }
+    .K-regist{
+        padding: 1rem;
+        width: 40rem;
+    
+    }
+    .K-form-input-regist{
+        display: flex;
+        justify-content: space-around;
+    }
+    .K-form-input-regist input{
+        width: 25rem;
+        height: 4rem;
+        background-color: white;
+        border: none;
+        margin-right: 20px;
+    }
+    .K-form-input-regist input::placeholder{
+        text-align: center;
+    }
+    .K-form-input-regist button{
+        width: 15rem;
+        height: 4rem;
+        background-color: var(--colorSite);
+        border: none;
+        color: #ffff;
+    } 
+    .K-tab-div{
+        width: 60rem;
+        display: block;
+        background: white;
+    
+    }
+
+    .k-color-i-1{
+        color: #2F14D4;
+    }
+    .k-color-i-1{
+        color: #2F14D4;
+    }
+    .k-color-i-2{
+        color: #d31c1c;
+    }
+    /* css action sur le personnel */
+.Paiement{
+    padding: 20px;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+}
+.rectan{
+    width:5px;
+    height: 10px;
+    background-color: var(--colorSite);
+    margin-right:8px;
+}
+.MonTache{
+    margin-right: 20px;
+}
+.k-titleAction{
+    display: flex;
+    align-items: center;
+}
+.K-form-input-action{
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.K-form-input-action input{
+   width: 10rem;
+   height: 3rem;
+   margin-bottom: 5px;
+   border: none;
+}
+.K-form-input-action input::placeholder{
+   text-align: center;
+ }
+#btnMontant{
+    font-size: 10px;
+    background-color: var(--colorSite);
+    color: white;
+}
+.k-card-action{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.k-card-action-1{
+    width: 120px;
+    height: 50px;
+    padding: 1%;
+    background-color: white;
+    border-right: 5px solid #14D428;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.tableauMontant{
+    width: 65rem;
+    display: block;
+    justify-content: space-between;
+}
+.mytable{
+    width: 60rem;
+}
+/* -------------Fin css action sur le personnel-------------------- */
+/* --------------css liste ouvrier ------------- */
+.k-Liste-perso{
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+.ico{
+   width: 10px;
+   height: 5px; 
+   background-color: var(--colorSite);
+}
+.titlePerso{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.k-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.k-recherch{
+    display: flex;
+    align-items: center;
+}
+.k-recherch #recher{
+   width: 15rem;
+   height: 30px;
+   border: 2px solid #25995C;
+}
+.k-recherch #btn-recher{
+    background-color: var(--colorSite);
+    width: 15rem;
+    height: 30px;
+    border: none;
+    color: white;
+ }
+ .k-select-num select{
+    width: 5rem;
+    height: 30px;
+    border: 2px solid var(--colorSite);
+ }
+ .k-perso-table{
+    width: 100%;
+ }
+    .foot{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        background-color: var(--colorSite);
+    }
 }
