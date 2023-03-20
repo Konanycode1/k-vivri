@@ -16,7 +16,7 @@ html{
 }
 main{
     display: flex;
-   height: 100%;
+   height: 100vh;
 }
 body{
    width: 100%;
@@ -28,12 +28,11 @@ body{
 /* css dashbord */
 .col1{
     width: 20%;
-    height: 100%;
     background-color: black;
+   
 }
 .col2{
     width: 80%;
-    height: 100%;
     background-color: var(--colorBg);
 }
 header{
@@ -170,7 +169,7 @@ svg{
     text-align: center;
 }
 .content{
-   display: block;
+   display: flex;
 }
 .interDash{
     width: 85%;
@@ -419,8 +418,10 @@ option{
 .K-tab-div{
     width: 90rem;
     display: block;
-    background: white;
 
+}
+.TacheTerminer{
+    width: 80rem;
 }
 
 .k-color-i-1{
@@ -562,11 +563,10 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 
 /* link-... */
 .link-1 {
-  font-size: 1.8rem;
+  font-size: 0.8rem;
   color: var(--light);
   box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, .3);
-  border-radius: 10rem;
-  padding: .4rem 3.2rem;
+  padding: .4rem 1.2rem;
   transition: .2s;
 }
 
@@ -665,13 +665,14 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     color: white;
 }
 .k-card-action-1{
-    width: 120px;
+    width: 130px;
     height: 90px;
     padding: 1%;
     background-color: white;
     border-right: 5px solid #14D428;
     margin-bottom: 20px;
     text-align: center;
+    
 
 }
 .tableauMontant{
@@ -688,6 +689,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 .k-Liste-perso{
     padding: 20px;
     width: 100%;
+    height: 100%;
     display: block;
 }
 .ico{
@@ -811,7 +813,9 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     transition: 0.3s ease all;
 }
 .k-list-Perso-table{
+
     margin-top: 20px;
+    height: 100%;
 }
 .voirForm{
     display: flex;
@@ -982,9 +986,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
      .K-tab-div{
         width: 60rem;
         display: block;
-        align-items: center;
-        justify-content: center;
-        background: white;
+      
     
     }
     /* css ajout page */
@@ -1009,10 +1011,10 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     justify-content: center;
 }
 .formPerso{
-    margin-right: 10rem;
+    margin-right: 2rem;
 }
 .K-form-input{
-    width:40rem ;
+    width:35rem ;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -1109,8 +1111,7 @@ option{
 
 }
 .TacheTerminer{
-    width: 80rem;
-    background: white;
+    width: 100%;
 }
 
 .k-color-i-1{
@@ -1252,26 +1253,26 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 
 
 /* link-... */
+/* link-... */
 .link-1 {
-  font-size: 1.8rem;
-  color: var(--light);
-  box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, .3);
-  border-radius: 10rem;
-  padding: .4rem 3.2rem;
-  transition: .2s;
-}
-
-.link-1:hover {
-  transform: translateY(-.2rem);
-  box-shadow: 0 0 4.4rem .2rem var(--colorSite);
-}
-
-.link-1:focus {
-  box-shadow:
-    0 0 4.4rem .2rem var(--colorSite),
-    0 0 0 .4rem var(--colorSite),
-    0 0 0 .5rem var(--colorSite);
-}
+    font-size: 0.8rem;
+    color: var(--light);
+    box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, .3);
+    padding: .4rem 1.2rem;
+    transition: .2s;
+  }
+  
+  .link-1:hover {
+    transform: translateY(-.2rem);
+    box-shadow: 0 0 4.4rem .2rem var(--colorSite);
+  }
+  
+  .link-1:focus {
+    box-shadow:
+      0 0 4.4rem .2rem var(--colorSite),
+      0 0 0 .4rem var(--colorSite),
+      0 0 0 .5rem var(--colorSite);
+  }
 
 .link-2 {
   width: 4rem;
@@ -1406,9 +1407,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .K-tab-div{
         width: 60rem;
         display: block;
-        align-items: center;
-        justify-content: center;
-        background: white;
     
     }
     
@@ -1517,9 +1515,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .K-tab-div{
         width: 60rem;
         display: block;
-        align-items: center;
-        justify-content: center;
-        background: white;
     
     }
     .k-color-i-1{
@@ -1572,7 +1567,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .K-tab-div{
         width: 80rem;
         display: block;
-        background: white;
     
     }
     .k-list{
@@ -1802,7 +1796,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .K-tab-div{
         width: 60rem;
         display: block;
-        background: white;
     
     }
 
@@ -2131,7 +2124,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .K-tab-div{
         width: 50rem;
         display: block;
-        background: white;
     }
     .k-color-i-1{
         color: #2F14D4;
@@ -2357,7 +2349,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .K-tab-div{
         width: 40rem;
         display: block;
-        background: white;
     }
     .TacheTerminer{
         width: 30rem;
@@ -2699,7 +2690,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .K-tab-div{
         width: 60rem;
         display: block;
-        background: white;
     
     }
 
