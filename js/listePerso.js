@@ -55,19 +55,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     function detail(){
         let detail =  document.querySelectorAll('.link-1');
-
+        let title = document.querySelector(".modal__title");
+        let miTable = document.querySelector(".miTable");
         detail.forEach(clic => clic.addEventListener("click", ()=>{
             let parent = clic.closest("tr");
             let tache = parent.querySelector('.tache').textContent;
             let dateTerm = parent.querySelector(".dateTermine").textContent
             let perso = localStorage.getItem("perso");
             perso = JSON.parse(perso);
-            perso.map(ele => {
-                console.log(ele);
+            perso.filter(ele => {
                 if (ele.attache === tache) {
-                    let title = document.querySelector(".modal__title");
-                    title.textContent = ele.attache
-                    let miTable = document.querySelector(".miTable");
+                    title.textContent = tache
                     let tr = document.createElement('tr');
                     let text = `
                     <td>${ele.nom} ${ele.prenom}</td>
@@ -77,9 +75,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     <td>10 000 Fr Cfa</td>`
                     tr.innerHTML = text;
                     miTable.appendChild(tr)
-                }
-                else{
-                    return ele
                 }
             })
 
