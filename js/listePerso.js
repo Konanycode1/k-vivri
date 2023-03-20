@@ -23,9 +23,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         valeur.map(element => {
             
             if( element.dateTermine !== "En cours"){
-                console.log(element.dateTermine)
                 let tr = document.createElement('tr');
-                console.log(element.tache)
                 let text = `<td class="tache">${element.tache}</td>
                 <td class="dateAjout">${element.dateAjout}</td>
                 <td class="dateTermine">${element.dateTermine}</td>
@@ -60,8 +58,34 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         detail.forEach(clic => clic.addEventListener("click", ()=>{
             let parent = clic.closest("tr");
-            console.log(parent)
+            let tache = parent.querySelector('.tache').textContent;
+            let dateTerm = parent.querySelector(".dateTermine").textContent
+            let perso = localStorage.getItem("perso");
+            perso = JSON.parse(perso);
+            perso.map(ele => {
+                console.log(ele);
+                if (ele.attache === tache) {
+                    let title = document.querySelector(".modal__title");
+                    title.textContent = ele.attache
+                    let miTable = document.querySelector(".miTable");
+                    let tr = document.createElement('tr');
+                    let text = `
+                    <td>${ele.nom} ${ele.prenom}</td>
+                    <td>${ele.attache}</td>
+                    <td>10 000 Fr Cfa</td>
+                    <td>10 000    Fr Cfa</td>
+                    <td>10 000 Fr Cfa</td>`
+                    tr.innerHTML = text;
+                    miTable.appendChild(tr)
+                }
+                else{
+                    return ele
+                }
+            })
+
         }))
     }
     detail();
+
+
 })

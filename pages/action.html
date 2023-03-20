@@ -67,16 +67,27 @@
                                 <div class="K-form-Action">
                                     <form action="" class="Montant">
                                         <div class="K-form-input-action">
-                                            <input type="text" name="" id="" placeholder="Tâche">
-                                            <input type="text" name="" id="" placeholder="Montant">
+                                            <select name="" id="tache" class="listeTac">
+                                                <option value="tache encours">tache encours</option>
+                                            </select>
+                                            <input type="text" name="" id="montant" placeholder="Montant">
                                         </div>
                                         <div class="K-form-input-action">
-                                            <input type="text" name="" id="" placeholder="Statut Tâche">
-                                            <input type="text" name="" id="" placeholder="/Par">
+                                            <select name="" id="statut" class="statut">
+                                                <option value="Statut Tâche">Statut Tâche</option>
+                                                <option value="Stantard">Stantard</option>
+                                                <option value="Premium">Premium</option>
+                                            </select>
+                                            <select name="" id="par" class="par">
+                                                <option value="Statut Tâche">/par</option>
+                                                <option value="Jours">Jours</option>
+                                                <option value="Semeine">Semaine    </option>
+                                                <option value="Mois">Mois</option>
+                                            </select>
                                         </div>
                                         <div class="K-form-input-action">
-                                            <input type="text" name="" id="" placeholder="offres (facultatif)">
-                                            <input type="submit" name="" id="btnMontant" value="Enregistrer">
+                                            <input type="text" name="" id="offre" placeholder="offres (facultatif)">
+                                            <input type="button" name="" id="btnMontant" value="Enregistrer">
                                         </div>
                                     </form>
                                 </div>
@@ -103,53 +114,20 @@
                         </div>
                         <div class="tableauMontant">
                             <table class="mytable">
-                                <tr>
-                                    <td>Statut</td>
-                                    <td>Tâche</td>
-                                    <td>Montant</td>
-                                    <td>/par</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Premium</td>
-                                    <td>Nettoyage</td>
-                                    <td>90 0000 Fr Cfa</td>
-                                    <td>Mois</td>
-                                    <td>  <i class="fa-sharp fa-solid fa-bell k-color-i-1"></i>
-                                        <i class="fa-solid fa-envelope k-color-i-2"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Stantard</td>
-                                    <td>Remplissage</td>
-                                    <td>20 0000 Fr Cfa</td>
-                                    <td>Jour</td>
-                                    <td>  <i class="fa-sharp fa-solid fa-bell k-color-i-1"></i>
-                                        <i class="fa-solid fa-envelope k-color-i-2"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Stantard</td>
-                                    <td>Remplissage</td>
-                                    <td>20 0000 Fr Cfa</td>
-                                    <td>Jour</td>
-                                    <td>  <i class="fa-sharp fa-solid fa-bell k-color-i-1"></i>
-                                        <i class="fa-solid fa-envelope k-color-i-2"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Stantard</td>
-                                    <td>Remplissage</td>
-                                    <td>20 0000 Fr Cfa</td>
-                                    <td>Jour</td>
-                                    <td>  <i class="fa-sharp fa-solid fa-bell k-color-i-1"></i>
-                                        <i class="fa-solid fa-envelope k-color-i-2"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Stantard</td>
-                                    <td>Remplissage</td>
-                                    <td>20 0000 Fr Cfa</td>
-                                    <td>Jour</td>
-                                    <td>  <i class="fa-sharp fa-solid fa-bell k-color-i-1"></i>
-                                        <i class="fa-solid fa-envelope k-color-i-2"></i></td>
-                                </tr>
+                                <thead>
+                                    <tr class="Titre">
+                                        <th>Statut</th>
+                                        <th>Tâche</th>
+                                        <th>Montant</th>
+                                        <th>/par</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                              
+
                             </table>
                             <div class="k-card-action">
                                 <div class="k-card-action-1">
@@ -177,6 +155,8 @@
           <p>CopyRight &copy; by KonanyCode</p>
         </div>
       </footer>
+      <script src="../js/action.js"></script>
       <script src="../js/authentik.js"></script>
+
 </body>
 </html>
