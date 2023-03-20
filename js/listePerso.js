@@ -25,9 +25,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
             if( element.dateTermine !== "En cours"){
                 console.log(element.dateTermine)
                 let tr = document.createElement('tr');
+                console.log(element.tache)
                 let text = `<td>${element.tache}</td>
                 <td>${element.dateAjout}</td>
                 <td>${element.dateTermine}</td>
+                <td><a href="#m1-o" class="link-1" id="m1-c">Détails</a></td>
                 <td>
                 <svg fill="#ffff" width="20px" height="20px" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffff">
 

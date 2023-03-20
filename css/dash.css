@@ -2,6 +2,14 @@
     --colorSite : #25995C;
     --TailMax :71.25rem;
     --colorBg :#D9D9D9;
+    --light: hsl(0, 0%, 0%);
+    --primary: hsl(255, 30%, 55%);
+    --focus: hsl(210, 90%, 50%);
+    --border-color: hsla(0, 0%, 100%, .2);
+    --global-background: hsl(220, 25%, 10%);
+    --background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
+    --shadow-1: hsla(236, 50%, 50%, .3);
+    --shadow-2: hsla(236, 50%, 50%, .4);
 }
 html{
     font-size: 90%;
@@ -162,7 +170,7 @@ svg{
     text-align: center;
 }
 .content{
-   display: flex;
+   display: block;
 }
 .interDash{
     width: 85%;
@@ -421,7 +429,205 @@ option{
 .k-color-i-2{
     color: #d31c1c;
 }
+
+/* modal css  */
+a,
+a:link {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+/* box */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* padding: 0 4rem 2rem; */
+}
+
+.box:not(:first-child) {
+  height: 5rem;
+}
+
+.box__title {
+  font-size: 10rem;
+  font-weight: normal;
+  letter-spacing: .8rem;
+  margin-bottom: 2.6rem;
+}
+
+.box__title::first-letter {
+  color: var(--primary);
+}
+
+.box__p,
+.box__info,
+.box__note {
+  font-size: 1.6rem;
+}
+
+.box__info {
+  margin-top: 6rem;
+}
+
+.box__note {
+  line-height: 2;
+}
+
+
+/* modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* --m-background is set as inline style */
+  background: var(--m-background);
+}
+
+/* using :target */
+/*
+when users will click/enter button(link) browser will add a #id in a url and when that happens we'll show our users the modal that contains that id.
+*/
+.modal-container:target {
+  display: flex;
+}
+
+.modal {
+  width: 60rem;
+  padding: 4rem 2rem;
+  border-radius: .8rem;
+  color: var(--light);
+  background: white;
+  box-shadow: var(--m-shadow, .4rem .4rem 10.2rem .2rem) var(--shadow-1);
+  position: relative;
+  overflow: hidden;
+}
+
+.modal__title {
+  font-size: 3.2rem;
+}
+
+.modal__text {
+  padding: 0 4rem;
+  margin-top: 4rem;
+
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.modal__btn {
+  margin-top: 4rem;
+  padding: 1rem 1.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 100rem;
+  color: inherit;
+  background: transparent;
+  font-size: 1.4rem;
+  font-family: inherit;
+  letter-spacing: .2rem;
+
+  transition: .2s;
+  cursor: pointer;
+}
+
+.modal__btn:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  background: var(--focus);
+  border-color: var(--focus);
+  transform: translateY(-.2rem);
+}
+
+
+/* link-... */
+.link-1 {
+  font-size: 1.8rem;
+  color: var(--light);
+  box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, .3);
+  border-radius: 10rem;
+  padding: .4rem 3.2rem;
+  transition: .2s;
+}
+
+.link-1:hover {
+  transform: translateY(-.2rem);
+  box-shadow: 0 0 4.4rem .2rem var(--colorSite);
+}
+
+.link-1:focus {
+  box-shadow:
+    0 0 4.4rem .2rem var(--colorSite),
+    0 0 0 .4rem var(--colorSite),
+    0 0 0 .5rem var(--colorSite);
+}
+
+.link-2 {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--colorSite);
+  border-radius: 100rem;
+
+  color: inherit;
+  font-size: 2.2rem;
+
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .2s;
+}
+
+.link-2::before {
+  content: '×';
+
+  transform: translateY(-.1rem);
+}
+
+.link-2:hover,
+.link-2:focus {
+  background: var(--colorSite);
+  border-color: var(--colorSite);
+  transform: translateY(-.2rem);
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 1000%, .6);
+  font-size: 1.6rem;
+}
+/* modal css  */
+
+
 /* css ajout page */
+
+
 /* css action sur le personnel */
 .Paiement{
     padding: 20px;
@@ -522,9 +728,229 @@ option{
  .k-perso-table{
     width: 100%;
  }
+
+ .button
+ {
+     position: relative;
+     top: 0%;
+     width: 70px;
+     height: 30px;
+     /* margin: 0px auto 0 auto; */
+     overflow: hidden;
+     background-color: #ebf7fc;
+ }
  
+ .button.r, .button.r .layer
+ {
+     border-radius: 100px;
+ }
+ 
+ .button.b2
+ {
+     border-radius: 2px;
+ }
+ 
+ .checkbox
+ {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     opacity: 0;
+     cursor: pointer;
+     z-index: 3;
+ }
+ 
+ .knobs
+ {
+     z-index: 2;
+ }
+ 
+ .layer
+ {
+     width: 100%;
+     background-color: #ebf7fc;
+     transition: 0.3s ease all;
+     z-index: 1;
+ }
+ /* Button 1 */
+#button-1 .knobs:before
+{
+    content: 'Non';
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: var(--colorSite);
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .checkbox:checked + .knobs:before
+{
+    content: 'oui';
+    left: 42px;
+    background-color: #f44336;
+}
+
+#button-1 .checkbox:checked ~ .layer
+{
+    background-color: #fcebeb;
+}
+
+#button-1 .knobs, #button-1 .knobs:before, #button-1 .layer
+{
+    transition: 0.3s ease all;
+}
+.k-list-Perso-table{
+    margin-top: 20px;
+}
+.voirForm{
+    display: flex;
+    justify-content: space-between;
+}
+.voirForm input{
+    width: 19rem;
+    height: 3rem;
+    border: none;
+}
+.voirForm input::placeholder{
+   text-align: center;
+}
+.voirForm button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: #25995C;
+    color: white;
+}
+.voirFelement{
+    width: 30rem;
+}
+ 
+
 /* --------------css liste ouvrier ------------- */
 
+/* css parametre element */
+.blocAdminPro{
+    padding: 20px;
+    width: 90rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Profil{
+    padding: 15px;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 5px 2px 5px grey;
+}
+.content-Pro{
+    display: block;
+}
+.avat{
+    display: flex;
+    align-items: center;
+}
+.avat img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.infoPro{
+    text-align: center;
+}
+.foncti{
+    display: flex;
+    align-items: center;
+}
+.foncti h2{
+  margin-right: 20px;
+}
+.btnEdi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnEdi button{
+    width: 10rem;
+    height: 3rem;
+    background-color:var(--colorSite);
+    border: none;
+    color: white;
+}
+.adminListelem{
+    padding: 15px;
+    display: block;
+    background-color: white;
+    border: 2px solid var(--colorSite);
+    box-shadow: 2px 2px 2px 2px gray;
+
+}
+.adminList-perso{
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+.adminList-perso img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.Admintitle{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.Admintitle p{
+    height: 20px;
+    width: 5px;
+    background-color: var(--colorSite);
+}
+.form-admin-ajout{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.form-admin-ajout input{
+    height: 3rem;
+    border: none;
+}
+.form-admin-ajout input::placeholder{
+    text-align: center;
+}
+.form-admin-ajout #btnCree{
+    height: 3rem;
+    width: 18rem;
+    color: white;
+    border: none;
+    background-color: var(--colorSite);
+}
+.form-ajoutAdmin{
+    width: 40rem;
+}
+.formAjoutAdmin{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between
+}
+/* css parametre element */
 @media screen and (max-width:1600px) {
 
     html{
@@ -686,10 +1112,14 @@ option{
     color: #ffff;
 }
 .K-tab-div{
-    width: 90rem;
+    width: 100%;
     display: block;
-    background: white;
+    
 
+}
+.TacheTerminer{
+    width: 80rem;
+    background: white;
 }
 
 .k-color-i-1{
@@ -698,11 +1128,208 @@ option{
 .k-color-i-2{
     color: #d31c1c;
 }
+
+
+/* modal css  */
+a,
+a:link {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+/* box */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* padding: 0 4rem 2rem; */
+}
+
+.box:not(:first-child) {
+  height: 5rem;
+}
+
+.box__title {
+  font-size: 10rem;
+  font-weight: normal;
+  letter-spacing: .8rem;
+  margin-bottom: 2.6rem;
+}
+
+.box__title::first-letter {
+  color: var(--primary);
+}
+
+.box__p,
+.box__info,
+.box__note {
+  font-size: 1.6rem;
+}
+
+.box__info {
+  margin-top: 6rem;
+}
+
+.box__note {
+  line-height: 2;
+}
+
+
+/* modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* --m-background is set as inline style */
+  background: var(--m-background);
+}
+
+/* using :target */
+/*
+when users will click/enter button(link) browser will add a #id in a url and when that happens we'll show our users the modal that contains that id.
+*/
+.modal-container:target {
+  display: flex;
+}
+
+.modal {
+  width: 60rem;
+  padding: 4rem 2rem;
+  border-radius: .8rem;
+  color: var(--light);
+  background: white;
+  box-shadow: var(--m-shadow, .4rem .4rem 10.2rem .2rem) var(--shadow-1);
+  position: relative;
+  overflow: hidden;
+}
+
+.modal__title {
+  font-size: 3.2rem;
+}
+
+.modal__text {
+  padding: 0 4rem;
+  margin-top: 4rem;
+
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.modal__btn {
+  margin-top: 4rem;
+  padding: 1rem 1.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 100rem;
+  color: inherit;
+  background: transparent;
+  font-size: 1.4rem;
+  font-family: inherit;
+  letter-spacing: .2rem;
+
+  transition: .2s;
+  cursor: pointer;
+}
+
+.modal__btn:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  background: var(--focus);
+  border-color: var(--focus);
+  transform: translateY(-.2rem);
+}
+
+
+/* link-... */
+.link-1 {
+  font-size: 1.8rem;
+  color: var(--light);
+  box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, .3);
+  border-radius: 10rem;
+  padding: .4rem 3.2rem;
+  transition: .2s;
+}
+
+.link-1:hover {
+  transform: translateY(-.2rem);
+  box-shadow: 0 0 4.4rem .2rem var(--colorSite);
+}
+
+.link-1:focus {
+  box-shadow:
+    0 0 4.4rem .2rem var(--colorSite),
+    0 0 0 .4rem var(--colorSite),
+    0 0 0 .5rem var(--colorSite);
+}
+
+.link-2 {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--colorSite);
+  border-radius: 100rem;
+
+  color: inherit;
+  font-size: 2.2rem;
+
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .2s;
+}
+
+.link-2::before {
+  content: '×';
+
+  transform: translateY(-.1rem);
+}
+
+.link-2:hover,
+.link-2:focus {
+  background: var(--colorSite);
+  border-color: var(--colorSite);
+  transform: translateY(-.2rem);
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 1000%, .6);
+  font-size: 1.6rem;
+}
+/* modal css  */
+
+
 /* css ajout page */
 /* css action sur le personnel */
 .Paiement{
     padding: 20px;
-    width: 90rem;
+    width: 100rem;
     display: flex;
     justify-content: space-between;
 }
@@ -735,20 +1362,25 @@ option{
     background-color: var(--colorSite);
     color: white;
 }
+.k-card-action{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 .k-card-action-1{
-    width: 120px;
+    width: 100px;
     height: 90px;
     padding: 1%;
-    background-color: white;
-    border-right: 5px solid #14D428;
+    background-color: rgb(36, 230, 85);
     margin-bottom: 20px;
     text-align: center;
+    color: white;
+    margin-right: 20px;
 
 }
 .tableauMontant{
-    width: 90rem;
-    display: flex;
-    justify-content: space-between;
+    width: 100rem;
+    display: block;
 }
 .mytable{
     width: 90rem;
@@ -2272,4 +2904,7 @@ option{
         width: 100%;
         background-color: var(--colorSite);
     }
+}
+@media screen and (max-width: 500px) {
+	
 }
