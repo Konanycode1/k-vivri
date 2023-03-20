@@ -62,12 +62,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
                 recupVal = recupVal.map(element => {
                     if(element.tache === texte){
-                       
+                       console.log(element.tache)
                          data = {
                             tache: element.tache,
                             dateTermine : dat.toLocaleDateString(),
                             dateAjout: element.dateAjout
                         }
+                        console.log(data)
                     }else{
                         return element
                     }
