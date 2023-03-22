@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 <td class="dateTermine">${element.dateTermine}</td>
                 <td><a href="#m1-o" class="link-1" id="m1-c">Détails</a></td>
                 <td>
-                <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
+                <svg id="delete" width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0">
                 
@@ -87,6 +87,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
         miTable.appendChild(tr)
     }
     detail();
+
+    function Delete() {
+        let delet = document.querySelectorAll('#delete');
+        delet.forEach(clic => clic.addEventListener("click", ()=>{
+            let parent = clic.closest("tr");
+            let tachesRecup = localStorage.getItem('tache');
+            tachesRecup = JSON.parse(tachesRecup);
+            console.log(tachesRecup);
+        }))
+        
+        
+        
+    }
+    Delete();
 
 
 });

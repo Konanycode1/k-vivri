@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
             e.preventDefault();
         })
         
+       
         btnMontant.addEventListener("click", ()=>{
-           
-
             let montantTache = localStorage.getItem("montantTache");
-            console.log(montantTache)
+            montantTache = JSON.parse(montantTache);
+            console.log(montantTache);
            let offres = offre.value? offre.value != "": "Pas d'offres"
             let data = {
                 tache: tache.value,
@@ -49,14 +49,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 localStorage.setItem("montantTache", JSON.stringify(montantTache));
                 window.location.reload();
             }
-        })
-
-
-
-
-
-
-        
+        })  
     }
     MontantTache();
 
