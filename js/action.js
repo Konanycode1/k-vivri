@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function tacheEncours() {
         let listeTac = document.querySelector(".listeTac");
         let recupTache = localStorage.getItem("tache");
-
         recupTache = JSON.parse(recupTache)
-        console.log(recupTache);
         recupTache.map(ele => {
         let option = document.createElement('option');
             option.value = ele.tache;
@@ -21,10 +19,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         let par = document.getElementById('par');
         let offre = document.getElementById('offre');
         let btnMontant = document.getElementById('btnMontant');
+        montant.addEventListener("submit", (e)=>{
+            e.preventDefault();
+        })
         
         btnMontant.addEventListener("click", ()=>{
-            let montantTache = localStorage.getItem("montanTache");
-            
+           
+
+            let montantTache = localStorage.getItem("montantTache");
+            console.log(montantTache)
            let offres = offre.value? offre.value != "": "Pas d'offres"
             let data = {
                 tache: tache.value,
@@ -33,15 +36,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 durer : par.value,
                 offre: offres
             }
+            montantTache =JSON.parse(montantTache);
+            console.log(montantTache);
             if(montantTache != null){
-                montantTache =JSON.parse(montantTache);
                 montantTache.push(data);
                 localStorage.setItem("montantTache", JSON.stringify(montantTache));
+                window.location.reload();
             }
             else{
                 montantTache = [];
                 montantTache.push(data)
                 localStorage.setItem("montantTache", JSON.stringify(montantTache));
+                window.location.reload();
             }
         })
 
@@ -61,7 +67,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         let mytable = document.querySelector("tbody");
        if(recupMontantTache != null){
             recupMontantTache.forEach(element => {
-                console.log("ok")
                 let tr = document.createElement("tr");
                 let text = `
                 <td>${element.statut}</td>
@@ -108,4 +113,46 @@ document.addEventListener("DOMContentLoaded", ()=>{
        }
         
     }
+
+    function Paiement() {
+        let recuPerso = localStorage.getItem("perso");
+        let identi = document.getElementById("identi");
+        let paie =  document.getElementById("paie");
+        let form = document.getElementById("Paye");
+        let btnPaie = document.getElementById("btnPaie")
+        recuPerso = JSON.parse(recuPerso);
+        form.addEventListener("click", (e)=>{
+            e.preventDefault();
+        });
+        if(recuPerso != null){
+            btnPaie.addEventListener("click", ()=>{
+                recuPerso =  recuPerso.map(ele => {
+                     let data;
+                     if(ele.id === identi.value){
+                         data = {
+                             id :ele.id, 
+                             nom :ele.nom,
+                             prenom : ele.prenom,
+                             age : ele.age,
+                             domaine : ele.domaine,
+                             attache : ele.attache,
+                             tel : ele.tel,
+                             dateAjout : ele.dateAjout,
+                             statutPaie : "Payé",
+                             Montant : paie.value
+                         }
+                     }
+                     else{
+                         return ele;
+                     }
+                     return data;
+                 }); 
+                 localStorage.setItem("perso",JSON.stringify(recuPerso))
+             })
+        }
+        else{
+            alert("impossible d'attribuer un montant ");
+        }  
+    }
+    Paiement();
 })

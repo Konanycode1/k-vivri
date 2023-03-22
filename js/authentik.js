@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function affiTache() {
         let recupData = localStorage.getItem("tache");
         let recupTachTer = localStorage.getItem('tacheTerminer');
-        let ajoutContent = document.querySelector('.tacheEncour');
+        let ajoutContent = document.querySelector('.contentTacheS');
 
         recupData = JSON.parse(recupData);
 

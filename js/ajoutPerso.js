@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
         const mnute = event.getMinutes();
         const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
         let perso = localStorage.getItem("perso");
+        let me = nom.value
+        let code = `${me.substring(0,3)}${ Math.ceil(Math.random()*(1000-200)+ 200)}`;
         let data = {
+            id :code, 
             nom : nom.value,
             prenom : prenom.value,
             age : age.value,

@@ -56,31 +56,37 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function detail(){
         let detail =  document.querySelectorAll('.link-1');
         let title = document.querySelector(".modal__title");
-        let miTable = document.querySelector(".miTable");
+        let miTable = document.querySelector(".tbod");
+        let tr = document.createElement('tr');
+        let text;
+        tr.style.textAlign = "center"
         detail.forEach(clic => clic.addEventListener("click", ()=>{
             let parent = clic.closest("tr");
             let tache = parent.querySelector('.tache').textContent;
-            let dateTerm = parent.querySelector(".dateTermine").textContent
             let perso = localStorage.getItem("perso");
+            let AttribuSolde = localStorage.getItem("montantTache");
+            AttribuSolde = JSON.parse(AttribuSolde);
             perso = JSON.parse(perso);
             perso.filter(ele => {
                 if (ele.attache === tache) {
-                    title.textContent = tache
-                    let tr = document.createElement('tr');
-                    let text = `
-                    <td>${ele.nom} ${ele.prenom}</td>
-                    <td>${ele.attache}</td>
-                    <td>10 000 Fr Cfa</td>
-                    <td>10 000    Fr Cfa</td>
-                    <td>10 000 Fr Cfa</td>`
+                    let ismontant = AttribuSolde.find(element =>  element.tache == ele.attache);
+                   console.log(ismontant)
+                    let [solde, statut] =  ismontant ?[ ismontant.montant, ismontant.statut ]: "Montant non assigné";
+                    title.textContent = tache;
+                    text = `
+                    <td style="vertical-align:middle;">${ele.nom} ${ele.prenom}</td>
+                    <td style="vertical-align:middle;">${ele.attache}</td>
+                    <td style="vertical-align:middle;">${solde} Fr Cfa</td>
+                    <td style="vertical-align:middle;">${statut}</td>
+                    <td style="vertical-align:middle;">10 000 Fr Cfa</td>`;
                     tr.innerHTML = text;
-                    miTable.appendChild(tr)
                 }
             })
 
         }))
+        miTable.appendChild(tr)
     }
     detail();
 
 
-})
+});
