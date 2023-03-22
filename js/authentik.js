@@ -82,5 +82,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
             
         }));
     }
-    BtnTerminer()
+    BtnTerminer();
 })

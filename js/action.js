@@ -23,11 +23,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
             e.preventDefault();
         })
         
-       
+        let montantTache = localStorage.getItem("montantTache");
         btnMontant.addEventListener("click", ()=>{
-            let montantTache = localStorage.getItem("montantTache");
-            montantTache = JSON.parse(montantTache);
-            console.log(montantTache);
+            
            let offres = offre.value? offre.value != "": "Pas d'offres"
             let data = {
                 tache: tache.value,
@@ -38,16 +36,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }
             montantTache =JSON.parse(montantTache);
             console.log(montantTache);
-            if(montantTache != null){
+            if(montantTache != null || montantTache === []){
+                console.log("ok");
                 montantTache.push(data);
                 localStorage.setItem("montantTache", JSON.stringify(montantTache));
-                window.location.reload();
+                // window.location.reload();
             }
             else{
                 montantTache = [];
                 montantTache.push(data)
                 localStorage.setItem("montantTache", JSON.stringify(montantTache));
-                window.location.reload();
+                // window.location.reload();
             }
         })  
     }
@@ -63,7 +62,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 let tr = document.createElement("tr");
                 let text = `
                 <td>${element.statut}</td>
-                <td>${element.tache}</td>
+                <td class="tachRe">${element.tache}</td>
                 <td>${element.montant}Fr Cfa</td>
                 <td>${element.durer}</td>
                 <td>
@@ -86,7 +85,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 </g>
 
                 </svg>
-                <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
+                <svg  id="suprim" width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0">
                 
@@ -148,4 +147,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }  
     }
     Paiement();
+
+
+    function DeletePaie() {
+        let dele = document.querySelectorAll("#suprim");
+        dele.forEach(clic =>clic.addEventListener("click", ()=>{
+            let parent = clic.closest("tr");
+            let first = parent.querySelector(".tachRe").textContent
+            let recupPaie = localStorage.getItem("montantTache");
+            recupPaie = JSON.parse(recupPaie);
+            recupPaie = recupPaie.filter(item => item.tache != first);
+            localStorage.setItem("montantTache", JSON.stringify(recupPaie));
+            window.location.reload();
+        }));   
+    }
+    DeletePaie()
 })

@@ -57,34 +57,42 @@ document.addEventListener('DOMContentLoaded', ()=>{
         let detail =  document.querySelectorAll('.link-1');
         let title = document.querySelector(".modal__title");
         let miTable = document.querySelector(".tbod");
-        let tr = document.createElement('tr');
+       
         let text;
-        tr.style.textAlign = "center"
+        
         detail.forEach(clic => clic.addEventListener("click", ()=>{
+            
             let parent = clic.closest("tr");
             let tache = parent.querySelector('.tache').textContent;
             let perso = localStorage.getItem("perso");
             let AttribuSolde = localStorage.getItem("montantTache");
             AttribuSolde = JSON.parse(AttribuSolde);
             perso = JSON.parse(perso);
-            perso.filter(ele => {
+            perso.map(ele => {
+                
                 if (ele.attache === tache) {
+                    let tr = document.createElement('tr');
+                    tr.style.textAlign = "center"
+                    
                     let ismontant = AttribuSolde.find(element =>  element.tache == ele.attache);
-                   console.log(ismontant)
                     let [solde, statut] =  ismontant ?[ ismontant.montant, ismontant.statut ]: "Montant non assigné";
+                    let paie =  ele.statutPaie ? ele.statutPaie : "Non payé"
                     title.textContent = tache;
+                    console.log(ele.nom);
                     text = `
                     <td style="vertical-align:middle;">${ele.nom} ${ele.prenom}</td>
                     <td style="vertical-align:middle;">${ele.attache}</td>
                     <td style="vertical-align:middle;">${solde} Fr Cfa</td>
                     <td style="vertical-align:middle;">${statut}</td>
-                    <td style="vertical-align:middle;">10 000 Fr Cfa</td>`;
+                    <td style="vertical-align:middle;">${paie} </td>`;
                     tr.innerHTML = text;
+                    miTable.appendChild(tr)
                 }
             })
+            
 
         }))
-        miTable.appendChild(tr)
+       
     }
     detail();
 
@@ -92,13 +100,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
         let delet = document.querySelectorAll('#delete');
         delet.forEach(clic => clic.addEventListener("click", ()=>{
             let parent = clic.closest("tr");
+            let tache = parent.querySelector('.tache').textContent
             let tachesRecup = localStorage.getItem('tache');
             tachesRecup = JSON.parse(tachesRecup);
-            console.log(tachesRecup);
-        }))
-        
-        
-        
+            tachesRecup = tachesRecup.filter(item => item.tache != tache);
+            localStorage.setItem("tache", JSON.stringify(tachesRecup));
+            window.location.reload();
+        }));  
     }
     Delete();
 
