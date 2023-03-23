@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 <td>${element.montant}Fr Cfa</td>
                 <td>${element.durer}</td>
                 <td>
-                <svg fill="#ffff" width="20px" height="20px" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffff">
+                <svg  class="btn btn-open" fill="#ffff" width="20px" height="20px" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffff">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0">
 
@@ -161,5 +161,44 @@ document.addEventListener("DOMContentLoaded", ()=>{
             window.location.reload();
         }));   
     }
-    DeletePaie()
+    DeletePaie();
+
+    function Modal() {
+
+        const modal = document.querySelector(".modal");
+        const overlay = document.querySelector(".overlay");
+        const openModalBtn = document.querySelectorAll(".btn-open");
+        const closeModalBtn = document.querySelector(".btn-close");
+        // close modal function
+        const closeModal = function () {
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+        };
+        // close the modal when the close button and overlay is clicked
+        closeModalBtn.addEventListener("click", closeModal);
+        overlay.addEventListener("click", closeModal);
+
+        // close modal when the Esc key is pressed
+        document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+            closeModal();
+        }
+        });
+        // open modal function
+        const openModal = function () {
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+        };
+        // open modal event
+        openModalBtn.forEach(ele => ele.addEventListener("click", openModal));
+        
+
+    }
+    Modal();
+
+    function UpdateMontant(){
+        let data = localStorage.getItem("montantTache");
+        
+    }
+    UpdateMontant();
 })

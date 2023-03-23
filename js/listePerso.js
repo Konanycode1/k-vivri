@@ -68,10 +68,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let AttribuSolde = localStorage.getItem("montantTache");
             AttribuSolde = JSON.parse(AttribuSolde);
             perso = JSON.parse(perso);
+            let tr;
             perso.map(ele => {
                 
                 if (ele.attache === tache) {
-                    let tr = document.createElement('tr');
+                     tr = document.createElement('tr');
                     tr.style.textAlign = "center"
                     
                     let ismontant = AttribuSolde.find(element =>  element.tache == ele.attache);
@@ -86,10 +87,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     <td style="vertical-align:middle;">${statut}</td>
                     <td style="vertical-align:middle;">${paie} </td>`;
                     tr.innerHTML = text;
-                    miTable.appendChild(tr)
+                    
                 }
             })
-            
+            miTable.appendChild(tr)
 
         }))
        
