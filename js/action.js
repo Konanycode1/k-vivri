@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             recupMontantTache.forEach(element => {
                 let tr = document.createElement("tr");
                 let text = `
-                <td>${element.statut}</td>
+                <td class="statusTache">${element.statut}</td>
                 <td class="tachRe">${element.tache}</td>
                 <td>${element.montant}Fr Cfa</td>
                 <td>${element.durer}</td>
@@ -142,9 +142,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
                  localStorage.setItem("perso",JSON.stringify(recuPerso))
              })
         }
-        else{
-            alert("impossible d'attribuer un montant ");
-        }  
+        // else{
+        //     alert("impossible d'attribuer un montant ");
+        // }  
     }
     Paiement();
 
@@ -197,7 +197,32 @@ document.addEventListener("DOMContentLoaded", ()=>{
     Modal();
 
     function UpdateMontant(){
-        let data = localStorage.getItem("montantTache");
+        let btn = document.querySelectorAll(".btn-open");
+        btn.forEach(clic=> clic.addEventListener("click", ()=>{
+            let modalForm = document.querySelector(".modaltache");
+            let btn = document.getElementById("btnSubmi");
+            let data = localStorage.getItem("montantTache");
+            data = JSON.parse(data);
+            console.log(data);
+
+            let parent = clic.closest('tr');
+            let first = parent.querySelector(".tachRe").textContent;
+            modalForm.addEventListener("submit", (e)=>{
+                e.preventDefault();
+            });
+
+            btn.addEventListener("click", ()=>{
+                let tache = document.getElementById("tache");
+                let montant = document.getElementById("montant");
+                let status = document.getElementById("status");
+                let durer = document.getElementById("durer");
+                let offre = document.getElementById("offret");
+                
+            })
+
+
+            
+        }))
         
     }
     UpdateMontant();

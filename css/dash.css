@@ -17,7 +17,7 @@ html{
 }
 main{
     display: grid;
-   height: 100vh;
+    height: 100vh;
 }
 body{
    width: 100%;
@@ -32,12 +32,10 @@ body{
     background-color: black;
     height: 100%;
     position: sticky;
-   
 }
 .col2{
     width: 80%;
     background-color: var(--colorBg);
-
 }
 .container{
     display: flex;
@@ -819,7 +817,7 @@ td, th {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     z-index: 1;
   }
   
@@ -1105,12 +1103,14 @@ td, th {
         font-size: 100%;
     }
     main{
+        display: grid;
         height: 100vh;
     }
      .col1 {
         width: 20%;
-        height: 100%;
+        height: 100vh;
         background-color: black;
+        position: sticky;
     }
     .col2{
         width:80%;
@@ -1722,7 +1722,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     z-index: 1;
   }
   
@@ -1739,10 +1739,11 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         font-size: 80%;
     }
    
-     .col1 {
+    .col1 {
         width: 20%;
-        height: 100vh;
         background-color: black;
+        height: 100%;
+        position: sticky;
     }
     .col2{
         width:80%;
@@ -1762,8 +1763,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         display: block;
     
     }
-    
-    
     .titleForm{
         display: flex;
         align-items: center;
@@ -2367,7 +2366,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     z-index: 1;
   }
   

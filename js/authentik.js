@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     data = JSON.parse(data);
     let logStatus = false;
     // data = data.find(element => element.admin);
-
     if( data.user == verifSuper.admin || data.user == verifAdmin.admin ){
         logStatus = true;
         para.style.color = "white"
