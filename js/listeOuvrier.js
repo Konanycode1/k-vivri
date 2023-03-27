@@ -1,34 +1,38 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     // appel function créer
     ListePerso();
-    actionPersonTerminer();
+    
     // appel function créer
     function ListePerso() {
         let recupPerson = localStorage.getItem('perso');
         recupPerson = JSON.parse(recupPerson);
         let meTable = document.querySelector(".k-perso-table");
         recupPerson.forEach(element => {
-            let tr = document.createElement("tr");
+            let tr = document.createElement("tr"); 
+          
+
+
             let text = `
-            <td>${element.id}</td>
-            <td>${element.nom} ${element.prenom}</td>
-            <td>${element.dateAjout}</td>
-            <td>
+            <td class="id">${element.id}</td>
+            <td class="nomPrenom">${element.nom} ${element.prenom}</td>
+            <td class="dateajout">${element.dateAjout}</td>
+            <td class="terminerTch">
                   <div class="button r" id="button-1">
-                    <input type="checkbox" class="checkbox">
+                    <input type="checkbox" class="checkbox" elment="${element.id}">
                     <div class="knobs"></div>
                     <div class="layer"></div>
                   </div>
                 
             </td>
-            <td>${element.attache}</td>
+            <td class="tache">${element.attache}</td>
             <td>Encours</td>
-            <td>
-                <svg fill="#ffff" width="20px" height="20px" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffff">
+            <td class="valPaie">${element.statutPaie ? element.statutPaie : "Non payé"}</td>
+            <td class="valider"> 
+                <svg fill="#ffff" width="20px" height="20px" class="Modif" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffff">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0">
 
-                <rect x="-1.6" y="-1.6" width="19.20" height="19.20" rx="1.92" fill="blue" strokewidth="0"/>
+                <rect x="-1.6" y="-1.6" width="19.20" height="19.20" rx="1.92" fill="blue" class="upd" strokewidth="0"/>
 
                 </g>
 
@@ -59,16 +63,99 @@ document.addEventListener('DOMContentLoaded', ()=>{
             `;
             tr.innerHTML = text
             meTable.appendChild(tr)
+                        
+        
+            
         });  
     }
+
     function actionPersonTerminer() {
         let btnTer = document.querySelectorAll(".checkbox");
+        let perso = localStorage.getItem("perso");
+        perso = JSON.parse(perso)
         btnTer.forEach(element =>  element.addEventListener("click", ()=>{
-            console.log(element.value)
-            if(element.value == "yes"){
-                element.checked = false;
+            let recupValue;
+            let parent =  element.closest("tr");
+            let user =  parent.querySelector(".nomPrenom").textContent;
+            let id = parent.querySelector('.id').textContent;
+            let terminer = parent.querySelector('.terminerTch');
+            let date = new Date();
+            if(element.value == "on"){
+                element.disabled = true;
+                recupValue = perso.map(item =>{
+                    let meDAta;
+                    if(item.id == id){
+                        meDAta = {
+                            id:item.id,
+                            nom:item.nom,
+                            prenom:item.prenom,
+                            age:item.age,
+                            domaine:item.domaine,
+                            attache:item.attache,
+                            tel:item.tel,
+                            Montant: item.Montant !== null? item.Montant: "Non assigné",
+                            dateAjout:item.dateAjout,
+                            statutPaie:item.statutPaie,
+                            tacheTerminer: "Terminer",
+                            heureTerminer: `${date.getHours()} : ${date.getMinutes()} du  ${date.toLocaleDateString()}`
+                        }
+                        // terminer.textContent = `${date.getHours()} : ${date.getMinutes()} du  ${date.toLocaleDateString()}`
+
+                    }
+                    else{
+                        return item
+                    }
+                    return meDAta
+                })
+                localStorage.setItem("perso", JSON.stringify(recupValue));
+                window.location.reload();
+                
+
             }
         }) );
     }
+    actionPersonTerminer();
+
+let checkbox = document.querySelectorAll(".checkbox")
+
+function activ(eve) {
+    
+    if( eve.length != 0 ){
+        console.log("ok")
+        eve.forEach(item => {
+            let verif = item.getAttribute("elment");
+            let perso = JSON.parse(localStorage.getItem("perso")).filter(key => key.id == verif);
+            if(perso[0].tacheTerminer){
+                let parent = item.closest("td")
+                parent.textContent = perso[0].heureTerminer
+            }
+            
+        })
+    }
+
+    
+}
+activ(checkbox)
+
+
+// checkbox.forEach(ele => {
+//     let psr = localStorage.getItem("perso");
+//     let parent = ele.closest("tr")
+//     console.log(parent)
+//     psr = JSON.parse(psr)
+//     event = event.target.getAttribute("elment");
+//     psr.map(item =>{
+//         if(item.id == event && item.heureTerminer){
+//             alert("ok")
+//                 let terminer = parent.querySelector('.terminerTch');
+//                 console.log(terminer)
+//                 terminer.innerHTML = item.heureTerminer
+//         }
+//     })
+
+// } )
+
+
    
 })
+

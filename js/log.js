@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         admin : "superadmin",
         pwd : "superadmin"
     }
-
     localStorage.setItem("superAdmin", JSON.stringify(userUdefine));
 
     form.addEventListener('submit', (e)=>{

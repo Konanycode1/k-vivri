@@ -1181,7 +1181,7 @@ td, th {
         
     }
     .contentTacheS{
-        width: 60rem;
+        width: 50rem;
         height: 20rem;
         overflow-y: scroll;
     
@@ -1211,6 +1211,7 @@ td, th {
         justify-content: space-between;
     
     }
+   
     .dat{
         display: flex;
         justify-content: end;
@@ -1256,7 +1257,7 @@ td, th {
 }
 .K-form-input input{
     width: 15rem;
-    height: 4rem;
+    height: 2rem;
     background-color: white;
     border: none;
 }
@@ -1265,7 +1266,7 @@ td, th {
 }
 .K-form-input select{
     width: 15rem;
-    height: 4rem;
+    height: 2rem;
     border: none;background-color: #fff;
 }
 option{
@@ -1729,6 +1730,30 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   }
 
 /* -------------Fin css action sur le personnel-------------------- */
+
+/*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+}
+.form-ajoutAdmin {
+    width: 20rem;
+}
+.formAjoutAdmin {
+    padding: 5px;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+}
+
 }
 
 @media screen and (max-width:1450px) {

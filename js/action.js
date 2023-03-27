@@ -254,6 +254,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     }
                     return myData
                 } )
+                console.log(recupValue)
                 localStorage.setItem("montantTache", JSON.stringify(recupValue));
                 window.location.reload();
             }) 
