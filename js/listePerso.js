@@ -68,12 +68,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let AttribuSolde = localStorage.getItem("montantTache");
             AttribuSolde = JSON.parse(AttribuSolde);
             perso = JSON.parse(perso);
-            let tr;
-            perso.map(ele => {
+            
+            perso.forEach(ele => {
                 
                 if (ele.attache === tache) {
-                     tr = document.createElement('tr');
-                    tr.style.textAlign = "center"
+                    let tr = document.createElement('tr');
+                     tr.style.textAlign = "center"
                     
                     let ismontant = AttribuSolde.find(element =>  element.tache == ele.attache);
                     let [solde, statut] =  ismontant ?[ ismontant.montant, ismontant.statut ]: "Montant non assigné";
@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     <td style="vertical-align:middle;">${statut}</td>
                     <td style="vertical-align:middle;">${paie} </td>`;
                     tr.innerHTML = text;
-                    
+                    miTable.appendChild(tr)
                 }
             })
-            miTable.appendChild(tr)
+            
 
         }))
        

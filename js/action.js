@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 let text = `
                 <td class="statusTache">${element.statut}</td>
                 <td class="tachRe">${element.tache}</td>
-                <td>${element.montant}Fr Cfa</td>
-                <td>${element.durer}</td>
+                <td class="mntn">${element.montant}Fr Cfa</td>
+                <td class="dure">${element.durer}</td>
                 <td>
                 <svg  class="btn btn-open" fill="#ffff" width="20px" height="20px" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffff">
 
@@ -102,8 +102,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 mytable.appendChild(tr)
                 
             });
-       }
-        
+       }  
     }
 
     function Paiement() {
@@ -116,8 +115,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
         form.addEventListener("click", (e)=>{
             e.preventDefault();
         });
-        if(recuPerso != null){
             btnPaie.addEventListener("click", ()=>{
+                recuPerso = recuPerso != null? recuPerso: alert("Pas d'ouvrier enregistrer");
+                // let myMontant = localStorage.getItem("montantTache");
+                // myMontant = JSON.parse(myMontant);
+                // myMontant = myMontant.filter(item => item.montant != null ? item :0)
+                // paie.value = myMontant != 0? myMontant[0].montant:0
                 recuPerso =  recuPerso.map(ele => {
                      let data;
                      if(ele.id === identi.value){
@@ -140,25 +143,42 @@ document.addEventListener("DOMContentLoaded", ()=>{
                      return data;
                  }); 
                  localStorage.setItem("perso",JSON.stringify(recuPerso))
-             })
-        }
-        // else{
-        //     alert("impossible d'attribuer un montant ");
-        // }  
+             }) 
     }
     Paiement();
 
 
     function DeletePaie() {
         let dele = document.querySelectorAll("#suprim");
+        let isPass = false;
         dele.forEach(clic =>clic.addEventListener("click", ()=>{
             let parent = clic.closest("tr");
             let first = parent.querySelector(".tachRe").textContent
             let recupPaie = localStorage.getItem("montantTache");
             recupPaie = JSON.parse(recupPaie);
-            recupPaie = recupPaie.filter(item => item.tache != first);
-            localStorage.setItem("montantTache", JSON.stringify(recupPaie));
-            window.location.reload();
+            let recupEle = recupPaie.filter(item => item.tache === first);
+            isPass = true;
+            if(isPass){
+                
+                recupEle.map(ele => {
+                    let listeTache =  localStorage.getItem("listeTache");
+                    listeTache = JSON.parse(listeTache);
+                    if(listeTache !== null){
+                        listeTache.push(ele);
+                        localStorage.setItem('listeTache', JSON.stringify(listeTache));
+                    }
+                    else{
+                        listeTache = [];
+                        listeTache.push(ele);
+                        console.log(listeTache);
+                        localStorage.setItem('listeTache', JSON.stringify(listeTache));
+                    }
+                       
+                })
+                recupPaie = recupPaie.filter(item => item.tache != first);
+                localStorage.setItem("montantTache", JSON.stringify(recupPaie));
+                window.location.reload();
+            }
         }));   
     }
     DeletePaie();
@@ -191,8 +211,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         };
         // open modal event
         openModalBtn.forEach(ele => ele.addEventListener("click", openModal));
-        
-
     }
     Modal();
 
@@ -202,28 +220,44 @@ document.addEventListener("DOMContentLoaded", ()=>{
             let modalForm = document.querySelector(".modaltache");
             let btn = document.getElementById("btnSubmi");
             let data = localStorage.getItem("montantTache");
+            let tache = document.getElementById("tacheModal");
+            let montant = document.getElementById("montantModal");
+            let status = document.getElementById("statusModal");
+            let durer = document.getElementById("durerModal");
+            let offre = document.getElementById("offreModal");
             data = JSON.parse(data);
-            console.log(data);
-
             let parent = clic.closest('tr');
-            let first = parent.querySelector(".tachRe").textContent;
+            let tachTr = parent.querySelector(".tachRe").textContent;
+            let statusTr = parent.querySelector(".statusTache").textContent
+            let montantTr = parent.querySelector(".mntn").textContent
+
+            tache.value = tachTr;
+            montant.value = montantTr
+           
             modalForm.addEventListener("submit", (e)=>{
                 e.preventDefault();
             });
-
             btn.addEventListener("click", ()=>{
-                let tache = document.getElementById("tache");
-                let montant = document.getElementById("montant");
-                let status = document.getElementById("status");
-                let durer = document.getElementById("durer");
-                let offre = document.getElementById("offret");
-                
-            })
-
-
-            
+                let recupValue = data.map(item => {
+                    let myData;
+                    if(item.tache === tachTr){
+                        myData = {
+                            tache : tache.value,
+                            montant : montant.value,
+                            statut:status.value,
+                            offre : offre.value==""?"Pas d'offre": offre.value,
+                            durer:durer.value
+                        }
+                    }
+                    else{
+                        return item
+                    }
+                    return myData
+                } )
+                localStorage.setItem("montantTache", JSON.stringify(recupValue));
+                window.location.reload();
+            }) 
         }))
-        
     }
     UpdateMontant();
 })

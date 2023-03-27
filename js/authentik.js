@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     }
                     return data
                 });
-                console.log(recupVal)
                 localStorage.setItem("tache", JSON.stringify(recupVal));
                 window.location.reload();
 

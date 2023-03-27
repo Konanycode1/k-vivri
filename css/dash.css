@@ -30,8 +30,7 @@ body{
 .col1{
     width: 20%;
     background-color: black;
-    height: 100%;
-    position: sticky;
+    height: 100vh;
 }
 .col2{
     width: 80%;
@@ -1110,7 +1109,6 @@ td, th {
         width: 20%;
         height: 100vh;
         background-color: black;
-        position: sticky;
     }
     .col2{
         width:80%;
@@ -1742,8 +1740,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .col1 {
         width: 20%;
         background-color: black;
-        height: 100%;
-        position: sticky;
+        height: 100vh;
     }
     .col2{
         width:80%;
@@ -2394,7 +2391,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
    
      .col1 {
         width: 20%;
-        height: 99.7vh;
+        height: 100vh;
         background-color: black;
     }
     .col2{
