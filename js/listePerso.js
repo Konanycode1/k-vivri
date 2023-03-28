@@ -99,11 +99,33 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     function Delete() {
         let delet = document.querySelectorAll('#delete');
+        let isPass = false
         delet.forEach(clic => clic.addEventListener("click", ()=>{
             let parent = clic.closest("tr");
             let tache = parent.querySelector('.tache').textContent
             let tachesRecup = localStorage.getItem('tache');
             tachesRecup = JSON.parse(tachesRecup);
+           
+            console.log(tache)
+            let recupEle = tachesRecup.filter(item => item.tache === tache);
+            isPass = true;
+            if(isPass){
+                recupEle.map(ele => {
+                    let listeTache =  localStorage.getItem("listTaTerminer");
+                    listeTache = JSON.parse(listeTache);
+                    if(listeTache !== null){
+                        listeTache.push(ele);
+                        localStorage.setItem('listTaTerminer', JSON.stringify(listeTache));
+                    }
+                    else{
+                        listeTache = [];
+                        listeTache.push(ele);
+                        console.log(listeTache);
+                        localStorage.setItem('listTaTerminer', JSON.stringify(listeTache));
+                    }
+                       
+                })
+            }
             tachesRecup = tachesRecup.filter(item => item.tache != tache);
             localStorage.setItem("tache", JSON.stringify(tachesRecup));
             window.location.reload();

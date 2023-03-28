@@ -4,10 +4,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
         let recupTache = localStorage.getItem("tache");
         recupTache = JSON.parse(recupTache)
         recupTache.map(ele => {
-        let option = document.createElement('option');
-            option.value = ele.tache;
-            option.textContent = ele.tache
-            listeTac.appendChild(option);
+            if(ele.dateTermine === "En cours"){
+                let option = document.createElement('option');
+                option.value = ele.tache;
+                option.textContent = ele.tache
+                listeTac.appendChild(option);
+            }
+      
         });
     }
     tacheEncours();

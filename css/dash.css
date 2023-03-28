@@ -1765,16 +1765,17 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .col1 {
         width: 20%;
         background-color: black;
-        height: 100vh;
+        height: 100%;
     }
     .col2{
         width:80%;
-        height: 100vh;
+        height: 100%;
         background-color: var(--colorBg);
     }
     .listPersonel {
         width: 20%;
         background-color: white;
+        height: 100%;
     }
     .interDash{
         width: 80%;
@@ -2416,12 +2417,12 @@ when users will click/enter button(link) browser will add a #id in a url and whe
    
      .col1 {
         width: 20%;
-        height: 100vh;
+        height: 100%;
         background-color: black;
     }
     .col2{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: var(--colorBg);
     }
     .listImg img{
@@ -2435,7 +2436,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     }
     .listPersonel {
         width: 25%;
-        height: 92vh;
+        height: 100%;
         background-color: white;
     }
     .K-tab-div{
@@ -2533,12 +2534,12 @@ when users will click/enter button(link) browser will add a #id in a url and whe
    
      .col1{
         width: 20%;
-        height: 100vh;
+        height: 100%;
         background-color: black;
     }
     .col2{
         width: 80%;
-        height: 100vh;
+        height: 100%;
         background-color: var(--colorBg);
     }
     .tacheEncour {
@@ -2559,7 +2560,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     }
     .listPersonel {
         width: 25%;
-        height: 92vh;
+        height: 100%;
         background-color: white;
     }
     .listImg img{

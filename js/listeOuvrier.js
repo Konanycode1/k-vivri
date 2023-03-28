@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 </g>
 
                 </svg>
-                <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
+                <svg width="20px" height="20px" viewBox="-2.4 -2.4 28.80 28.80" id="delete" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0">
                 
@@ -138,22 +138,41 @@ function activ(eve) {
 activ(checkbox)
 
 
-// checkbox.forEach(ele => {
-//     let psr = localStorage.getItem("perso");
-//     let parent = ele.closest("tr")
-//     console.log(parent)
-//     psr = JSON.parse(psr)
-//     event = event.target.getAttribute("elment");
-//     psr.map(item =>{
-//         if(item.id == event && item.heureTerminer){
-//             alert("ok")
-//                 let terminer = parent.querySelector('.terminerTch');
-//                 console.log(terminer)
-//                 terminer.innerHTML = item.heureTerminer
-//         }
-//     })
-
-// } )
+function Delete() {
+    let delet = document.querySelectorAll('#delete');
+    let isPass = false
+    delet.forEach(clic => clic.addEventListener("click", ()=>{
+        let parent = clic.closest("tr");
+        let id = parent.querySelector('.id').textContent
+        let tachesRecup = localStorage.getItem('perso');
+        tachesRecup = JSON.parse(tachesRecup);
+        let recupEle = tachesRecup.filter(item => item.id === id);
+        
+        isPass = true;
+        if(isPass){
+            recupEle.map(ele => {
+                console.log(recupEle)
+                let listeTache =  localStorage.getItem("listPersoGloblistTaTerminer");
+                listeTache = JSON.parse(listeTache);
+                if(listeTache !== null){
+                    listeTache.push(ele);
+                    localStorage.setItem('listPersoGlob', JSON.stringify(listeTache));
+                }
+                else{
+                    listeTache = [];
+                    listeTache.push(ele);
+                    console.log(listeTache);
+                    localStorage.setItem('listPersoGlob', JSON.stringify(listeTache));
+                }
+                   
+            })
+        }
+        tachesRecup = tachesRecup.filter(item => item.id != id);
+        localStorage.setItem("perso", JSON.stringify(tachesRecup));
+        window.location.reload();
+    }));  
+}
+Delete();
 
 
    

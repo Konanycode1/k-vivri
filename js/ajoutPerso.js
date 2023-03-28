@@ -101,10 +101,13 @@ function SelectTache() {
     let select = document.getElementById("tach")
     recupListe = JSON.parse(recupListe);
     recupListe.forEach(element => {
-       let option = document.createElement('option');
-       option.textContent = element.tache;
-       option.value = element.tache
-       select.appendChild(option)
+        if(element.dateTermine === "En cours"){
+            let option = document.createElement('option');
+            option.textContent = element.tache;
+            option.value = element.tache
+            select.appendChild(option)
+        }
+       
     });
 }
 
