@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 
             </td>
             <td class="tache">${element.attache}</td>
-            <td>Encours</td>
+            <td class="tel">${element.tel}</td>
             <td class="valPaie">${element.statutPaie ? element.statutPaie : "Non payé"}</td>
             <td class="valider"> 
-                <svg fill="#ffff" width="20px" height="20px" class="Modif" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffff">
+                <svg fill="#ffff" id="${element.id}"  width="20px" height="20px" class="Modif btn btn-open" viewBox="-1.6 -1.6 19.20 19.20" xmlns="http://www.w3.org/2000/svg" stroke="#ffff">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0">
 
@@ -116,18 +116,107 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
     actionPersonTerminer();
 
-let checkbox = document.querySelectorAll(".checkbox")
+    function updatePerso() {
 
+        let form = document.querySelector(".modaltache");
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+        })
+        let recupIcon = document.querySelectorAll(".Modif")
+        recupIcon.forEach(item => item.addEventListener("click", ()=>{
+            let dad = item.closest("tr");
+            let nom = document.getElementById("nom");
+            let prenom = document.getElementById("prenom");
+            let tel = document.getElementById('tel');
+            let tache = document.getElementById('tache');
+            let btn = document.getElementById("btnclic");
+            let idn= dad.querySelector(".id").textContent;
+            
+            nom.value =  dad.querySelector(".nomPrenom").textContent.split(' ')[0]
+            prenom.value = dad.querySelector(".nomPrenom").textContent.split(' ')[1]
+            tel.value = dad.querySelector(".tel").textContent;
+            tache.value = dad.querySelector(".tache").textContent;
+            
+            btn.addEventListener("click", ()=>{
+                let listperson = localStorage.getItem("perso");
+                listperson = JSON.parse(listperson);
+                listperson =  listperson.map(item => {
+                    let data
+                    if(item.id == idn){
+                        data = {
+                            id:item.id,
+                            nom:nom.value,
+                            prenom:prenom.value,
+                            age : item.age,
+                            domaine:item.domaine?item.domaine:"",
+                            attache:tache.value,
+                            tel:tel.value,
+                            Montant:item.Montant,
+                            dateAjout:item.dateAjout,
+                            statutPaie:item.statutPaie?item.statutPaie:"",
+                            tacheTerminer:item.heureTerminer?item.heureTerminer:"",
+                            heureTerminer:item.heureTerminer?item.heureTerminer:"",   
+                        }
+                    }
+                    else{
+                        return item
+                    }
+                    return data
+
+                })
+                localStorage.setItem("perso", JSON.stringify(listperson))
+                window.location.reload();
+            })
+
+        }));
+        
+    }
+    updatePerso();
+    function Modal() {
+
+        const modal = document.querySelector(".modal");
+        const overlay = document.querySelector(".overlay");
+        const openModalBtn = document.querySelectorAll(".btn-open");
+        const closeModalBtn = document.querySelector(".btn-close");
+        // close modal function
+        const closeModal = function () {
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+        };
+        // close the modal when the close button and overlay is clicked
+        closeModalBtn.addEventListener("click", closeModal);
+        overlay.addEventListener("click", closeModal);
+
+        // close modal when the Esc key is pressed
+        document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+            closeModal();
+        }
+        });
+        // open modal function
+        const openModal = function () {
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+        };
+        // open modal event
+        openModalBtn.forEach(ele => ele.addEventListener("click", openModal));
+    }
+    Modal();
+
+let checkbox = document.querySelectorAll(".checkbox")
 function activ(eve) {
     
     if( eve.length != 0 ){
-        console.log("ok")
         eve.forEach(item => {
             let verif = item.getAttribute("elment");
-            let perso = JSON.parse(localStorage.getItem("perso")).filter(key => key.id == verif);
-            if(perso[0].tacheTerminer){
+            let parent = item.closest('tr');
+            let child = parent.querySelector(".valider svg")
+            let imgSVG = child.id;
+            let perso = JSON.parse(localStorage.getItem("perso")).filter(key => key.id == verif && key.id == imgSVG);
+            if(perso[0].tacheTerminer && perso[0].tacheTerminer != ""){
                 let parent = item.closest("td")
                 parent.textContent = perso[0].heureTerminer
+                child.style.display = "none"
             }
             
         })
@@ -147,12 +236,11 @@ function Delete() {
         let tachesRecup = localStorage.getItem('perso');
         tachesRecup = JSON.parse(tachesRecup);
         let recupEle = tachesRecup.filter(item => item.id === id);
-        
         isPass = true;
         if(isPass){
             recupEle.map(ele => {
                 console.log(recupEle)
-                let listeTache =  localStorage.getItem("listPersoGloblistTaTerminer");
+                let listeTache =  localStorage.getItem("listPersoGlob");
                 listeTache = JSON.parse(listeTache);
                 if(listeTache !== null){
                     listeTache.push(ele);
@@ -173,6 +261,8 @@ function Delete() {
     }));  
 }
 Delete();
+
+
 
 
    

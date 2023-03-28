@@ -137,7 +137,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
                              tel : ele.tel,
                              dateAjout : ele.dateAjout,
                              statutPaie : "Payé",
-                             Montant : paie.value
+                             Montant : paie.value,
+                             tacheTerminer:ele.heureTerminer?ele.heureTerminer:"",
+                             heureTerminer:ele.heureTerminer?ele.heureTerminer:"", 
                          }
                      }
                      else{
@@ -146,6 +148,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                      return data;
                  }); 
                  localStorage.setItem("perso",JSON.stringify(recuPerso))
+                 window.location.reload();
              }) 
     }
     Paiement();

@@ -8,8 +8,16 @@
     --border-color: hsla(0, 0%, 100%, .2);
     --global-background: hsl(220, 25%, 10%);
     --background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
-    --shadow-1: hsla(236, 50%, 50%, .3);
+    --shadow-1: hsla(128, 84%, 77%, 0.3);
     --shadow-2: hsla(236, 50%, 50%, .4);
+    --inputHau: 2rem;
+    --inputLong: 12rem;
+    --MaxWidthForm : 40rem;
+    --MinwidthFor: 25rem;
+    --BtnMaxwidth: 10rem;
+    --BtnHeigth: 2rem;
+    --BorderBtn: .2rem;
+    
 }
 
 html{
@@ -337,24 +345,26 @@ footer{
     margin-right: 10rem;
 }
 .K-form-input{
-    width:60rem ;
+    width:var(--MaxWidthForm);
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 .K-form-input input{
-    width: 25rem;
-    height: 4rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     background-color: white;
     border: none;
+    border-radius: 2px;
 }
 .K-form-input input::placeholder{
     text-align: center;
 }
 .K-form-input select{
-    width: 25rem;
-    height: 4rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     border: none;background-color: #fff;
+    border-radius: 2px;
 }
 option{
     text-align: center;
@@ -364,10 +374,11 @@ option{
     justify-content: end;
 }
 .k-form-btn button{
-    width: 15rem;
-    height: 4rem;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
     color: #ffff;
 }
 .K-tach-info{
@@ -411,20 +422,22 @@ option{
     justify-content: space-around;
 }
 .K-form-input-regist input{
-    width: 25rem;
-    height: 4rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     background-color: white;
     border: none;
     margin-right: 20px;
+    border-radius: 2px;
 }
 .K-form-input-regist input::placeholder{
     text-align: center;
 }
 .K-form-input-regist button{
-    width: 15rem;
-    height: 4rem;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
     color: #ffff;
 }
 .K-tab-div{
@@ -669,33 +682,45 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-   width: 15rem;
-   height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
    margin-bottom: 5px;
    border: none;
+   border-radius: 2px;
 }
 .K-form-input-action button{
-    width: 15rem;
-    height: 3rem;
-    margin-bottom: 5px;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
  }
 .K-form-input-action select{
-    width: 15rem;
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     margin-bottom: 5px;
     border: none;
+    border-radius: 2px;
  }
 .K-form-input-action input::placeholder{
    text-align: center;
  }
 #btnMontant{
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
-    color: white;
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
 }
 #btnPaie{
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
-    color: white;
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
 }
 .k-card-action-1{
     width: 130px;
@@ -962,19 +987,21 @@ td, th {
     justify-content: space-between;
 }
 .voirForm input{
-    width: 19rem;
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     border: none;
+    border-radius: 2px;
 }
 .voirForm input::placeholder{
    text-align: center;
 }
 .voirForm button{
-    width: 10rem;
-    height: 3rem;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
     border: none;
-    background-color: #25995C;
-    color: white;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
 }
 .voirFelement{
     width: 30rem;
@@ -1030,11 +1057,12 @@ td, th {
     justify-content: center;
 }
 .btnEdi button{
-    width: 10rem;
-    height: 3rem;
-    background-color:var(--colorSite);
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
     border: none;
-    color: white;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
 }
 .adminListelem{
     padding: 15px;
@@ -1073,21 +1101,24 @@ td, th {
     margin-bottom: 10px;
 }
 .form-admin-ajout input{
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     border: none;
+    border-radius: 2px;
 }
 .form-admin-ajout input::placeholder{
     text-align: center;
 }
 .form-admin-ajout #btnCree{
-    height: 3rem;
-    width: 18rem;
-    color: white;
-    border: none;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
 }
 .form-ajoutAdmin{
-    width: 40rem;
+    width: 30rem;
 }
 .formAjoutAdmin{
     padding: 20px;
@@ -1250,24 +1281,26 @@ td, th {
     margin-right: 2rem;
 }
 .K-form-input{
-    width:35rem ;
+    width:var(--MinwidthFor);
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 .K-form-input input{
-    width: 15rem;
-    height: 2rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     background-color: white;
     border: none;
+    border-radius: 2px;
 }
 .K-form-input input::placeholder{
     text-align: center;
 }
 .K-form-input select{
-    width: 15rem;
-    height: 2rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     border: none;background-color: #fff;
+    border-radius: 2px;
 }
 option{
     text-align: center;
@@ -1277,10 +1310,11 @@ option{
     justify-content: end;
 }
 .k-form-btn button{
-    width: 15rem;
-    height: 4rem;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
     color: #ffff;
 }
 .K-tach-info{
@@ -1322,22 +1356,25 @@ option{
 .K-form-input-regist{
     display: flex;
     justify-content: space-around;
+    width: var(--MinwidthFor);
 }
 .K-form-input-regist input{
-    width: 25rem;
-    height: 4rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     background-color: white;
     border: none;
     margin-right: 20px;
+    border-radius: 2px;
 }
 .K-form-input-regist input::placeholder{
     text-align: center;
 }
 .K-form-input-regist button{
-    width: 15rem;
-    height: 4rem;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
     color: #ffff;
 }
 .K-tab-div{
@@ -1574,35 +1611,43 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     align-items: center;
 }
 .K-form-input-action{
-    width: 30rem;
+    width: var(--MinwidthFor);
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-   width: 10rem;
-   height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
    margin-bottom: 5px;
    border: none;
+   border-radius: 2px;
 }
 .K-form-input-action button{
-    width: 10rem;
-    height: 3rem;
-    margin-bottom: 5px;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
  }
  .K-form-input-action select{
-    width: 10rem;
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     margin-bottom: 5px;
     border: none;
+    border-radius: 2px;
  }
 .K-form-input-action input::placeholder{
    text-align: center;
  }
 #btnMontant{
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
-    color: white;
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
 }
 .k-card-action{
     margin-top: 20px;
@@ -1738,20 +1783,19 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     display: flex;
     justify-content: space-between;
 }
-.form-ajoutAdmin {
-    width: 20rem;
-}
+
 .formAjoutAdmin {
     padding: 5px;
-    width: 60rem;
+    width: 15rem;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .form-admin-ajout input {
     height: 3rem;
     margin-right: 3rem;
     border: none;
+    border-radius: 2px;
 }
 
 }
@@ -1800,18 +1844,20 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         margin-bottom: 15px;
     }
     .K-form-input input{
-        width: 20rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
+        border-radius: 2px;
     }
     .K-form-input input::placeholder{
         text-align: center;
     }
     .K-form-input select{
-        width: 20rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         border: none;background-color: #fff;
+        border-radius: 2px;
     }
     option{
         text-align: center;
@@ -1821,11 +1867,12 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
-        width: 15rem;
-        height: 4rem;
-        background-color: var(--colorSite);
-        border: none;
-        color: #ffff;
+        width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
     }
     .K-tach-info{
        display: block;
@@ -1868,21 +1915,23 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-around;
     }
     .K-form-input-regist input{
-        width: 25rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
         margin-right: 20px;
+        border-radius: 2px;
     }
     .K-form-input-regist input::placeholder{
         text-align: center;
     }
     .K-form-input-regist button{
-        width: 15rem;
-        height: 4rem;
-        background-color: var(--colorSite);
-        border: none;
-        color: #ffff;
+        width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
     }
     .K-tab-div{
         width: 60rem;
@@ -1925,18 +1974,20 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 15px;
 }
 .K-form-input input{
-    width: 10rem;
-    height: 2rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     background-color: white;
     border: none;
+    border-radius: 2px;
 }
 .K-form-input input::placeholder{
     text-align: center;
 }
 .K-form-input select{
-    width: 10rem;
-    height: 2rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     border: none;background-color: #fff;
+    border-radius: 2px;
 }
 option{
     text-align: center;
@@ -1946,10 +1997,11 @@ option{
     justify-content: end;
 }
 .k-form-btn button{
-    width: 10rem;
-    height: 3rem;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
     color: #ffff;
 }
 .K-tach-info{
@@ -1993,20 +2045,22 @@ option{
     justify-content: space-around;
 }
 .K-form-input-regist input{
-    width: 15rem;
-    height: 2rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     background-color: white;
     border: none;
     margin-right: 10px;
+    border-radius: 2px;
 }
 .K-form-input-regist input::placeholder{
     text-align: center;
 }
 .K-form-input-regist button{
-    width: 10rem;
-    height: 3rem;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
     color: #ffff;
 }
 .K-tab-div{
@@ -2248,20 +2302,22 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-   width: 10rem;
-   height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
    margin-bottom: 5px;
    border: none;
 }
 .K-form-input-action button{
-    width: 10rem;
-    height: 3rem;
-    margin-bottom: 5px;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
  }
  .K-form-input-action select{
-    width: 10rem;
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     margin-bottom: 5px;
     border: none;
  }
@@ -2269,8 +2325,12 @@ when users will click/enter button(link) browser will add a #id in a url and whe
    text-align: center;
  }
 #btnMontant{
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
-    color: white;
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
 }
 .k-card-action{
     margin-top: 20px;
@@ -2479,23 +2539,27 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-   width: 15rem;
-   height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
    margin-bottom: 5px;
    border: none;
+   border-radius: 2px;
 }
 .K-form-input-action button{
-    width: 15rem;
-    height: 3rem;
-    margin-bottom: 5px;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
     border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
  }
 
 .K-form-input-action select{
-    width: 15rem;
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     margin-bottom: 5px;
     border: none;
+    border-radius: 2px;
  }
 .K-form-input-action input::placeholder{
    text-align: center;
@@ -2597,18 +2661,20 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         margin-bottom: 15px;
     }
     .K-form-input input{
-        width: 10rem;
-        height: 4rem;
+        width: var(--inputLong);
+    height: var(--inputHau);
         background-color: white;
         border: none;
+        border-radius: 2px;
     }
     .K-form-input input::placeholder{
         text-align: center;
     }
     .K-form-input select{
-        width: 10rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         border: none;background-color: #fff;
+        border-radius: 2px;
     }
     option{
         text-align: center;
@@ -2618,11 +2684,12 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
-        width: 15rem;
-        height: 4rem;
-        background-color: var(--colorSite);
-        border: none;
-        color: #ffff;
+        width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
     }
     .K-tach-info{
        display: block;
@@ -2665,21 +2732,23 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-around;
     }
     .K-form-input-regist input{
-        width: 25rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
         margin-right: 20px;
+        border-radius: 2px;
     }
     .K-form-input-regist input::placeholder{
         text-align: center;
     }
     .K-form-input-regist button{
-        width: 15rem;
-        height: 4rem;
-        background-color: var(--colorSite);
-        border: none;
-        color: #ffff;
+        width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
     } 
     .K-tab-div{
         width: 60rem;
@@ -2723,16 +2792,18 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-   width: 15rem;
-   height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
    margin-bottom: 5px;
    border: none;
+   border-radius: 2px;
 }
 .K-form-input-action select{
-    width: 15rem;
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     margin-bottom: 5px;
     border: none;
+    border-radius: 2px;
  }
 .K-form-input-action input::placeholder{
    text-align: center;
@@ -2786,7 +2857,32 @@ when users will click/enter button(link) browser will add a #id in a url and whe
          font-family: 'Inria Serif', serif;
          flex-direction: row;
      }
+
+     .contentTacheS {
+        width: 35rem;
+        height: 20rem;
+        overflow-y: scroll;
+    }
+    .K-form-input-regist button {
+        width: var(--BtnMaxwidth);
+        height: var(--BtnHeigth);
+        background-color: var(--colorSite);
+        border: none;
+        border-radius: var(--BorderBtn);
+        color: #ffff;
+        font-size: 10px;
+    }
+    .k-form-btn button {
+        width: var(--BtnMaxwidth);
+        height: var(--BtnHeigth);
+        background-color: var(--colorSite);
+        border: none;
+        border-radius: var(--BorderBtn);
+        color: #ffff;
+        font-size: 10px;
+    }
         /* css action sur le personnel */
+
 .Paiement{
     padding: 20px;
     width: 60rem;
@@ -2814,16 +2910,18 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-   width: 10rem;
-   height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
    margin-bottom: 5px;
    border: none;
+   border-radius: 2px;
 }
 .K-form-input-action select{
-    width: 10rem;
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     margin-bottom: 5px;
     border: none;
+    border-radius: 2px;
  }
 .K-form-input-action input::placeholder{
    text-align: center;
@@ -2937,18 +3035,20 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         margin-bottom: 15px;
     }
     .K-form-input input{
-        width: 10rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
+        border-radius: 2px;
     }
     .K-form-input input::placeholder{
         text-align: center;
     }
     .K-form-input select{
-        width: 10rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         border: none;background-color: #fff;
+        border-radius: 2px;
     }
     option{
         text-align: center;
@@ -2958,11 +3058,12 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
-        width: 15rem;
-        height: 4rem;
-        background-color: var(--colorSite);
-        border: none;
-        color: #ffff;
+        width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
     }
     .K-tach-info{
        display: block;
@@ -3005,20 +3106,22 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-around;
     }
     .K-form-input-regist input{
-        width: 25rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
         margin-right: 20px;
+        border-radius: 2px;
     }
     .K-form-input-regist input::placeholder{
         text-align: center;
     }
     .K-form-input-regist button{
-        width: 15rem;
-        height: 4rem;
+        width: var(--BtnMaxwidth);
+        height: var(--BtnHeigth);
         background-color: var(--colorSite);
         border: none;
+        border-radius: var(--BorderBtn);
         color: #ffff;
     }
     .K-tab-div{
@@ -3162,18 +3265,20 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         margin-bottom: 15px;
     }
     .K-form-input input{
-        width: 10rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
+        border-radius: 2px;
     }
     .K-form-input input::placeholder{
         text-align: center;
     }
     .K-form-input select{
-        width: 10rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         border: none;background-color: #fff;
+        border-radius: 2px;
     }
     option{
         text-align: center;
@@ -3183,11 +3288,12 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
-        width: 15rem;
-        height: 4rem;
-        background-color: var(--colorSite);
-        border: none;
-        color: #ffff;
+        width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
     }
     .K-tach-info{
        display: block;
@@ -3230,20 +3336,22 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-around;
     }
     .K-form-input-regist input{
-        width: 25rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
         margin-right: 20px;
+        border-radius: 2px;
     }
     .K-form-input-regist input::placeholder{
         text-align: center;
     }
     .K-form-input-regist button{
-        width: 15rem;
-        height: 4rem;
+        width: var(--BtnMaxwidth);
+        height: var(--BtnHeigth);
         background-color: var(--colorSite);
         border: none;
+        border-radius: var(--BorderBtn);
         color: #ffff;
     }
     .K-tab-div{
@@ -3501,18 +3609,20 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         margin-bottom: 15px;
     }
     .K-form-input input{
-        width: 10rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
+        border-radius: 2px;
     }
     .K-form-input input::placeholder{
         text-align: center;
     }
     .K-form-input select{
-        width: 10rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         border: none;background-color: #fff;
+        border-radius: 2px;
     }
     option{
         text-align: center;
@@ -3522,10 +3632,11 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
-        width: 15rem;
-        height: 4rem;
+        width: var(--BtnMaxwidth);
+        height: var(--BtnHeigth);
         background-color: var(--colorSite);
         border: none;
+        border-radius: var(--BorderBtn);
         color: #ffff;
     }
     .K-tach-info{
@@ -3571,21 +3682,23 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-around;
     }
     .K-form-input-regist input{
-        width: 25rem;
-        height: 4rem;
+        width: var(--inputLong);
+        height: var(--inputHau);
         background-color: white;
         border: none;
         margin-right: 20px;
+        border-radius: 2px;
     }
     .K-form-input-regist input::placeholder{
         text-align: center;
     }
     .K-form-input-regist button{
-        width: 15rem;
-        height: 4rem;
-        background-color: var(--colorSite);
-        border: none;
-        color: #ffff;
+        width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
     } 
     .K-tab-div{
         width: 60rem;
@@ -3629,24 +3742,30 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-   width: 10rem;
-   height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
    margin-bottom: 5px;
    border: none;
+   
 }
 .K-form-input-action select{
-    width: 10rem;
-    height: 3rem;
+    width: var(--inputLong);
+    height: var(--inputHau);
     margin-bottom: 5px;
     border: none;
+    border-radius: 2px;
  }
 .K-form-input-action input::placeholder{
    text-align: center;
  }
 #btnMontant{
-    font-size: 10px;
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
     background-color: var(--colorSite);
-    color: white;
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    font-size: .8rem;
 }
 .k-card-action{
     margin-top: 20px;

@@ -56,40 +56,32 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function detail(){
         let detail =  document.querySelectorAll('.link-1');
         let title = document.querySelector(".modal__title");
-        let miTable = document.querySelector(".tbod");
-       
         let text;
-        
-        detail.forEach(clic => clic.addEventListener("click", ()=>{
-            
+        detail.forEach(clic => clic.addEventListener("click", (event)=>{
+            let miTable = document.querySelector(".tbod");
             let parent = clic.closest("tr");
             let tache = parent.querySelector('.tache').textContent;
             let perso = localStorage.getItem("perso");
             let AttribuSolde = localStorage.getItem("montantTache");
             AttribuSolde = JSON.parse(AttribuSolde);
             perso = JSON.parse(perso);
-            
-            perso.forEach(ele => {
-                
-                if (ele.attache === tache) {
-                    let tr = document.createElement('tr');
-                     tr.style.textAlign = "center"
-                    
-                    let ismontant = AttribuSolde.find(element =>  element.tache == ele.attache);
-                    let [solde, statut] =  ismontant ?[ ismontant.montant, ismontant.statut ]: "Montant non assigné";
-                    let paie =  ele.statutPaie ? ele.statutPaie : "Non payé"
-                    title.textContent = tache;
-                    console.log(ele.nom);
-                    text = `
-                    <td style="vertical-align:middle;">${ele.nom} ${ele.prenom}</td>
-                    <td style="vertical-align:middle;">${ele.attache}</td>
-                    <td style="vertical-align:middle;">${solde} Fr Cfa</td>
-                    <td style="vertical-align:middle;">${statut}</td>
-                    <td style="vertical-align:middle;">${paie} </td>`;
-                    tr.innerHTML = text;
-                    miTable.appendChild(tr)
-                }
+
+            perso = perso.filter(item => item.attache == tache);
+            miTable.textContent = ""
+            perso.forEach(ele =>{
+                            let tr = document.createElement('tr');
+                            tr.style.textAlign = "center";
+                            title.textContent = tache;
+                            text = `
+                            <td style="vertical-align:middle;">${ele.nom} ${ele.prenom}</td>
+                            <td style="vertical-align:middle;">${ele.attache}</td>
+                            <td style="vertical-align:middle;">${ele.Montant?ele.Montant: 0} Fr Cfa</td>
+                            <td style="vertical-align:middle;">${ele.tacheTerminer?ele.tacheTerminer:"Non termminer"} </td>
+                            <td style="vertical-align:middle;">${ele.statutPaie?ele.statutPaie:"Non payé"} </td>`;
+                            tr.innerHTML = text;
+                            miTable.appendChild(tr)
             })
+            
             
 
         }))
@@ -135,3 +127,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
 });
+
+ // let tr = document.createElement('tr');
+                            // tr.style.textAlign = "center";
+                            // let paie =  ele.statutPaie ? ele.statutPaie : "Non payé"
+                            // title.textContent = tache;
+                            // let [solde, statut] =  ismontant ?[ ismontant.montant, ismontant.statut ]: "Montant non assigné";
+                            // text = `
+                            // <td style="vertical-align:middle;">${ele.nom} ${ele.prenom}</td>
+                            // <td style="vertical-align:middle;">${ele.attache}</td>
+                            // <td style="vertical-align:middle;">${solde} Fr Cfa</td>
+                            // <td style="vertical-align:middle;">${statut}</td>
+                            // <td style="vertical-align:middle;">${paie} </td>`;
+                            // tr.innerHTML = text;
+                            // miTable.appendChild(tr)
