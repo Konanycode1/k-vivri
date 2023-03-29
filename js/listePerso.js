@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                             <td style="vertical-align:middle;">${ele.tacheTerminer?ele.tacheTerminer:"Non termminer"} </td>
                             <td style="vertical-align:middle;">${ele.statutPaie?ele.statutPaie:"Non payé"} </td>`;
                             tr.innerHTML = text;
-                            miTable.appendChild(tr)
+                            miTable.appendChild(tr);
             })
             
             
