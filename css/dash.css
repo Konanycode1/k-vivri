@@ -848,6 +848,9 @@ td, th {
   .hidden {
     display: none;
   }
+
+
+
 /* -------------Fin css action sur le personnel-------------------- */
 
 /* --------------css liste ouvrier ------------- */
@@ -1125,6 +1128,109 @@ td, th {
     display: flex;
     justify-content: space-between
 }
+
+/* modal action */
+.modalUpdate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 50rem;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    z-index: 5;
+    top: 10%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+  }
+  
+  .modalUpdate .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modalUpdate input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  .modalUpdate select {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+ 
+  .modal-tache{
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+  }
+  #btnSubmi{
+    background-color: var(--colorSite);
+    color: white;
+    cursor: pointer;
+    
+  }
+  
+  .modalUpdate p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.4rem 0 0.2rem;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+  }
+  
+  /* .btn {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+  } */
+  
+  /* .btn-open {
+    position: absolute;
+    bottom: 150px;
+  } */
+  
+  .btn-closes {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(3px); */
+    z-index: 1;
+  }
+  
+  .hiddenn {
+    display: none;
+  }
+
 /* css parametre element */
 
 @media screen and (max-width:1600px) {
@@ -2917,7 +3023,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;
-    width: 60rem;
+    width: 80rem;
     display: flex;
     justify-content: space-between;
 }
@@ -3057,7 +3163,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;
-    width: 80rem;
+    width: 73rem;
     display: flex;
     justify-content: space-between;
 }
