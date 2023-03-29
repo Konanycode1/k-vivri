@@ -760,8 +760,9 @@ td, th {
     z-index: 5;
     top: 10%;
     background-color: white;
-    border: 1px solid #ddd;
+    border: 1px solid #bdec9e;
     border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px black);
   }
   
   .modal .flex {
@@ -1142,8 +1143,9 @@ td, th {
     z-index: 5;
     top: 10%;
     background-color: white;
-    border: 1px solid #ddd;
+    border: 1px solid #bdec9e;
     border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px black);
   }
   
   .modalUpdate .flex {
@@ -1230,7 +1232,18 @@ td, th {
   .hiddenn {
     display: none;
   }
-
+.btnB{
+    width: var(--BtnMaxwidth);
+    height: var(--BtnHeigth);
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+}
+.btnBilan{
+    display: flex;
+    justify-content: center;
+}
 /* css parametre element */
 
 @media screen and (max-width:1600px) {
@@ -1793,6 +1806,10 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
+    border: 1px solid #bdec9e;
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px black);
+
   }
   
   .modal .flex {
@@ -2476,6 +2493,9 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
+    border: 1px solid #bdec9e;
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px black);
   }
   
   .modal .flex {

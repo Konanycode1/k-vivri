@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         let email =  document.querySelector(".eml");
         let tel = document.querySelector(".tele");
 
-        recupProf.forEach(item => {
+        recupProf?.forEach(item => {
             nom.textContent = item.nomPrenom;
             fonct.textContent = item.fonction;
             email.textContent = item.email
@@ -206,7 +206,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
             })
         }))  
     }
-    UpdateAdmin()
+    UpdateAdmin();
+    function DeleteAdmin() {
+        let icoDelete = document.querySelectorAll("#delete-alt-2");
+        icoDelete.forEach(item => item.addEventListener("click", ()=>{
+            let dad = item.closest(".adminList-perso");
+            let child = dad.querySelector(".nomPrenom").textContent;
+            let adminList = localStorage.getItem("admin")
+            adminList = JSON.parse(adminList)
+            adminList = adminList.filter(item => item.nomPrenom != child);
+            localStorage.setItem("admin", JSON.stringify(adminList));
+            window.location.reload();
+        }))
+    }
+    DeleteAdmin();
 
     function ModalUp() {
 
