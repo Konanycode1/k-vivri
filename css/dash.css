@@ -2456,6 +2456,32 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   .hidden {
     display: none;
   }
+  /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 15rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+.adminList-perso img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
 
 /* -------------Fin css action sur le personnel-------------------- */
     .foot{
@@ -2468,6 +2494,35 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         width: 100%;
         background-color: var(--colorSite);
     }
+}
+@media screen and (max-width:1370px) {
+     /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 15rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+.adminList-perso img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+} 
+    
 }
 @media screen and (max-width:1230px) {
 
@@ -2587,6 +2642,29 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     width: 90rem;
 }
 /* -------------Fin css action sur le personnel-------------------- */
+
+/*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 15rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
     
 }
 
@@ -2836,6 +2914,28 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     width: 90rem;
 }
 /* -------------Fin css action sur le personnel-------------------- */
+/*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 15rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
     .foot{
         
         display: flex;
@@ -2954,6 +3054,28 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     width: 60rem;
 }
 /* -------------Fin css action sur le personnel-------------------- */
+/*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
     
 }
 @media screen and (max-width:900px) {
@@ -3134,6 +3256,13 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .k-color-i-2{
         color: #d31c1c;
     }
+    .adminListelem {
+        padding: 10px;
+        display: block;
+        background-color: white;
+        border: 2px solid var(--colorSite);
+        box-shadow: 2px 2px 2px 2px gray;
+    }
     .foot{
         
         display: flex;
@@ -3144,7 +3273,38 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         width: 100%;
         background-color: var(--colorSite);
     }
-    
+    /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Profil {
+    padding: 20px;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 5px 2px 5px grey;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
 }
 @media screen and (max-width:800px) {
 
@@ -3367,6 +3527,28 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .k-color-i-2{
         color: #d31c1c;
     }
+    /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
     .foot{
         
         display: flex;
@@ -3458,6 +3640,28 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         height: 30px;
         border-radius: 100%;
     }
+    /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
     .foot{
         
         display: flex;
@@ -3836,6 +4040,29 @@ when users will click/enter button(link) browser will add a #id in a url and whe
  .k-perso-table{
     width: 100%;
  }
+
+ /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
     .foot{
         
         display: flex;
@@ -3849,4 +4076,27 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 @media screen and (max-width: 500px) {
 	
+
+    /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
 }

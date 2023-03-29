@@ -267,4 +267,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }))
     }
     UpdateMontant();
+
+
+    alert(screen.width)
 })
