@@ -247,7 +247,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ModalUp();
 
 
-
+function redirect(){
+    let btn = document.querySelector(".btnB");
+    btn.addEventListener("click", ()=>{
+        window.location.href ="../pages/bilan.html"
+    })
+}
+redirect();
    
 
 })

@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 div.innerHTML = `
                 <h3>${recupData[i].tache}</h3>
                 <input type="button" class="terminer" value="Terminée">`;
-                ajoutContent.appendChild(div)
+                ajoutContent?.appendChild(div)
             } 
         }
         let div2 = document.createElement('div')
         div2.className = "dat";
         div2.innerHTML = `<h4>${dat.toLocaleDateString()}</h4>`;
-        ajoutContent.appendChild(div2)  
+        ajoutContent?.appendChild(div2)  
         
     }
     

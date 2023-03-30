@@ -45,6 +45,7 @@ body{
     background-color: var(--colorBg);
 }
 .container{
+   
     display: flex;
 }
 header{
@@ -1245,6 +1246,60 @@ td, th {
     justify-content: center;
 }
 /* css parametre element */
+ /*------------bilan---------- */
+ .espaceBilan{
+    width: 100%;
+    display: block;
+    
+}
+.bilanTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.bilanTitle h1{
+    text-align: center;
+}
+.affiBilan{
+    display: flex;
+    width: 100%;
+}
+.bilanTache{
+    margin: 0 auto;
+    width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.bilanGen{
+    width: 70%;
+    height: 100%;
+    background-color: #bdec9e;
+}
+.bilantaD{
+    display: flex;
+    align-items: center;
+}
+.bilantaD h2{
+    margin-right: 20px;
+}
+.casseSom{
+    width: 150px;
+    height: 20px;
+    border: 2px solid rgb(189, 254, 169);
+    box-shadow: 3px 4px 3px 4px gray;
+    overflow: hidden;
+    
+}
+.casseSom p{
+    margin: 0 auto;
+    text-align: center;
+}
+.tex{
+    font-weight: bold;
+}
+/*------------bilan---------- */
 
 @media screen and (max-width:1600px) {
 
@@ -2610,6 +2665,60 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 
 /* -------------Fin css action sur le personnel-------------------- */
+  /*------------bilan---------- */
+  .espaceBilan{
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+.bilanTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.bilanTitle h1{
+    text-align: center;
+}
+.affiBilan{
+    display: flex;
+    width: 100%;
+}
+.bilanTache{
+    margin: 0 auto;
+    width: 30%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.bilanGen{
+    width: 70%;
+    height: 100vh;
+    background-color: #bdec9e;
+}
+.bilantaD{
+    display: flex;
+    align-items: center;
+}
+.bilantaD h2{
+    margin-right: 20px;
+}
+.casseSom{
+    width: 150px;
+    height: 30px;
+    border: 2px solid rgb(189, 254, 169);
+    box-shadow: 3px 4px 3px 4px gray;
+    overflow: hidden;
+    
+}
+.casseSom p{
+    margin: 0 auto;
+    text-align: center;
+}
+.tex{
+    font-weight: bold;
+}
+/*------------bilan---------- */
+
     .foot{
         
         display: flex;
@@ -2622,6 +2731,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     }
 }
 @media screen and (max-width:1370px) {
+  
      /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;

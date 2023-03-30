@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
             domaine : domaine.value,
             attache : attache.value,
             tel : tel.value,
-            dateAjout :`${hre}:${mnute}`   
+            dateAjout :`${hre}:${mnute}`,
+            Montant : 0
         }
         if(perso !== null){
             perso = JSON.parse(perso);

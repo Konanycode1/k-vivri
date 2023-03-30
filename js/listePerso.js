@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         valeur = JSON.parse(valeur);
         valeur.map(element => {
             
-            if( element.dateTermine !== "En cours"){
+            if( element.dateTermine !== "En cours" && element.statut != false){
                 let tr = document.createElement('tr');
                 let text = `<td class="tache">${element.tache}</td>
                 <td class="dateAjout">${element.dateAjout}</td>
@@ -98,29 +98,33 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let tachesRecup = localStorage.getItem('tache');
             tachesRecup = JSON.parse(tachesRecup);
            
-            console.log(tache)
-            let recupEle = tachesRecup.filter(item => item.tache === tache);
-            isPass = true;
-            if(isPass){
-                recupEle.map(ele => {
-                    let listeTache =  localStorage.getItem("listTaTerminer");
-                    listeTache = JSON.parse(listeTache);
-                    if(listeTache !== null){
-                        listeTache.push(ele);
-                        localStorage.setItem('listTaTerminer', JSON.stringify(listeTache));
+            console.log(tachesRecup)
+            // let recupEle = tachesRecup.filter(item => item.tache === tache);
+            // console.log(recupEle)
+            // isPass = true;
+            tachesRecup= tachesRecup.map(ele => {
+                console.log(ele)
+                let data
+                if(ele.tache === tache){
+                     data = {
+                        tache:ele.tache,
+                        dateAjout:ele.dateAjout,
+                        dateTermine:ele.dateTermine,
+                        statut : false
                     }
-                    else{
-                        listeTache = [];
-                        listeTache.push(ele);
-                        console.log(listeTache);
-                        localStorage.setItem('listTaTerminer', JSON.stringify(listeTache));
-                    }
-                       
+
+                }
+                else{
+                    return ele
+                }
+                return data   
                 })
-            }
-            tachesRecup = tachesRecup.filter(item => item.tache != tache);
-            localStorage.setItem("tache", JSON.stringify(tachesRecup));
-            window.location.reload();
+                console.log(tachesRecup)
+                localStorage.setItem("tache", JSON.stringify(tachesRecup));
+                window.location.reload();
+            // tachesRecup = tachesRecup.filter(item => item.tache != tache);
+            // localStorage.setItem("tache", JSON.stringify(tachesRecup));
+            // window.location.reload();
         }));  
     }
     Delete();
@@ -128,16 +132,3 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 });
 
- // let tr = document.createElement('tr');
-                            // tr.style.textAlign = "center";
-                            // let paie =  ele.statutPaie ? ele.statutPaie : "Non payé"
-                            // title.textContent = tache;
-                            // let [solde, statut] =  ismontant ?[ ismontant.montant, ismontant.statut ]: "Montant non assigné";
-                            // text = `
-                            // <td style="vertical-align:middle;">${ele.nom} ${ele.prenom}</td>
-                            // <td style="vertical-align:middle;">${ele.attache}</td>
-                            // <td style="vertical-align:middle;">${solde} Fr Cfa</td>
-                            // <td style="vertical-align:middle;">${statut}</td>
-                            // <td style="vertical-align:middle;">${paie} </td>`;
-                            // tr.innerHTML = text;
-                            // miTable.appendChild(tr)
