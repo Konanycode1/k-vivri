@@ -56,3 +56,15 @@ border: none;
 color: white;
 background-color: var(--colorSite);
 }
+@media screen and (max-width: 1400) {
+    
+    main{
+        margin: var(--TailMax);
+        margin: 0 auto;
+        display: grid;
+    
+    }
+    .login{
+        padding-top: 50px;
+    }
+}

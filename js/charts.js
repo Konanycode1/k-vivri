@@ -3,73 +3,43 @@
 
 
 let ctx = document.getElementById('myChart');
-const DATA_COUNT = 12;
-const labels = [];
-for (let i = 0; i < DATA_COUNT; ++i) {
-  labels.push(i.toString());
-}
-const datapoints = [0, 20, 20, 60, 60, 120, NaN, 180, 120, 125, 105, 110, 170];
-const data = {
-  labels: labels,
-  datasets: [
-    {
-      label: 'Cubic interpolation (monotone)',
-      data: datapoints,
-      borderColor: Utils.CHART_COLORS.red,
-      fill: false,
-      cubicInterpolationMode: 'monotone',
-      tension: 0.4
-    }, {
-      label: 'Cubic interpolation',
-      data: datapoints,
-      borderColor: Utils.CHART_COLORS.blue,
-      fill: false,
-      tension: 0.4
-    }, {
-      label: 'Linear interpolation (default)',
-      data: datapoints,
-      borderColor: Utils.CHART_COLORS.green,
-      fill: false
-    }
-  ]
-};
-// </block:setup>
 
-// <block:config:0>
-const config = {
+new Chart(ctx, {
   type: 'line',
-  data: data,
-  options: {
-    responsive: true,
-    plugins: {
-      title: {
-        display: true,
-        text: 'Chart.js Line Chart - Cubic interpolation mode'
-      },
-    },
-    interaction: {
-      intersect: false,
-    },
-    scales: {
-      x: {
-        display: true,
-        title: {
-          display: true
-        }
-      },
-      y: {
-        display: true,
-        title: {
-          display: true,
-          text: 'Value'
-        },
-        suggestedMin: -10,
-        suggestedMax: 200
+  data: {
+    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+    datasets: [{ 
+        data: [86,114,106,106,107,111,133,221,783,2478],
+        label: "Africa",
+        borderColor: "#3e95cd",
+        fill: false
+      }, { 
+        data: [282,350,411,502,635,809,947,1402,3700,5267],
+        label: "Asia",
+        borderColor: "#8e5ea2",
+        fill: false
+      }, { 
+        data: [168,170,178,190,203,276,408,547,675,734],
+        label: "Europe",
+        borderColor: "#3cba9f",
+        fill: false
+      }, { 
+        data: [40,20,10,16,24,38,74,167,508,784],
+        label: "Latin America",
+        borderColor: "#e8c3b9",
+        fill: false
+      }, { 
+        data: [6,3,2,2,7,26,82,172,312,433],
+        label: "North America",
+        borderColor: "#c45850",
+        fill: false
       }
-    }
+    ]
   },
-};
-
-console.log(ctx)
-
-new Chart(ctx, config);
+  options: {
+    title: {
+      display: true,
+      text: "L'évolution des tâches"
+    }
+  }
+});
