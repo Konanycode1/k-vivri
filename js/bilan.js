@@ -32,24 +32,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             `;
             div.innerHTML = text
             bilanTache.appendChild(div)
-
-
-                    // SomParTa +=parseInt(item.Montant) ;
-                    // tacheN = item.attache
-                    // let div = document.createElement("div");
-                    // div.className = "bilantaD";
-                    // let text = `
-                    // <h2>${tacheN}</h2>
-                    // <div class="casseSom">
-                    // <p>${SomParTa} <span class="tex">Fr Cfa</span></p>
-                    // </div>
-                    // `;
-                    // div.innerHTML = text
-                    // bilanTache.appendChild(div)
-
-                
-            
-            
+   
         });
         console.log(SomParTa)
         
