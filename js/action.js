@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                              dateAjout : ele.dateAjout,
                              statutPaie : "Payé",
                              Montant : paie.value,
+                             statut: ele.statut,
                              tacheTerminer:ele.heureTerminer?ele.heureTerminer:"",
                              heureTerminer:ele.heureTerminer?ele.heureTerminer:"", 
                          }

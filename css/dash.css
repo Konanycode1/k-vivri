@@ -381,6 +381,7 @@ option{
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .K-tach-info{
    display: block;
@@ -440,6 +441,7 @@ option{
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .K-tab-div{
     width: 90rem;
@@ -696,6 +698,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
  }
 .K-form-input-action select{
     width: var(--inputLong);
@@ -714,6 +717,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 #btnPaie{
     width: var(--BtnMaxwidth);
@@ -722,6 +726,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .k-card-action-1{
     width: 130px;
@@ -796,6 +801,7 @@ td, th {
     background-color: var(--colorSite);
     color: white;
     cursor: pointer;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     
   }
   
@@ -891,6 +897,7 @@ td, th {
     height: 30px;
     border: none;
     color: white;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
  }
  .k-select-num select{
     width: 50px;
@@ -1007,6 +1014,7 @@ td, th {
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .voirFelement{
     width: 30rem;
@@ -1068,6 +1076,7 @@ td, th {
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .adminListelem{
     padding: 15px;
@@ -1121,6 +1130,7 @@ td, th {
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .form-ajoutAdmin{
     width: 30rem;
@@ -1179,6 +1189,7 @@ td, th {
     background-color: var(--colorSite);
     color: white;
     cursor: pointer;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     
   }
   
@@ -1263,20 +1274,21 @@ td, th {
 }
 .affiBilan{
     display: flex;
-    width: 100%;
 }
 .bilanTache{
     margin: 0 auto;
     width: 30%;
     height: 100%;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 10px;
 }
 .bilanGen{
     width: 70%;
     height: 100%;
-    background-color: #bdec9e;
+    padding: 10px;
+    margin: 0 auto;
 }
+
 .bilantaD{
     display: flex;
     align-items: center;
@@ -1287,8 +1299,8 @@ td, th {
 .casseSom{
     width: 150px;
     height: 20px;
-    border: 2px solid rgb(189, 254, 169);
-    box-shadow: 3px 4px 3px 4px gray;
+    border: 2px solid rgb(217, 255, 192);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     overflow: hidden;
     
 }
@@ -1299,6 +1311,40 @@ td, th {
 .tex{
     font-weight: bold;
 }
+.bilanTaa{
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.bilTa{
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(211, 211, 211) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 10px;
+    text-align: center;
+}
+.bilPerso{
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(211, 211, 211) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 20px;
+    text-align: center;
+   
+}
+.depense{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.depenseTot{
+    width: 30rem;
+    height: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+
 /*------------bilan---------- */
 
 @media screen and (max-width:1600px) {
@@ -1490,6 +1536,7 @@ option{
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .K-tach-info{
    display: block;
@@ -1550,6 +1597,7 @@ option{
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .K-tab-div{
     width: 100%;
@@ -1568,7 +1616,14 @@ option{
     color: #d31c1c;
 }
 
-
+.btnB {
+    width: 20rem;
+    height: 4rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+}
 /* modal css  */
 a,
 a:link {
@@ -1804,6 +1859,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
  }
  .K-form-input-action select{
     width: var(--inputLong);
@@ -1822,6 +1878,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .k-card-action{
     margin-top: 20px;
@@ -1897,6 +1954,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     background-color: var(--colorSite);
     color: white;
     cursor: pointer;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     
   }
   
@@ -1910,6 +1968,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     cursor: pointer;
     border: none;
     font-weight: 600;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
   }
   
   /* .btn {
@@ -1977,6 +2036,95 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 
 }
+ /*------------bilan---------- */
+ .espaceBilan{
+    width: 100%;
+    display: block;
+    
+}
+.bilanTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.bilanTitle h1{
+    text-align: center;
+}
+.affiBilan{
+    display: flex;
+}
+.bilanTache{
+    margin: 0 auto;
+    width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.bilanGen{
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.bilantaD{
+    display: flex;
+    align-items: center;
+}
+.bilantaD h2{
+    margin-right: 20px;
+}
+.casseSom{
+    width: 150px;
+    height: 20px;
+    border: 2px solid rgb(217, 255, 192);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    overflow: hidden;
+    
+}
+.casseSom p{
+    margin: 0 auto;
+    text-align: center;
+}
+.tex{
+    font-weight: bold;
+}
+.bilanTaa{
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.bilTa{
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(211, 211, 211) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 5px;
+    text-align: center;
+}
+.bilPerso{
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(211, 211, 211) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 5px;
+    text-align: center;
+   
+}
+.depense{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.depenseTot{
+    width: 30rem;
+    height: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+
+/*------------bilan---------- */
 
 @media screen and (max-width:1450px) {
 
@@ -2045,12 +2193,14 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
+
         width: var(--BtnMaxwidth);
     height: var(--BtnHeigth);
     background-color: var(--colorSite);
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
     .K-tach-info{
        display: block;
@@ -2110,6 +2260,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
     .K-tab-div{
         width: 60rem;
@@ -2181,6 +2332,7 @@ option{
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .K-tach-info{
    display: block;
@@ -2240,6 +2392,7 @@ option{
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .K-tab-div{
     width: 60rem;
@@ -2492,6 +2645,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
  }
  .K-form-input-action select{
     width: var(--inputLong);
@@ -2509,6 +2663,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .k-card-action{
     margin-top: 20px;
@@ -2583,6 +2738,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     background-color: var(--colorSite);
     color: white;
     cursor: pointer;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     
   }
   
@@ -2669,7 +2825,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
   .espaceBilan{
     width: 100%;
     display: block;
-    justify-content: center;
 }
 .bilanTitle{
     display: flex;
@@ -2693,7 +2848,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 .bilanGen{
     width: 70%;
     height: 100vh;
-    background-color: #bdec9e;
 }
 .bilantaD{
     display: flex;
@@ -2731,11 +2885,263 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     }
 }
 @media screen and (max-width:1370px) {
+     
+    .ajoutPerso{
+        padding: 15px;
+        display: block;
+    }
+    .formAjoutPerso{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .p-rect{
+        height: 20px;
+        width: 5PX;
+        background-color: var(--colorSite);
+    }
+    .titleForm{
+        display: flex;
+        align-items: center;
+    }
+    .formPerso{
+        margin-right: 10rem;
+    }
+    .K-form-input{
+        width:50rem ;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .K-form-input input{
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        border-radius: 2px;
+    }
+    .K-form-input input::placeholder{
+        text-align: center;
+    }
+    .K-form-input select{
+        width: 20rem;
+        height: 5rem;
+        border: none;background-color: #fff;
+        border-radius: 2px;
+    }
+    option{
+        text-align: center;
+    }
+    .k-form-btn{
+        display: flex;
+        justify-content: end;
+    }
+    .k-form-btn button{
+     width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
+    #btnAjout{
+        width: 20rem;
+       height: 5rem;
+       background-color: var(--colorSite);
+       border: none;
+       border-radius: var(--BorderBtn);
+       color: #ffff;
+       margin-bottom: 20px;
+       box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+       }
+    .K-tach-info{
+       display: flex;
+       justify-content: space-between;
+        
+    }
+    .K-card-1{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(20, 239, 20);
+    }
+    .K-card-2{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(243, 60, 60);
+    }
+    .K-card-3{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(229, 216, 38);
+    }
+    .K-regist{
+        padding: 1rem;
+        width: 40rem;
+    
+    }
+    .K-form-input-regist{
+        display: flex;
+        justify-content: space-around;
+    }
+    .K-form-input-regist input{
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        margin-right: 20px;
+        border-radius: 2px;
+    }
+    .K-form-input-regist input::placeholder{
+        text-align: center;
+    }
+    .K-form-input-regist button{
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    } 
+    .K-tab-div{
+        width: 60rem;
+        display: block;
+    
+    }
+
+    .k-color-i-1{
+        color: #2F14D4;
+    }
+    .k-color-i-1{
+        color: #2F14D4;
+    }
+    .k-color-i-2{
+        color: #d31c1c;
+    }
+    .TacheTerminer {
+        width: 50rem;
+    }
+ /* css action sur le personnel */
+ .Paiement{
+    padding: 20px;
+    width: 60rem;
+    display: block;
+    
+}
+.rectan{
+    width:5px;
+    height: 10px;
+    background-color: var(--colorSite);
+    margin-right:8px;
+}
+.MonTache{
+    margin-right: 20px;
+}
+.k-titleAction{
+    display: flex;
+    align-items: center;
+}
+.K-form-input-action{
+    width: 45rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.K-form-input-action input{
+    width: 20rem;
+    height: 5rem;
+   margin-bottom: 5px;
+   border: none;
+   border-radius: 2px;
+}
+.K-form-input-action select{
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+ }
+.K-form-input-action input::placeholder{
+   text-align: center;
+ }
+#btnMontant{
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    color: white;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.voirForm {
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.voirForm input {
+    width: 20rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2px;
+}
+#btnPaie {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.voirForm button {
+    width: 15rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.k-card-action{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.k-card-action-1{
+    width: 120px;
+    height: 80px;
+    padding: 1%;
+    background-color: white;
+    border-right: 5px solid #14D428;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.tableauMontant{
+    width: 80rem;
+    display: block;
+    justify-content: space-between;
+}
+.mytable{
+    width: 80rem;
+}
+/* -------------Fin css action sur le personnel-------------------- */
   
      /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;
-    width: 80rem;
+    width: 75rem;
     display: flex;
     justify-content: space-between;
 }
@@ -2758,7 +3164,21 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     height: 30px;
     border-radius: 100%;
 } 
-    
+.bilanTaa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.bilTa {
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(211, 211, 211);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 }
 @media screen and (max-width:1230px) {
 
@@ -2806,12 +3226,160 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .k-color-i-1{
         color: #2F14D4;
     }
-    /* css action sur le personnel */
-.Paiement{
+    
+    .ajoutPerso{
+        padding: 15px;
+        display: block;
+    }
+    .formAjoutPerso{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .p-rect{
+        height: 20px;
+        width: 5PX;
+        background-color: var(--colorSite);
+    }
+    .titleForm{
+        display: flex;
+        align-items: center;
+    }
+    .formPerso{
+        margin-right: 10rem;
+    }
+    .K-form-input{
+        width:50rem ;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .K-form-input input{
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        border-radius: 2px;
+    }
+    .K-form-input input::placeholder{
+        text-align: center;
+    }
+    .K-form-input select{
+        width: 20rem;
+        height: 5rem;
+        border: none;background-color: #fff;
+        border-radius: 2px;
+    }
+    option{
+        text-align: center;
+    }
+    .k-form-btn{
+        display: flex;
+        justify-content: end;
+    }
+    .k-form-btn button{
+     width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
+    #btnAjout{
+        width: 20rem;
+       height: 5rem;
+       background-color: var(--colorSite);
+       border: none;
+       border-radius: var(--BorderBtn);
+       color: #ffff;
+       margin-bottom: 20px;
+       box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+       }
+    .K-tach-info{
+       display: flex;
+       justify-content: space-between;
+        
+    }
+    .K-card-1{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(20, 239, 20);
+    }
+    .K-card-2{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(243, 60, 60);
+    }
+    .K-card-3{
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(229, 216, 38);
+    }
+    .K-regist{
+        padding: 1rem;
+        width: 40rem;
+    
+    }
+    .K-form-input-regist{
+        display: flex;
+        justify-content: space-around;
+    }
+    .K-form-input-regist input{
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        margin-right: 20px;
+        border-radius: 2px;
+    }
+    .K-form-input-regist input::placeholder{
+        text-align: center;
+    }
+    .K-form-input-regist button{
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    } 
+    .K-tab-div{
+        width: 60rem;
+        display: block;
+    
+    }
+
+    .k-color-i-1{
+        color: #2F14D4;
+    }
+    .k-color-i-1{
+        color: #2F14D4;
+    }
+    .k-color-i-2{
+        color: #d31c1c;
+    }
+    .TacheTerminer {
+        width: 50rem;
+    }
+ /* css action sur le personnel */
+ .Paiement{
     padding: 20px;
-    width: 90rem;
+    width: 60rem;
     display: flex;
-    justify-content: space-between;
+    
 }
 .rectan{
     width:5px;
@@ -2819,35 +3387,29 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     background-color: var(--colorSite);
     margin-right:8px;
 }
+.MonTache{
+    margin-right: 20px;
+}
 .k-titleAction{
     display: flex;
     align-items: center;
 }
 .K-form-input-action{
-    width: 40rem;
+    width: 45rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-    width: var(--inputLong);
-    height: var(--inputHau);
+    width: 20rem;
+    height: 5rem;
    margin-bottom: 5px;
    border: none;
    border-radius: 2px;
 }
-.K-form-input-action button{
-    width: var(--BtnMaxwidth);
-    height: var(--BtnHeigth);
-    background-color: var(--colorSite);
-    border: none;
-    border-radius: var(--BorderBtn);
-    color: #ffff;
- }
-
 .K-form-input-action select{
-    width: var(--inputLong);
-    height: var(--inputHau);
+    width: 20rem;
+    height: 5rem;
     margin-bottom: 5px;
     border: none;
     border-radius: 2px;
@@ -2856,12 +3418,51 @@ when users will click/enter button(link) browser will add a #id in a url and whe
    text-align: center;
  }
 #btnMontant{
+    width: 20rem;
+    height: 5rem;
     background-color: var(--colorSite);
     color: white;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+
+.voirForm {
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.voirForm input {
+    width: 20rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2px;
+}
+#btnPaie {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.voirForm button {
+    width: 15rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.k-card-action{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 .k-card-action-1{
     width: 120px;
-    height: 90px;
+    height: 50px;
     padding: 1%;
     background-color: white;
     border-right: 5px solid #14D428;
@@ -2870,22 +3471,28 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 
 }
 .tableauMontant{
-    width: 90rem;
+    width: 80rem;
     display: block;
     justify-content: space-between;
 }
 .mytable{
-    width: 90rem;
+    width: 80rem;
 }
 /* -------------Fin css action sur le personnel-------------------- */
 
 /*----------------parametre--------*/
+.contentParam{
+    width: 100%;
+}
 .blocAdminPro {
     padding: 5px;
-    width: 60rem;
+    width: 80rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 .formAjoutAdmin {
     padding: 5px;
@@ -2948,9 +3555,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     }
     .ajoutPerso{
         padding: 15px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        display: block;
     }
     .formAjoutPerso{
         display: flex;
@@ -2969,14 +3574,14 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         margin-right: 10rem;
     }
     .K-form-input{
-        width:30rem ;
+        width:50rem ;
         display: flex;
         justify-content: space-between;
         margin-bottom: 15px;
     }
     .K-form-input input{
-        width: var(--inputLong);
-    height: var(--inputHau);
+        width: 20rem;
+        height: 5rem;
         background-color: white;
         border: none;
         border-radius: 2px;
@@ -2985,8 +3590,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         text-align: center;
     }
     .K-form-input select{
-        width: var(--inputLong);
-        height: var(--inputHau);
+        width: 20rem;
+        height: 5rem;
         border: none;background-color: #fff;
         border-radius: 2px;
     }
@@ -2998,15 +3603,27 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
-        width: var(--BtnMaxwidth);
-    height: var(--BtnHeigth);
+     width: 20rem;
+    height: 5rem;
     background-color: var(--colorSite);
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
+    #btnAjout{
+        width: 20rem;
+       height: 5rem;
+       background-color: var(--colorSite);
+       border: none;
+       border-radius: var(--BorderBtn);
+       color: #ffff;
+       margin-bottom: 20px;
+       box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+       }
     .K-tach-info{
-       display: block;
+       display: flex;
+       justify-content: space-between;
         
     }
     .K-card-1{
@@ -3046,8 +3663,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-around;
     }
     .K-form-input-regist input{
-        width: var(--inputLong);
-        height: var(--inputHau);
+        width: 20rem;
+        height: 5rem;
         background-color: white;
         border: none;
         margin-right: 20px;
@@ -3057,12 +3674,13 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         text-align: center;
     }
     .K-form-input-regist button{
-        width: var(--BtnMaxwidth);
-    height: var(--BtnHeigth);
+    width: 20rem;
+    height: 5rem;
     background-color: var(--colorSite);
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     } 
     .K-tab-div{
         width: 60rem;
@@ -3084,7 +3702,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     padding: 20px;
     width: 60rem;
     display: flex;
-    justify-content: space-between;
+    
 }
 .rectan{
     width:5px;
@@ -3106,15 +3724,15 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-    width: var(--inputLong);
-    height: var(--inputHau);
+    width: 15rem;
+    height: 5rem;
    margin-bottom: 5px;
    border: none;
    border-radius: 2px;
 }
 .K-form-input-action select{
-    width: var(--inputLong);
-    height: var(--inputHau);
+    width: 15rem;
+    height: 5rem;
     margin-bottom: 5px;
     border: none;
     border-radius: 2px;
@@ -3123,8 +3741,41 @@ when users will click/enter button(link) browser will add a #id in a url and whe
    text-align: center;
  }
 #btnMontant{
+    width: 20rem;
+    height: 5rem;
     background-color: var(--colorSite);
     color: white;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.voirForm {
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.voirForm input {
+    width: 20rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2px;
+}
+#btnPaie {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.voirForm button {
+    width: 15rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .k-card-action{
     margin-top: 20px;
@@ -3147,7 +3798,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     justify-content: space-between;
 }
 .mytable{
-    width: 90rem;
+    width: 80rem;
 }
 /* -------------Fin css action sur le personnel-------------------- */
 /*----------------parametre--------*/
@@ -3166,12 +3817,29 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 
 .form-admin-ajout input {
-    height: 3rem;
+    height: 5rem;
     margin-right: 3rem;
     border: none;
     border-radius: 2px;
 }
-
+.btnB {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    margin-bottom: 20px;
+}
+.form-admin-ajout #btnCree {
+    width: var(--BtnMaxwidth);
+    height: 5rem;   
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
     .foot{
         
         display: flex;
@@ -3200,30 +3868,31 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         overflow-y: scroll;
     }
     .K-form-input-regist button {
-        width: var(--BtnMaxwidth);
-        height: var(--BtnHeigth);
+        width: 20rem;
+        height: 5rem;
         background-color: var(--colorSite);
         border: none;
         border-radius: var(--BorderBtn);
         color: #ffff;
         font-size: 10px;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
     .k-form-btn button {
-        width: var(--BtnMaxwidth);
-        height: var(--BtnHeigth);
+        width: 20rem;
+        height: 5rem;
         background-color: var(--colorSite);
         border: none;
         border-radius: var(--BorderBtn);
         color: #ffff;
         font-size: 10px;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
         /* css action sur le personnel */
 
 .Paiement{
     padding: 20px;
     width: 60rem;
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 .rectan{
     width:5px;
@@ -3240,21 +3909,21 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     align-items: center;
 }
 .K-form-input-action{
-    width: 30rem;
+    width: 50rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-    width: var(--inputLong);
-    height: var(--inputHau);
+    width: 20rem;
+    height: 5rem;
    margin-bottom: 5px;
    border: none;
    border-radius: 2px;
 }
 .K-form-input-action select{
-    width: var(--inputLong);
-    height: var(--inputHau);
+    width: 20rem;
+    height: 5rem;
     margin-bottom: 5px;
     border: none;
     border-radius: 2px;
@@ -3263,8 +3932,11 @@ when users will click/enter button(link) browser will add a #id in a url and whe
    text-align: center;
  }
 #btnMontant{
+    width: 20rem;
+    height: 5rem;
     background-color: var(--colorSite);
     color: white;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .k-card-action{
     margin-top: 20px;
@@ -3281,13 +3953,22 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     text-align: center;
 
 }
+#btnPaie {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
 .tableauMontant{
     width: 70rem;
     display: block;
     justify-content: space-between;
 }
 .mytable{
-    width: 60rem;
+    width: 70rem;
 }
 /* -------------Fin css action sur le personnel-------------------- */
 /*----------------parametre--------*/
@@ -3301,17 +3982,39 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 .formAjoutAdmin {
     padding: 5px;
     width: 10rem;
-    display: flex;
-    justify-content:space-between;
+    display: block;
 }
 
 .form-admin-ajout input {
-    height: 3rem;
+    width: 20rem;
+    height: 5rem;
     margin-right: 3rem;
     border: none;
     border-radius: 2px;
 }
-
+.form-admin-ajout #btnCree {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.btnB {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+}
+.bilanTaa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
     
 }
 @media screen and (max-width:900px) {
@@ -3364,10 +4067,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     .ajoutPerso{
 
         padding: 15px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
+        display: block;
+       
     }
     .formAjoutPerso{
         display: flex;
@@ -3387,14 +4088,14 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         margin-right: 10rem;
     }
     .K-form-input{
-        width:30rem ;
+        width:40rem ;
         display: flex;
         justify-content: space-between;
         margin-bottom: 15px;
     }
     .K-form-input input{
-        width: var(--inputLong);
-        height: var(--inputHau);
+        width: 15rem;
+        height: 5rem;
         background-color: white;
         border: none;
         border-radius: 2px;
@@ -3403,8 +4104,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         text-align: center;
     }
     .K-form-input select{
-        width: var(--inputLong);
-        height: var(--inputHau);
+        width: 15rem;
+        height: 5rem;
         border: none;background-color: #fff;
         border-radius: 2px;
     }
@@ -3416,15 +4117,16 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
-        width: var(--BtnMaxwidth);
-    height: var(--BtnHeigth);
+        width: 20rem;
+        height: 5rem;
     background-color: var(--colorSite);
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
     }
     .K-tach-info{
-       display: block;
+       display: flex;
+       justify-content: space-between;
         
     }
     .K-card-1{
@@ -3464,8 +4166,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-around;
     }
     .K-form-input-regist input{
-        width: var(--inputLong);
-        height: var(--inputHau);
+        width: 20rem;
+        height: 5rem;
         background-color: white;
         border: none;
         margin-right: 20px;
@@ -3475,12 +4177,13 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         text-align: center;
     }
     .K-form-input-regist button{
-        width: var(--BtnMaxwidth);
-        height: var(--BtnHeigth);
+        width: 20rem;
+        height: 5rem;
         background-color: var(--colorSite);
         border: none;
         border-radius: var(--BorderBtn);
         color: #ffff;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
     .K-tab-div{
         width: 50rem;
@@ -3512,9 +4215,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;
-    width: 70rem;
-    display: flex;
-    justify-content: space-between;
+    width: 60rem;
+    display: block;
 }
 .Profil {
     padding: 20px;
@@ -3525,17 +4227,18 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     justify-content: center;
     background-color: white;
     box-shadow: 2px 5px 2px 5px grey;
+    margin-bottom: 20px;
 }
 
 .formAjoutAdmin {
     padding: 5px;
-    width: 10rem;
-    display: flex;
-    justify-content:space-between;
+    width: 40rem;
+    display: block;
 }
 
 .form-admin-ajout input {
-    height: 3rem;
+    width: 20rem;
+    height: 5rem;
     margin-right: 3rem;
     border: none;
     border-radius: 2px;
@@ -3545,22 +4248,18 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 @media screen and (max-width:800px) {
 
     html{
-        font-size: 60%;
+        font-size: 50%;
     }
     
-
-    html{
-        font-size: 60%;
-    }
    
      .col1{
         width: 10%;
-        height: 100vh;
+        height: 100%;
         background-color: black;
     }
     .col2{
         width: 90%;
-        height: 100vh;
+        height: 100%;
         background-color: var(--colorBg);
     }
   
@@ -3615,12 +4314,12 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-between;
     }
     .interDash{
-        width: 75%;
+        width: 80%;
         background-color: var(--colorBg);
         flex-direction: row;
     }
     .listPersonel {
-        width: 25%;
+        width: 20%;
         height: 92vh;
         background-color: white;
     }
@@ -3690,9 +4389,11 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
     .K-tach-info{
-       display: block;
+       display: flex;
+       justify-content: space-between;
         
     }
     .K-card-1{
@@ -3749,6 +4450,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         border: none;
         border-radius: var(--BorderBtn);
         color: #ffff;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
     .K-tab-div{
         width: 40rem;
@@ -3766,9 +4468,10 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;
-    width: 40rem;
+    width: 70rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .formAjoutAdmin {
@@ -3876,26 +4579,209 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         height: 30px;
         border-radius: 100%;
     }
+    .K-form-input-regist {
+        display: flex;
+        justify-content: space-between;
+    }
+    .K-form-input-regist input {
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        margin-right: 20px;
+        border-radius: 2px;
+    }
+    .K-form-input input {
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        border-radius: 2px;
+    }
+    .K-form-input {
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .k-form-btn button {
+        width: 20rem;
+        height: 5rem;
+        background-color: var(--colorSite);
+        border: none;
+        border-radius: var(--BorderBtn);
+        color: #ffff;
+        margin-bottom: 20px;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
+    .TacheTerminer {
+        width: 50rem;
+    }
+    .K-form-input select {
+        width: 20rem;
+        height: 5rem;
+        border: none;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+    .K-tab-div {
+        width: 50rem;
+        display: block;
+    }
+    .K-form-input-regist button {
+        width: 20rem;
+        height: 5rem;
+        background-color: var(--colorSite);
+        border: none;
+        border-radius: var(--BorderBtn);
+        color: #ffff;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
     /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;
-    width: 40rem;
+    width: 80rem;
     display: flex;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
 }
 
 .formAjoutAdmin {
     padding: 5px;
     width: 10rem;
+    display: block;
+    margin-bottom: 20px;
+}
+.Profil {
+    padding: 20px;
+    width: 20rem;
+    height: 20rem;
     display: flex;
-    justify-content:space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 5px 2px 5px grey;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.adminListelem {
+    padding: 20px;
+    display: block;
+    background-color: white;
+    border: 2px solid var(--colorSite);
+    box-shadow: 2px 2px 2px 2px gray;
 }
 
 .form-admin-ajout input {
-    height: 3rem;
+    width: 20rem;
+    height: 5rem;
     margin-right: 3rem;
     border: none;
     border-radius: 2px;
+}
+.form-admin-ajout #btnCree {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.Admintitle{
+    width: 20rem;
+}
+.btnB {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    margin-bottom: 20px;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.Admintitle h2{
+    font-size: 1.8rem;
+}
+.mytable {
+    width: 80rem;
+}
+#btnPaie {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+#btnMontant {
+    background-color: var(--colorSite);
+    color: white;
+    width: 20rem;
+    height: 5rem;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    
+}
+.Paiement {
+    padding: 20px;
+    width: 60rem;
+    display: block;
+}
+.K-form-input-action {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.ajoutPerso {
+    padding: 15px;
+    display: block;
+    
+}
+
+.K-form-input-action select {
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+}
+.K-form-input-action input {
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+}
+.voirForm {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+.voirForm button {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.voirForm input {
+    width: 20rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2px;
+}
+.MonTache {
+    width: 40rem;
+    margin-right: 20px;
+}
+.form-ajoutAdmin {
+    width: 60rem;
 }
 
     .foot{
@@ -4078,6 +4964,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         border: none;
         border-radius: var(--BorderBtn);
         color: #ffff;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
     .K-tach-info{
         margin-top: 20px;
@@ -4139,6 +5026,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: var(--BorderBtn);
     color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     } 
     .K-tab-div{
         width: 60rem;
@@ -4206,6 +5094,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border-radius: var(--BorderBtn);
     color: #ffff;
     font-size: .8rem;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
 .k-card-action{
     margin-top: 20px;
@@ -4267,6 +5156,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     height: 30px;
     border: none;
     color: white;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
  }
  .k-select-num select{
     width: 5rem;
