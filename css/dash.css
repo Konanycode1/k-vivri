@@ -44,6 +44,11 @@ body{
     width: 80%;
     background-color: var(--colorBg);
 }
+.cann{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
    
     display: flex;
@@ -2034,8 +2039,6 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     border: none;
     border-radius: 2px;
 }
-
-}
  /*------------bilan---------- */
  .espaceBilan{
     width: 100%;
@@ -2125,6 +2128,9 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 
 /*------------bilan---------- */
+
+}
+
 
 @media screen and (max-width:1450px) {
 
@@ -2913,8 +2919,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         margin-bottom: 15px;
     }
     .K-form-input input{
-        width: 20rem;
-        height: 5rem;
+        width: 15rem;
+        height: 3rem;
         background-color: white;
         border: none;
         border-radius: 2px;
@@ -2923,8 +2929,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         text-align: center;
     }
     .K-form-input select{
-        width: 20rem;
-        height: 5rem;
+        width: 15rem;
+        height: 3rem;
         border: none;background-color: #fff;
         border-radius: 2px;
     }
@@ -2936,8 +2942,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: end;
     }
     .k-form-btn button{
-     width: 20rem;
-    height: 5rem;
+        width: 15rem;
+        height: 3rem;
     background-color: var(--colorSite);
     border: none;
     border-radius: var(--BorderBtn);
@@ -2945,8 +2951,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
     }
     #btnAjout{
-        width: 20rem;
-       height: 5rem;
+        width: 15rem;
+        height: 3rem;
        background-color: var(--colorSite);
        border: none;
        border-radius: var(--BorderBtn);
@@ -2996,8 +3002,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         justify-content: space-around;
     }
     .K-form-input-regist input{
-        width: 20rem;
-        height: 5rem;
+        width: 15rem;
+        height: 3rem;
         background-color: white;
         border: none;
         margin-right: 20px;
@@ -3007,8 +3013,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
         text-align: center;
     }
     .K-form-input-regist button{
-    width: 20rem;
-    height: 5rem;
+        width: 15rem;
+        height: 3rem;
     background-color: var(--colorSite);
     border: none;
     border-radius: var(--BorderBtn);
@@ -3060,15 +3066,15 @@ when users will click/enter button(link) browser will add a #id in a url and whe
     margin-bottom: 20px;
 }
 .K-form-input-action input{
-    width: 20rem;
-    height: 5rem;
+    width: 15rem;
+    height: 3rem;
    margin-bottom: 5px;
    border: none;
    border-radius: 2px;
 }
 .K-form-input-action select{
-    width: 20rem;
-    height: 5rem;
+    width: 15rem;
+    height: 3rem;
     margin-bottom: 5px;
     border: none;
     border-radius: 2px;
@@ -3077,8 +3083,8 @@ when users will click/enter button(link) browser will add a #id in a url and whe
    text-align: center;
  }
 #btnMontant{
-    width: 20rem;
-    height: 5rem;
+    width: 15rem;
+    height: 3rem;
     background-color: var(--colorSite);
     color: white;
     box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
@@ -3090,14 +3096,14 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 
 .voirForm input {
-    width: 20rem;
-    height: 5rem;
+    width: 15rem;
+    height: 3rem;
     border: none;
     border-radius: 2px;
 }
 #btnPaie {
-    width: 20rem;
-    height: 5rem;
+    width: 15rem;
+    height: 3rem;
     background-color: var(--colorSite);
     border: none;
     border-radius: var(--BorderBtn);
@@ -3106,7 +3112,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 .voirForm button {
     width: 15rem;
-    height: 5rem;
+    height: 3rem;
     background-color: var(--colorSite);
     border: none;
     border-radius: var(--BorderBtn);
@@ -3141,7 +3147,7 @@ when users will click/enter button(link) browser will add a #id in a url and whe
      /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;
-    width: 75rem;
+    width: 70rem;
     display: flex;
     justify-content: space-between;
 }
@@ -5202,7 +5208,619 @@ when users will click/enter button(link) browser will add a #id in a url and whe
 }
 @media screen and (max-width: 500px) {
 	
+   
+    html{
+        font-size: 50%;
+    }
+  
+   
+     .col1{
+        width: 10%;
+        height: 100vh;
+        background-color: black;
+    }
+    .cach{
+        display: none;
+    }
+    .listLink{
+        display: block;
+    
+    }
+    .listLink ul li i{
+        color: white;
+     
+     }
+     .listLink ul {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+     }
+     .listLink ul li {
+         height: 3rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 3rem;
+      }
+      .listLink ul li:hover {
+         background-color: cadetblue;
+      }
+     
+      .listLink ul li a {
+         width: 12rem;
+         display: flex;
+         align-items: center;
+         justify-content: center; 
+      }
+      .listLink ul li a{
+        margin-left: 0px;
+     }
+    .col2{
+        width: 90%;
+        height: 100vh;
+        background-color: var(--colorBg);
+    }
+    .tacheEncour {
+        padding: 0.8rem;
+        width: 40rem;
+        background-color: white;
+        border-top: 7px solid black;
+    }
+    .divTach {
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .interDash{
+        width: 75%;
+        background-color: var(--colorBg);
+    }
+    .listPersonel {
+        width: 25%;
+        height: 92vh;
+        background-color: white;
+    }
+    .listImg img{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+    .K-form-input-regist {
+        display: flex;
+        justify-content: space-between;
+    }
+    .K-form-input-regist input {
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        margin-right: 20px;
+        border-radius: 2px;
+    }
+    .K-form-input input {
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        border-radius: 2px;
+    }
+    .K-form-input {
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .k-form-btn button {
+        width: 20rem;
+        height: 5rem;
+        background-color: var(--colorSite);
+        border: none;
+        border-radius: var(--BorderBtn);
+        color: #ffff;
+        margin-bottom: 20px;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
+    .TacheTerminer {
+        width: 50rem;
+    }
+    .K-form-input select {
+        width: 20rem;
+        height: 5rem;
+        border: none;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+    .K-tab-div {
+        width: 50rem;
+        display: block;
+    }
+    .K-form-input-regist button {
+        width: 20rem;
+        height: 5rem;
+        background-color: var(--colorSite);
+        border: none;
+        border-radius: var(--BorderBtn);
+        color: #ffff;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
+    /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 80rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+}
 
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: block;
+    margin-bottom: 20px;
+}
+.Profil {
+    padding: 20px;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 5px 2px 5px grey;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.adminListelem {
+    padding: 20px;
+    display: block;
+    background-color: white;
+    border: 2px solid var(--colorSite);
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.form-admin-ajout input {
+    width: 20rem;
+    height: 5rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+.form-admin-ajout #btnCree {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.Admintitle{
+    width: 20rem;
+}
+.btnB {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    margin-bottom: 20px;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.Admintitle h2{
+    font-size: 1.8rem;
+}
+.mytable {
+    width: 80rem;
+}
+#btnPaie {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+#btnMontant {
+    background-color: var(--colorSite);
+    color: white;
+    width: 20rem;
+    height: 5rem;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    
+}
+.Paiement {
+    padding: 20px;
+    width: 60rem;
+    display: block;
+}
+.K-form-input-action {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.ajoutPerso {
+    padding: 15px;
+    display: block;
+    
+}
+
+.K-form-input-action select {
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+}
+.K-form-input-action input {
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+}
+.voirForm {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+.voirForm button {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.voirForm input {
+    width: 20rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2px;
+}
+.MonTache {
+    width: 40rem;
+    margin-right: 20px;
+}
+.form-ajoutAdmin {
+    width: 60rem;
+}
+
+    .foot{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        background-color: var(--colorSite);
+    }
+    
+    /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-admin-ajout input {
+    height: 3rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+
+}
+@media screen and (max-width: 400px) {
+	
+   
+    html{
+        font-size: 40%;
+    }
+  
+   
+     .col1{
+        width: 10%;
+        height: 100vh;
+        background-color: black;
+    }
+    .cach{
+        display: none;
+    }
+    .listLink{
+        display: block;
+    
+    }
+    .listLink ul li i{
+        color: white;
+     
+     }
+     .listLink ul {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+     }
+     .listLink ul li {
+         height: 3rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 3rem;
+      }
+      .listLink ul li:hover {
+         background-color: cadetblue;
+      }
+     
+      .listLink ul li a {
+         width: 12rem;
+         display: flex;
+         align-items: center;
+         justify-content: center; 
+      }
+      .listLink ul li a{
+        margin-left: 0px;
+     }
+    .col2{
+        width: 90%;
+        height: 100vh;
+        background-color: var(--colorBg);
+    }
+    .tacheEncour {
+        padding: 0.8rem;
+        width: 40rem;
+        background-color: white;
+        border-top: 7px solid black;
+    }
+    .divTach {
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .interDash{
+        width: 75%;
+        background-color: var(--colorBg);
+    }
+    .listPersonel {
+        width: 25%;
+        height: 92vh;
+        background-color: white;
+    }
+    .listImg img{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+    .K-form-input-regist {
+        display: flex;
+        justify-content: space-between;
+    }
+    .K-form-input-regist input {
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        margin-right: 20px;
+        border-radius: 2px;
+    }
+    .K-form-input input {
+        width: 20rem;
+        height: 5rem;
+        background-color: white;
+        border: none;
+        border-radius: 2px;
+    }
+    .K-form-input {
+        width: 50rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .k-form-btn button {
+        width: 20rem;
+        height: 5rem;
+        background-color: var(--colorSite);
+        border: none;
+        border-radius: var(--BorderBtn);
+        color: #ffff;
+        margin-bottom: 20px;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
+    .TacheTerminer {
+        width: 50rem;
+    }
+    .K-form-input select {
+        width: 20rem;
+        height: 5rem;
+        border: none;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+    .K-tab-div {
+        width: 50rem;
+        display: block;
+    }
+    .K-form-input-regist button {
+        width: 20rem;
+        height: 5rem;
+        background-color: var(--colorSite);
+        border: none;
+        border-radius: var(--BorderBtn);
+        color: #ffff;
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
+    /*----------------parametre--------*/
+.blocAdminPro {
+    padding: 5px;
+    width: 80rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formAjoutAdmin {
+    padding: 5px;
+    width: 10rem;
+    display: block;
+    margin-bottom: 20px;
+}
+.Profil {
+    padding: 20px;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 5px 2px 5px grey;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.adminListelem {
+    padding: 20px;
+    display: block;
+    background-color: white;
+    border: 2px solid var(--colorSite);
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.form-admin-ajout input {
+    width: 20rem;
+    height: 5rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 2px;
+}
+.form-admin-ajout #btnCree {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.Admintitle{
+    width: 20rem;
+}
+.btnB {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    margin-bottom: 20px;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.Admintitle h2{
+    font-size: 1.8rem;
+}
+.mytable {
+    width: 80rem;
+}
+#btnPaie {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+#btnMontant {
+    background-color: var(--colorSite);
+    color: white;
+    width: 20rem;
+    height: 5rem;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    
+}
+.Paiement {
+    padding: 20px;
+    width: 60rem;
+    display: block;
+}
+.K-form-input-action {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.ajoutPerso {
+    padding: 15px;
+    display: block;
+    
+}
+
+.K-form-input-action select {
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+}
+.K-form-input-action input {
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+}
+.voirForm {
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+}
+.voirForm button {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--colorSite);
+    border: none;
+    border-radius: var(--BorderBtn);
+    color: #ffff;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+.voirForm input {
+    width: 20rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2px;
+}
+.MonTache {
+    width: 40rem;
+    margin-right: 20px;
+}
+.form-ajoutAdmin {
+    width: 60rem;
+}
+
+    .foot{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        background-color: var(--colorSite);
+    }
+    
     /*----------------parametre--------*/
 .blocAdminPro {
     padding: 5px;
