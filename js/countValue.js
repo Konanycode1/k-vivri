@@ -24,4 +24,25 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     }CountAdmin();
 
+    function recupAdminList() {
+        let adminList = document.querySelector(".adminList");
+        let admin = localStorage.getItem("admin");
+        admin = JSON.parse(admin);
+        admin.forEach(element => {
+            let div = document.createElement("div");
+            div.className = "listen";
+            let text = `
+            <img src="../assets/image/ad1.jpeg" alt="">
+            <h3>${element.nomPrenom}</h3>
+            <p class="eclipAdmin"></p>
+            ` 
+            div.innerHTML = text;
+            adminList.appendChild(div);
+            console.log(element)
+            
+        });
+        
+    }
+    recupAdminList()
+
 })

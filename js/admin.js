@@ -254,6 +254,4 @@ function redirect(){
     })
 }
 redirect();
-   
-
 })
