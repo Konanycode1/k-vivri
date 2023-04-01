@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         let userAdmin = document.getElementById("userAdmin");
         let numero = document.getElementById("numero");
         let emailAdmin = document.getElementById("emailAdmin");
+        let pwdAdmin = document.getElementById("pwd");
         let fonctionAdmin = document.getElementById("fonctionAdmin");
         form.addEventListener("submit",(e)=>{
         e.preventDefault()
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let data = {
                 nomPrenom: nomAdmin.value,
                 user: userAdmin.value,
+                psw: pwdAdmin.value,
                 numero: numero.value,
                 email: emailAdmin.value,
                 fonction: fonctionAdmin.value,
@@ -45,7 +47,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
            div.className = "adminList-perso"
             let contenu = `
             <img src="../assets/image/ad2.png" alt="">
-            <h2 class="nomPrenom">${element.nomPrenom}</h2>
+            <h2 class="nomPrenom">${element.user}</h2>
             <h3 class="fonction">${element.fonction}</h3>
             <h3 class="statut">${element.statut}</h3>
             <h3>

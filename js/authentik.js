@@ -3,21 +3,33 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let verifSuper = localStorage.getItem("superAdmin");
     let verifAdmin =  localStorage.getItem("admin");
     let para = document.querySelector('.user');
+    let listPersonel = document.querySelector(".listPersonel");
+    let adminListelem = document.querySelector(".adminListelem");
+    let adminListperso =  document.querySelector(".adminList-perso");
     const dat = new Date()
 
     verifAdmin = JSON.parse(verifAdmin);
     verifSuper = JSON.parse(verifSuper);
     data = JSON.parse(data);
+    console.log(verifAdmin);
     let logStatus = false;
     // data = data.find(element => element.admin);
-    if( data.user == verifSuper.admin || data.user == verifAdmin.admin ){
+    if(data.statut === "admin"){
+        listPersonel.style.display = "none"
+        adminListelem.style.display = "none"
+        adminListperso.style.display = "none"
+    }
+
+    if(data.user === verifAdmin.user ||verifAdmin.some(item => item.user)){
         logStatus = true;
         para.style.color = "white"
         para.style.marginLeft = "5px"
         para.textContent = data.user;
+        
     }
     else{
         logStatus;
+        console.log("ok")
     }  
     affiTache()
     function affiTache() {
