@@ -167,8 +167,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
                 })
                 console.log(listperson)
-                // localStorage.setItem("perso", JSON.stringify(listperson))
-                // window.location.reload();
+                localStorage.setItem("perso", JSON.stringify(listperson))
+                window.location.reload();
             })
 
         }));
