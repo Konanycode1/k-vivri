@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         recupSuper = JSON.parse(recupSuper);
         recupAdmin = JSON.parse(recupAdmin);
         console.log(recupAdmin)
-        if(recupAdmin != null){
+        if(recupAdmin != null || recupSuper != null){
             if (utili.value === recupSuper.admin) {
                 if(pwd.value === recupSuper.pwd){
                     let user = {
