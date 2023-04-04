@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+    // liste personnel
     function listePerso() {
         let listPerso = localStorage.getItem("perso");
         listPerso = JSON.parse(listPerso);
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
     }
     listePerso()
-
+    // tâche terminée
     function tabTacheTerminer() {
         let valeur = localStorage.getItem('tache');
         let table = document.querySelector('.TacheTerminer');
@@ -52,7 +53,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
     }
     tabTacheTerminer();
-
+    //détails
     function detail(){
         let detail =  document.querySelectorAll('.link-1');
         let title = document.querySelector(".modal__title");
@@ -88,7 +89,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
        
     }
     detail();
-
+// supprimer tâche terminer
     function Delete() {
         let delet = document.querySelectorAll('#delete');
         let isPass = false

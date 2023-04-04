@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
+    // ajout personnel
     AjoutPerso() ;
     function AjoutPerso() {
          // ajout personnel
     let form = document.getElementById('formAjoutPerso');
     let btnAjout = document.getElementById('btnAjout');
-    let nom = document.getElementById('nom')
+    let nom = document.getElementById('nom');
     let prenom = document.getElementById('prenom');
-    let age = document.getElementById('age')
+    let age = document.getElementById('age');
     let domaine = document.getElementById('domaine');
     let attache = document.getElementById('tach');
     let tel = document.getElementById('numero');
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         } 
     });
     }
-   
+// ajout tache  
 AjoutTache();
 function AjoutTache() {
         let formRegistre = document.getElementById("K-form-registre");
@@ -96,8 +97,8 @@ function AjoutTache() {
         
 }
 
-
-    SelectTache();
+// selectionner tache
+SelectTache();
 function SelectTache() {
     let recupListe = localStorage.getItem('tache');
     let select = document.getElementById("tach")

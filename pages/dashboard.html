@@ -167,6 +167,14 @@
         </div>
        
     </main>
+    <script>
+        let listPersonel = document.querySelector(".listPersonel");
+        let data = localStorage.getItem("SessionUser");
+        data = JSON.parse(data)
+         if(data.statut === "admin"){
+            listPersonel.style.display = "none"
+            }
+    </script>
     
       <script src="../js/burger.js"></script>
      

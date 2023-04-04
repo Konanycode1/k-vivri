@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             
         });  
     }
-
+// action personnelle terminée
     function actionPersonTerminer() {
         let btnTer = document.querySelectorAll(".checkbox");
         let perso = localStorage.getItem("perso");
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }) );
     }
     actionPersonTerminer();
-
+// modification mot de passe
     function updatePerso() {
 
         let form = document.querySelector(".modaltache");
@@ -175,6 +175,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
     }
     updatePerso();
+// ajout modal 
     function Modal() {
 
         const modal = document.querySelector(".modal");
@@ -206,6 +207,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
     Modal();
 
+//active checkbox 
 let checkbox = document.querySelectorAll(".checkbox")
 function activ(eve) {
     
@@ -229,7 +231,7 @@ function activ(eve) {
 }
 activ(checkbox)
 
-
+// supprimer 
 function Delete() {
     let delet = document.querySelectorAll('#delete');
     let isPass = false

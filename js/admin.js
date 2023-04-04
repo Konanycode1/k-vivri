@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+   
 
     function CreateAdmin() {
         let form = document.querySelector(".formAdmin");

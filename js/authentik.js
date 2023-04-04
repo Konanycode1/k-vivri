@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let verifSuper = localStorage.getItem("superAdmin");
     let verifAdmin =  localStorage.getItem("admin");
     let para = document.querySelector('.user');
-    let listPersonel = document.querySelector(".listPersonel");
+   
     let adminListelem = document.querySelector(".adminListelem");
     let adminListperso =  document.querySelector(".adminList-perso");
+    console.log(adminListelem)
     const dat = new Date()
 
     verifAdmin = JSON.parse(verifAdmin);
@@ -14,12 +15,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
     console.log(verifAdmin);
     let logStatus = false;
     // data = data.find(element => element.admin);
-    if(data.statut === "admin"){
-        listPersonel.style.display = "none"
-        adminListelem.style.display = "none"
-        adminListperso.style.display = "none"
-    }
+    // if(data.statut === "admin"){
+    //     listPersonel.style.display = "none"
+    // }
 
+    verifAdmin = verifAdmin.filter(item => item.user = data.user)
     if(data.user === verifAdmin.user ||verifAdmin.some(item => item.user)){
         logStatus = true;
         para.style.color = "white"

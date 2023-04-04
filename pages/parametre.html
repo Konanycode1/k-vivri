@@ -67,7 +67,7 @@
                                             <img src="../assets/image/mem1.png" alt="" />
                                             <div class="infoPro">
                                                 <h2 class="nom">Abraham konany</h2>
-                                                <h4>Super Admin</h4>
+                                                <h4 class="addm">Super Admin</h4>
                                             </div>
                                         </div>
                                         <div class="foncti">
@@ -187,6 +187,24 @@
         </div>
       
     </main>
+    <script>
+         let adminListelem = document.querySelector(".adminListelem");
+        let verify = localStorage.getItem("SessionUser");
+        verify = JSON.parse(verify)
+        if(verify.statut == "admin"){
+            let blocAdminPro = document.querySelector(".blocAdminPro");
+            let addm = document.querySelector(".addm");
+            addm.textContent = verify.statut  
+            blocAdminPro.style.justifyContent = "center"
+            adminListelem.style.display = "none"
+            
+            
+
+        }
+        else{
+            adminListelem.style.display = "block"
+        }
+    </script>
     <script src="../js/admin.js"></script>
       <script src="../js/authentik.js"></script>
 </body>
