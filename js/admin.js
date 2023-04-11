@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             <path id="secondary-2" data-name="secondary" d="M12,18a1,1,0,0,1-1-1V11a1,1,0,0,1,2,0v6A1,1,0,0,1,12,18Z" style="fill: green;"></path>
             </g>
             </svg></h3>
-           
             `;
             div.innerHTML = contenu;
             divAjout.appendChild(div);
