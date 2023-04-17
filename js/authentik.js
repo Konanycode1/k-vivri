@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //     listPersonel.style.display = "none"
     // }
 
-    verifAdmin = verifAdmin.filter(item => item.user = data.user)
-    if(data.user === verifAdmin.user ||verifAdmin.some(item => item.user)){
+    verifAdmin = verifAdmin?.filter(item => item.user = data.user)
+    if(data.user === verifSuper.user || verifAdmin?.some(item => item.user)){
         logStatus = true;
         para.style.color = "white"
         para.style.marginLeft = "5px"
